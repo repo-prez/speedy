@@ -22,15 +22,15 @@ const NavBar = () => {
 
         {/* Menu Plans */}
         <div className="flex">
-          <p className="m-2">Personas</p>
-          <p className="m-2">Corporativo</p>
+          <p className="m-1">Personas</p>
+          <p className="m-1">Corporativo</p>
         </div>
 
         {/* Contact Data */}
         <div className="flex">
-          <p className="m-2">Paga tu cuenta</p>
-          <p className="m-2">Sucursales y Oficinas</p>
-          <p className="m-2">My Speedy</p>
+          <p className="m-1">Paga tu cuenta</p>
+          <p className="m-1">Sucursales y Oficinas</p>
+          <p className="m-1">My Speedy</p>
         </div>
 
       </div>
@@ -38,7 +38,7 @@ const NavBar = () => {
 
       {/* Menu */}
 
-      <div className='p-6 '>
+      <div className='px-6 py-4 '>
         <div className='absolute bottom-4'>
           <img src={homeLogo} alt="" width={200} />
         </div>
