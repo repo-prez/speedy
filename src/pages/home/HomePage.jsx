@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Plans from './components/Plans'
 import Form from './components/Form'
 import Info from './components/Info'
+import Map from './components/Map'
 
 const HomePage = () => {
   return (
@@ -13,8 +14,9 @@ const HomePage = () => {
       <Plans />
       <Form />
       <Info />
-
+      <Map />
       <Footer />
+
 
     </div>
   )

@@ -6,13 +6,13 @@ export default {
   ],
   theme: {
     screens: {
-      sm: '426px',
+      sm: '425px',
       // => @media (min-width: 425px) { ... }
 
-      md: '769px',
+      md: '768px',
       // => @media (min-width: 768px) { ... }
 
-      lg: '1025px',
+      lg: '1024px',
       // => @media (min-width: 1024px) { ... }
 
       xl: '1536px'

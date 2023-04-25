@@ -42,7 +42,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  px-4 lg:flex-row">
+    <div className="flex flex-col items-center justify-center  px-4 py-4 lg:flex-row bg-white">
 
       <img className="rounded-lg md:w-4/5 lg:w-2/5" src={bannerForm} alt="" />
 
