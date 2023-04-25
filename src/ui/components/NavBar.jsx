@@ -44,10 +44,10 @@ const NavBar = () => {
         </div>
 
         <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
-          <p className="m-2 ">Inicio</p>
-          <p className="m-2 ">Nosotros</p>
-          <p className="m-2 ">Planes de Internet</p>
-          <p className="m-2 ">Speedy TV</p>
+          <a href=""> <p className="m-2 ">Inicio</p></a>
+          <a href=""> <p className="m-2 ">Nosotros</p></a>
+          <a href=""> <p className="m-2 ">Planes de Internet</p></a>
+          <a href=""> <p className="m-2 ">Speedy TV</p></a>
         </div>
 
 
