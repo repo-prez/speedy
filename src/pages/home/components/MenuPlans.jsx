@@ -43,7 +43,7 @@ const MenuPlans = () => {
 
         <button
           className="flex items-center justify-center  p-4 bg-slate-50  border-slate-500
-        w-1/2 border-2  border-t-0 rounded-r-2xl 
+           w-1/2 border-2  border-t-0 rounded-r-2xl 
         md:w-1/3 md:rounded-r-none md:rounded-br-2xl md:rounded-bl-2xl
         lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl"
         >
