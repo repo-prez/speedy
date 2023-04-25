@@ -7,7 +7,7 @@ import bannerEcuador from '../../../assets/img/banners/bannerEcuador.png'
 
 const Map = () => {
   return (
-    <div className='flex flex-col items-center w-5/6 lg:w-3/5'>
+    <div className='flex flex-col lg:flex-row items-center  w-5/6 lg:w-3/5 my-8'>
 
 
       {/* Data */}

@@ -8,7 +8,7 @@ import bannerSupport from '../../../assets/img/banners/bannerSupport.png'
 
 const Info = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 lg:px-52">
 
       <div className="relative my-4 rounded-xl">
         <img className="object-cover object-right h-28 w-full rounded-xl" src={bannerSpeedyTv} alt="" />
