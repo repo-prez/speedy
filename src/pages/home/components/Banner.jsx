@@ -45,7 +45,8 @@ const Banner = ({ activeProduct }) => {
           <p className='text-sm'>La fibra que todos quieren</p>
         </div>
 
-        <div className=' text-white  p-2 md:backdrop-blur-sm md:bg-white/20 md:rounded-xl animate-pulse'>
+
+        <div className=' text-white  p-2 md:backdrop-blur-sm md:bg-white/20 md:rounded-xl animate__animated animate-pulse animate__slower'>
           <p className='text-xl font-bold'>200 Megas</p>
           <p className='text-xl font-bold'>$22/50/mes</p>
           <p className='text-sm'>Contrátalo ahora</p>
@@ -55,6 +56,8 @@ const Banner = ({ activeProduct }) => {
             Revisa tu Factibilidad
           </button>
         </div>
+
+
       </div>
 
 
