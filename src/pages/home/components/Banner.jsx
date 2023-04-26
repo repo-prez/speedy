@@ -3,7 +3,8 @@ import bannerCorporativo from '../../../assets/img/banners/bannerCorporativo.png
 import bannerTv from '../../../assets/img/banners/bannerTv.png'
 import bannerDual from '../../../assets/img/banners/bannerDual.png'
 import { useCallback, useEffect, useState } from 'react'
-import { useRef } from 'react'
+
+import { useSpring, animated } from '@react-spring/web'
 
 
 const Banner = ({ activeProduct }) => {
@@ -11,21 +12,13 @@ const Banner = ({ activeProduct }) => {
   const { home, business, tv, dual } = activeProduct
 
 
-  const [, updateState] = useState();
-  const forceUpdate = useCallback(() => updateState({}), []);
-
-  useEffect(() => {
-    forceUpdate()
-
-
-  }, [home, business, tv, dual])
-
-
 
   return (
     <div className=' relative flex '>
 
+
       <img className='object-cover h-56 w-full' src={home ? bannerInternetHome : business ? bannerCorporativo : tv ? bannerTv : bannerDual} alt="" />
+
 
       <div className='absolute z-10 my-4 md:my-12 w-full flex flex-col items-start md:flex-row md:items-center md:justify-around '>
 
