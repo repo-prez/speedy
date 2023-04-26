@@ -19,19 +19,19 @@ const Banner = ({ activeProduct }) => {
     <div className=' relative flex '>
 
 
-      <XyzTransition appear xyz="fade  ">
+      <XyzTransition appear xyz="fade short-50% delay-5  ">
         {home && <img className='object-cover h-56 w-full ' src={bannerInternetHome} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade  ">
+      <XyzTransition appear xyz="fade short-50% delay-5  ">
         {business && <img className='object-cover h-56 w-full ' src={bannerCorporativo} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade  ">
+      <XyzTransition appear xyz="fade short-50% delay-5  ">
         {tv && <img className='object-cover h-56 w-full ' src={bannerTv} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade  ">
+      <XyzTransition appear xyz="fade short-50% delay-5  ">
         {dual && <img className='object-cover h-56 w-full ' src={bannerDual} alt="" />}
       </XyzTransition>
 
