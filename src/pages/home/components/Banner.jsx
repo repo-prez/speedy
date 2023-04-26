@@ -2,9 +2,6 @@ import bannerInternetHome from '../../../assets/img/banners/bannerInternetHome.p
 import bannerCorporativo from '../../../assets/img/banners/bannerCorporativo.png'
 import bannerTv from '../../../assets/img/banners/bannerTv.png'
 import bannerDual from '../../../assets/img/banners/bannerDual.png'
-import { useCallback, useEffect, useState } from 'react'
-
-import { useSpring, animated } from '@react-spring/web'
 
 
 const Banner = ({ activeProduct }) => {
