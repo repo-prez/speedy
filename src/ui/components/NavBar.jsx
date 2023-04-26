@@ -39,7 +39,7 @@ const NavBar = () => {
       {/* Menu */}
 
       <div className='px-6 py-4 '>
-        <div className='absolute bottom-4'>
+        <div className='absolute bottom-2'>
           <img src={homeLogo} alt="" width={200} />
         </div>
 
@@ -64,7 +64,7 @@ const NavBar = () => {
           }
         </button>
 
-        <div className={`flex flex-col justify-center items-center w-screen absolute z-20 top-20 right-0 my-2  bg-slate-200 text-slate-700 md:hidden ${showBurgerMenu && `hidden`} `}>
+        <div className={`absolute z-20 top-16 right-0 flex flex-col justify-center items-center w-screen  my-2  bg-slate-200 text-slate-700 md:hidden ${showBurgerMenu && `hidden`} `}>
 
           <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Inicio</a>
           <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Nosotros</a>

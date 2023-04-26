@@ -38,11 +38,11 @@ const homeInternet = {
 }
 
 
-const Plans = () => {
+const Plans = ({ activeProduct, setActiveProduct }) => {
   return (
     <div>
 
-      <MenuPlans />
+      <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
       <div className="flex flex-wrap justify-center">
         <CardPlan planData={homeInternet.plan1} />

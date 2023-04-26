@@ -3,16 +3,22 @@ import svgInternetCorporativo from '../../../assets/icons/svgInternetCorporativo
 import svgSpeedy from '../../../assets/icons/svgSpeedy.svg'
 import svgsvgDualPack from '../../../assets/icons/svgDualPack.svg'
 
-const MenuPlans = () => {
+const MenuPlans = ({ activeProduct, setActiveProduct }) => {
+
+  const { home, business, tv, dual } = activeProduct
+
+
+
   return (
     <div className='flex flex-col items-center'>
       <div className="flex flex-row flex-wrap justify-center items-center p-1 w-11/12 ">
 
         <button
-          className="flex items-center justify-center p-4 bg-slate-50  border-slate-500
-        w-1/2 border-2 border-r-0 rounded-l-2xl 
-        md:w-1/3
-        lg:w-1/4"
+          className={`flex items-center justify-center p-4  border-slate-500  ${home ? 'bg-pink-600' : 'bg-slate-50'}
+          w-1/2 border-2 border-r-0 rounded-l-2xl 
+          md:w-1/3
+          lg:w-1/4`}
+          onClick={() => setActiveProduct({ home: true, business: false, tv: false, dual: false })}
         >
           <img src={svgInternetHome} width={50} alt="" />
           <p>Internet Hogar</p>
@@ -20,10 +26,11 @@ const MenuPlans = () => {
 
 
         <button
-          className="flex items-center justify-center p-4 bg-slate-50  border-slate-500
-        w-1/2 border-2 rounded-r-2xl 
-        md:w-1/3 md:rounded-none
-        lg:w-1/4"
+          className={`flex items-center justify-center p-4  border-slate-500 ${business ? 'bg-pink-600' : 'bg-slate-50'}
+          w-1/2 border-2 rounded-r-2xl 
+          md:w-1/3 md:rounded-none
+          lg:w-1/4`}
+          onClick={() => setActiveProduct({ home: false, business: true, tv: false, dual: false })}
         >
           <img src={svgInternetCorporativo} width={50} alt="" />
           <p>Internet Corporativo </p>
@@ -31,21 +38,24 @@ const MenuPlans = () => {
 
 
         <button
-          className="flex items-center justify-center  p-4 bg-slate-50  border-slate-500
-        w-1/2 border-2 border-r-0 border-t-0 rounded-l-2xl 
-        md:w-1/3 md:border-t-2 md:border-r-2 md:rounded-l-none md:border-l-0 md:rounded-r-2xl
-        lg:w-1/4 lg:rounded-r-none lg:border-r-0"
+          className={`flex items-center justify-center  p-4  border-slate-500 ${tv ? 'bg-pink-600' : 'bg-slate-50'}
+          w-1/2 border-2 border-r-0 border-t-0 rounded-l-2xl 
+          md:w-1/3 md:border-t-2 md:border-r-2 md:rounded-l-none md:border-l-0 md:rounded-r-2xl
+          lg:w-1/4 lg:rounded-r-none lg:border-r-0`}
+          onClick={() => setActiveProduct({ home: false, business: false, tv: true, dual: false })}
         >
           <img src={svgSpeedy} width={50} alt="" />
           <p>Speedy TV</p>
         </button>
 
 
+
         <button
-          className="flex items-center justify-center  p-4 bg-slate-50  border-slate-500
-           w-1/2 border-2  border-t-0 rounded-r-2xl 
-        md:w-1/3 md:rounded-r-none md:rounded-br-2xl md:rounded-bl-2xl
-        lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl"
+          className={`flex items-center justify-center  p-4 border-slate-500 ${dual ? 'bg-pink-600' : 'bg-slate-50'}
+          w-1/2 border-2  border-t-0 rounded-r-2xl 
+          md:w-1/3 md:rounded-r-none md:rounded-br-2xl md:rounded-bl-2xl
+          lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
+          onClick={() => setActiveProduct({ home: false, business: false, tv: false, dual: true })}
         >
           <img src={svgsvgDualPack} width={50} alt="" />
           <p>Dual Pack</p>

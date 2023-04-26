@@ -91,6 +91,9 @@ const Footer = () => {
 
 
       </div>
+
+      <p className='text-white border-t-2 p-1 text-justify'>Copyright © 2023 All Rights Reserved by <a className='underline' href="https://agenciaprez.com/" target='_blank' rel="noreferrer">Agencia Prez</a>.</p>
+
     </div >
   )
 }
