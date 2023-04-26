@@ -14,7 +14,7 @@ const Banner = ({ activeProduct }) => {
     <div className=' relative flex '>
 
 
-      <img className='object-cover h-56 w-full' src={home ? bannerInternetHome : business ? bannerCorporativo : tv ? bannerTv : bannerDual} alt="" />
+      <img className='object-cover h-56 w-full anima' src={home ? bannerInternetHome : business ? bannerCorporativo : tv ? bannerTv : bannerDual} alt="" />
 
 
       <div className='absolute z-10 my-4 md:my-12 w-full flex flex-col items-start md:flex-row md:items-center md:justify-around '>

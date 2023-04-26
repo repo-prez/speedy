@@ -12,7 +12,7 @@ const CardPlan = ({ planData }) => {
     <div className='flex flex-col items-center border-2 m-4  bg-slate-50  border-slate-500 rounded-xl shadow-xl w-4/5 md:w-2/5 lg:w-1/5'>
 
       <div className=' w-full'>
-        <p className='p-3 text-start text-xl w-1/2'>Internet <span className='font-bold'>{title}</span> </p>
+        <p className='p-3 text-start text-xl w-2/3 h-24'>Internet <span className='font-bold'>{title}</span> </p>
 
         <div className='flex p-3 items-center jus'>
           <img className='mr-3' src={iconRouter} width={30} alt="iconRouter" />
