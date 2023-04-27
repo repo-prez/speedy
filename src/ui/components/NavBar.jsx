@@ -58,9 +58,12 @@ const NavBar = () => {
             <p className="m-2 p-2 hover:border-b-2">Planes de Internet</p>
           </Link>
 
-          <Link to={'/speedytv'}>
-            <p className="m-2 p-2 hover:border-b-2">Speedy TV</p>
+          <Link to={'/contacto'}>
+            <p className="m-2 p-2 hover:border-b-2">Contáctanos</p>
           </Link>
+
+
+
         </div>
 
 
@@ -106,8 +109,8 @@ const NavBar = () => {
             <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Sucursales y Oficinas</p>
           </Link>
 
-          <Link to={'/myspedy'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >My Speedy</p>
+          <Link to={'/contacto'}>
+            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Contáctanos</p>
           </Link>
         </div>
 
