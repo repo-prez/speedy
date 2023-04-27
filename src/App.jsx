@@ -1,11 +1,17 @@
 import HomePage from "./pages/home/HomePage"
+import { Routes, Route, Navigate } from 'react-router-dom'
+import UsPage from "./pages/us/UsPage"
 
 function App() {
 
   return (
-    <>
-      <HomePage />
-    </>
+    <Routes>
+
+      <Route path='/' element={<HomePage />} />
+      <Route path='/us' element={<UsPage />} />
+
+    </Routes>
+
   )
 }
 
