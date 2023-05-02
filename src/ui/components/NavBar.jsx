@@ -4,6 +4,7 @@ import { useState } from 'react'
 import homeLogo from '../../assets/img/logoSpeedy.png'
 import burgerMenuIcon from '../../assets/icons/svgBurgerMenu.svg'
 import closeMenuIcon from '../../assets/icons/svgCloseMenu.svg'
+import { Link } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -15,22 +16,22 @@ const NavBar = () => {
   }
 
   return (
-    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full `}>
+    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full p-4 lg:h-32 `}>
 
       {/* Header */}
-      <div className={`flex justify-between hidden md:flex`}>
+      <div className={`justify-between hidden md:flex `}>
 
         {/* Menu Plans */}
-        <div className="flex">
-          <p className="m-1">Personas</p>
-          <p className="m-1">Corporativo</p>
+        <div className="flex items-center">
+          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Personas</p>
+          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Corporativo</p>
         </div>
 
         {/* Contact Data */}
-        <div className="flex">
-          <p className="m-1">Paga tu cuenta</p>
-          <p className="m-1">Sucursales y Oficinas</p>
-          <p className="m-1">My Speedy</p>
+        <div className="flex items-center">
+          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Paga tu cuenta</p>
+          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Sucursales y Oficinas</p>
+          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">My Speedy</p>
         </div>
 
       </div>
@@ -38,41 +39,97 @@ const NavBar = () => {
 
       {/* Menu */}
 
-      <div className='px-6 py-4 '>
-        <div className='absolute bottom-4'>
-          <img src={homeLogo} alt="" width={200} />
+      <div className=' '>
+        <div className='absolute '>
+          <img src={homeLogo} alt="icon speedy" width={200} />
         </div>
 
         <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
-          <a href=""> <p className="m-2 ">Inicio</p></a>
-          <a href=""> <p className="m-2 ">Nosotros</p></a>
-          <a href=""> <p className="m-2 ">Planes de Internet</p></a>
-          <a href=""> <p className="m-2 ">Speedy TV</p></a>
+
+          <Link to={'/'}>
+            <p className="m-2 p-2 hover:border-b-2">Inicio</p>
+          </Link>
+
+          <Link to={'/nosotros'}>
+            <p className="m-2 p-2 hover:border-b-2">Nosotros</p>
+          </Link>
+
+          <Link to={'/planes'}>
+            <p className="m-2 p-2 hover:border-b-2">Planes de Internet</p>
+          </Link>
+
+          <Link to={'/contacto'}>
+            <p className="m-2 p-2 hover:border-b-2">Contáctanos</p>
+          </Link>
+
+
+
         </div>
+
 
 
         {/* Burger menu */}
 
         <button
-          className='absolute bottom-4 right-4 md:hidden '
+          className='absolute bottom-12 right-4 md:hidden '
           onClick={toggleBurgerMenu}
         >
           {
             showBurgerMenu
-              ? <img src={burgerMenuIcon} alt="" width={30} />
-              : <img src={closeMenuIcon} alt="" width={30} />
+              ? <img src={burgerMenuIcon} alt="icon burger menu" width={30} />
+              : <img src={closeMenuIcon} alt="icon close burger menu" width={30} />
           }
         </button>
 
-        <div className={`flex flex-col justify-center items-center w-screen absolute z-20 top-20 right-0 my-2  bg-slate-200 text-slate-700 md:hidden ${showBurgerMenu && `hidden`} `}>
+        <div className={`absolute z-20 top-30 right-0 flex flex-col justify-center items-start w-full p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
+        animate__animated animate__faster animate__fadeInRight
+        `}>
 
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Inicio</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Nosotros</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Planes de Internet</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Speedy TV</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Paga tu cuenta</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>Sucursales y Oficinas</a>
-          <a className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" href='/'>My Speedy</a>
+
+          <Link
+            to={'/'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Inicio</p>
+          </Link>
+
+          <Link
+            to={'/nosotros'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Nosotros</p>
+          </Link>
+
+          <Link
+            to={'/planes'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Inicio</p>
+          </Link>
+
+          <Link
+            to={'/speedytv'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>SpeedyTv</p>
+          </Link>
+
+
+          <Link
+            to={'/pagos'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Pagos</p>
+          </Link>
+
+          <Link
+            to={'/sucursales'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Sucursales</p>
+          </Link>
+
+          <Link
+            to={'/contacto'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Contacto</p>
+          </Link>
+
+
         </div>
 
       </div>

@@ -42,19 +42,20 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  px-4 py-4 lg:flex-row bg-white">
+    <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-xl mt-60 w-4/5 md:w-3/5 lg:w-8/12 m-10  lg:mx-52 lg:flex-row ">
 
-      <img className="rounded-lg md:w-4/5 lg:w-2/5" src={bannerForm} alt="" />
+      <img className="rounded-lg lg:w-3/5 " src={bannerForm} alt="imagen formulario" />
 
-      <div className='flex flex-col items-center w-full  md:w-3/5 lg:w-1/2 lg:px-4'>
+
+      <div className='flex flex-col items-center w-full   lg:w-1/2 p-4 lg:px-4'>
 
         <div className='flex flex-col items-center my-2'>
-          <p className='text-2xl text-blue-800 font-bold'>¿Llega la fibra WiFi Total a tu casa?</p>
-          <p className='text-center'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
+          <p className='text-2xl text-blue-800 font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
+          <p className='text-justify'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
         </div>
 
 
-        <form onSubmit={handleSubmit} className="flex flex-col w-full  ">
+        <form onSubmit={handleSubmit} className="flex flex-col w-full ">
 
           <TextField
             id="nombres"
@@ -136,7 +137,7 @@ const Form = () => {
           />
 
           <button
-            className='bg-pink-600 hover:bg-pink-700 text-white font-bold p-4 rounded-xl'
+            className='bg-secondary hover:bg-pink-700 text-white font-bold p-4 rounded-xl'
             type='submit'
           >
             Enviar
@@ -144,6 +145,8 @@ const Form = () => {
 
 
         </form>
+
+
       </div>
 
     </div>

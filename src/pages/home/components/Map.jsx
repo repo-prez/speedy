@@ -7,12 +7,12 @@ import bannerEcuador from '../../../assets/img/banners/bannerEcuador.png'
 
 const Map = () => {
   return (
-    <div className='flex flex-col items-center w-5/6 lg:w-3/5'>
+    <div className='flex flex-col lg:flex-row items-center  w-5/6 lg:w-3/5 my-8'>
 
 
       {/* Data */}
       <div>
-        <div className='flex flex-col '>
+        <div className='flex flex-col  my-4'>
           <div className='flex  my-2 mx-5'>
             <img src={iconWireless} width={30} alt="iconWireLess" />
             <p className='text-lg font-bold mx-2'>¿Qué es Internet Hogar Fibra WiFi Total?</p>
@@ -21,16 +21,16 @@ const Map = () => {
         </div>
 
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col my-4'>
           <div className='flex my-2 mx-5'>
             <img src={iconUser} width={35} alt="iconWireLess" />
-            <p className='text-lg font-bold mx-2'>¿En qué consiste la experiencia de Internet Hogar Fibra WiFi Total?</p>
+            <p className='text-lg font-bold mx-2 text-jus'>¿En qué consiste la experiencia de Internet Hogar Fibra WiFi Total?</p>
           </div>
           <p className='mx-5 text-justify'>Nuestro internet hogar llega a ti a través de la tecnología Fibra Óptica. Esto asegura calidad y una mejor experiencia de conectividad con nuestros equipos, Router principal y/o Extensores WiFi.</p>
         </div>
 
 
-        <div className='flex flex-col '>
+        <div className='flex flex-col my-4 '>
           <div className='flex my-2 mx-5'>
             <img src={iconWifi} width={35} alt="iconWireLess" />
             <p className='text-lg font-bold mx-2'>¿Qué es Router Principal?</p>
@@ -41,7 +41,7 @@ const Map = () => {
 
 
       {/* Map */}
-      <img className='lg:w-1/2' src={bannerEcuador} alt="" />
+      <img className='lg:w-1/2' src={bannerEcuador} alt="cobertura ecuador" />
 
 
     </div>

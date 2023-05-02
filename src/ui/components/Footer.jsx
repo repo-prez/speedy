@@ -29,12 +29,12 @@ const Footer = () => {
           <div className='flex items-start justify-start text-white my-8 '>
 
             <div className='md:w-2/4'>
-              <img src={phone} width={50} alt="" />
+              <img src={phone} width={50} alt="icon phone" />
               <p>Matriz Ambato: Calle las Frutillas y Guaytambos, sector Ficoa</p>
             </div>
 
             <div className='md:w:1/4 mx-4'>
-              <img src={location} width={30} alt="" />
+              <img src={location} width={30} alt="icon location" />
               <p>(02) 4 700 600 / 0994 50 50 50 </p>
 
             </div>
@@ -91,6 +91,9 @@ const Footer = () => {
 
 
       </div>
+
+      <p className='text-white border-t-2 p-1 text-justify'>Copyright © 2023 All Rights Reserved by <a className='underline' href="https://agenciaprez.com/" target='_blank' rel="noreferrer">Agencia Prez</a>.</p>
+
     </div >
   )
 }

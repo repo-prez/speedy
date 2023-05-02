@@ -9,10 +9,10 @@ const CardPlan = ({ planData }) => {
 
   const { title, speed, promoDiscount, pricePromo, price, extensor } = planData
   return (
-    <div className='flex flex-col items-center border-2 m-4  bg-slate-50  border-slate-500 rounded-xl w-4/5 md:w-2/5 lg:w-1/5'>
+    <div className='flex flex-col items-center border-2 m-4  bg-slate-50  border-slate-500 rounded-xl shadow-xl w-4/5 md:w-2/5 lg:w-1/5'>
 
       <div className=' w-full'>
-        <p className='p-3 text-start text-xl w-1/2'>Internet <span className='font-bold'>{title}</span> </p>
+        <p className='p-3 text-start text-xl w-2/3 h-24'>Internet <span className='font-bold'>{title}</span> </p>
 
         <div className='flex p-3 items-center jus'>
           <img className='mr-3' src={iconRouter} width={30} alt="iconRouter" />
@@ -21,8 +21,8 @@ const CardPlan = ({ planData }) => {
       </div>
 
       <div className='flex justify-center items-center cursor-pointer'>
-        <p className='border-2  border-pink-600 bg-pink-600 rounded-l-full px-1  text-white'>{`${promoDiscount}% dcto.`}</p>
-        <p className=' border-2 border-pink-600 bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
+        <p className='border-2  border-secondary bg-secondary rounded-l-full px-1  text-white'>{`${promoDiscount}% dcto.`}</p>
+        <p className=' border-2 border-secondary bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
       </div>
 
       <div className='flex flex-col items-center p-4 justify-center'>

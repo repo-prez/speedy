@@ -1,6 +1,8 @@
-import CardPlan from "./CardPlan"
-import MenuPlans from "./MenuPlans"
-
+import { useState } from 'react'
+import Banner from './Banner'
+// import Plans from './Plans'
+import MenuPlans from './MenuPlans'
+import CardPlan from './CardPlan'
 
 const homeInternet = {
   plan1: {
@@ -145,49 +147,64 @@ const dualPlans = {
   },
 }
 
-const Plans = ({ activeProduct, setActiveProduct }) => {
+const Products = () => {
 
-  const { home, business, tv, dual } = activeProduct
+  const [activeProduct, setActiveProduct] = useState({
+    home: true,
+    business: false,
+    tv: false,
+    dual: false
+  })
 
   return (
-    <div className="">
+    <div className='relative '>
 
-      <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
+      <Banner activeProduct={activeProduct} />
 
-      <div className={`flex flex-wrap justify-center ${!home ? 'hidden' : 'flex'}`}>
-        <CardPlan planData={homeInternet.plan1} />
-        <CardPlan planData={homeInternet.plan2} />
-        <CardPlan planData={homeInternet.plan3} />
-        <CardPlan planData={homeInternet.plan4} />
+      {/* <Plans  activeProduct={activeProduct} setActiveProduct={setActiveProduct} /> */}
+
+
+      <div className="absolute z-20 top-56 md:top-48 ">
+
+        <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
+
+        <div className={`flex flex-wrap justify-center ${!activeProduct.home ? 'hidden' : 'flex'}`}>
+          <CardPlan planData={homeInternet.plan1} />
+          <CardPlan planData={homeInternet.plan2} />
+          <CardPlan planData={homeInternet.plan3} />
+          <CardPlan planData={homeInternet.plan4} />
+        </div>
+
+        <div className={`flex flex-wrap justify-center ${!activeProduct.business ? 'hidden' : 'flex'}`}>
+          <CardPlan planData={businessInternet.plan1} />
+          <CardPlan planData={businessInternet.plan2} />
+          <CardPlan planData={businessInternet.plan3} />
+          <CardPlan planData={businessInternet.plan4} />
+        </div>
+
+        <div className={`flex flex-wrap justify-center ${!activeProduct.tv ? 'hidden' : 'flex'}`}>
+          <CardPlan planData={tvPlans.plan1} />
+          <CardPlan planData={tvPlans.plan2} />
+          <CardPlan planData={tvPlans.plan3} />
+          <CardPlan planData={tvPlans.plan4} />
+        </div>
+
+        <div className={`flex flex-wrap justify-center ${!activeProduct.dual ? 'hidden' : 'flex'}`}>
+          <CardPlan planData={dualPlans.plan1} />
+          <CardPlan planData={dualPlans.plan2} />
+          <CardPlan planData={dualPlans.plan3} />
+          <CardPlan planData={dualPlans.plan4} />
+        </div>
+
+
+
+
+
       </div>
-
-      <div className={`flex flex-wrap justify-center ${!business ? 'hidden' : 'flex'}`}>
-        <CardPlan planData={businessInternet.plan1} />
-        <CardPlan planData={businessInternet.plan2} />
-        <CardPlan planData={businessInternet.plan3} />
-        <CardPlan planData={businessInternet.plan4} />
-      </div>
-
-      <div className={`flex flex-wrap justify-center ${!tv ? 'hidden' : 'flex'}`}>
-        <CardPlan planData={tvPlans.plan1} />
-        <CardPlan planData={tvPlans.plan2} />
-        <CardPlan planData={tvPlans.plan3} />
-        <CardPlan planData={tvPlans.plan4} />
-      </div>
-
-      <div className={`flex flex-wrap justify-center ${!dual ? 'hidden' : 'flex'}`}>
-        <CardPlan planData={dualPlans.plan1} />
-        <CardPlan planData={dualPlans.plan2} />
-        <CardPlan planData={dualPlans.plan3} />
-        <CardPlan planData={dualPlans.plan4} />
-      </div>
-
-
-
 
 
     </div>
   )
 }
 
-export default Plans
+export default Products

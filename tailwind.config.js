@@ -18,7 +18,18 @@ export default {
       xl: '1536px'
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {},
+    extend: {
+      animation: {
+        'bounce-slow': 'bounce 3s linear infinite'
+      },
+      colors: {
+        primary: '#AD272E',
+        secondary: '#EA3392',
+        background: '#474747',
+        degraded: '#5C0005'
+
+      }
+    }
   },
   plugins: [],
 }
