@@ -34,7 +34,6 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formState)
 
     // TODO: Lógica para enviar la información del formulario
 

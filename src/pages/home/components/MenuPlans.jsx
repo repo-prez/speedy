@@ -11,12 +11,10 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
   const { home, business, tv, dual } = activeProduct
 
 
-
-
   return (
-    <div className='flex flex-col items-center'>
-      <div className="flex flex-row flex-wrap justify-center items-center  w-10/12 ">
+    <div className='flex flex-col items-center w-screen '>
 
+      <div className="flex flex-row flex-wrap justify-center items-center w-5/6 ">
         <button
           className={`flex items-center justify-center p-4  border-slate-500 bg-white ${home ? 'font-bold' : ''} 
           w-1/2 border-2 border-r-0 rounded-l-2xl 
@@ -67,22 +65,22 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
       </div>
 
-      <div className={`flex flex-col items-center px-8 py-1 ${!home ? 'hidden' : 'flex'}`}>
+      <div className={`flex flex-col items-center px-8 py-6 ${!home ? 'hidden' : 'flex'}`}>
         <p className='text-2xl md:text-3xl font-bold text-blue-950'>Internet Hogar Fibra Óptica</p>
         <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
-      <div className={`flex flex-col items-center px-8 py-1 ${!business ? 'hidden' : 'flex'}`}>
+      <div className={`flex flex-col items-center px-8 py-6 ${!business ? 'hidden' : 'flex'}`}>
         <p className='text-2xl md:text-3xl font-bold text-blue-950'>Internet Corporativo Fibra Óptica</p>
         <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
-      <div className={`flex flex-col items-center px-8 py-1 ${!tv ? 'hidden' : 'flex'}`}>
+      <div className={`flex flex-col items-center px-8 py-6 ${!tv ? 'hidden' : 'flex'}`}>
         <p className='text-2xl md:text-3xl font-bold text-blue-950'>Speedy TV</p>
         <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
-      <div className={`flex flex-col items-center px-8 py-1 ${!dual ? 'hidden' : 'flex'}`}>
+      <div className={`flex flex-col items-center px-8 py-6 ${!dual ? 'hidden' : 'flex'}`}>
         <p className='text-2xl md:text-3xl font-bold text-blue-950'>Dual Pack</p>
         <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
