@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className='flex flex-col items-center bg-slate-200'>
 
-      <Helmet >
+      {/* <Helmet >
         <html lang="es" />
         <title>Internet sin límites</title>
         <meta title='Speedy | Internet sin límites' />
@@ -19,7 +19,7 @@ const HomePage = () => {
         <meta name="robots" content="index" />
 
 
-      </Helmet>
+      </Helmet> */}
 
       <NavBar />
       <Products />
