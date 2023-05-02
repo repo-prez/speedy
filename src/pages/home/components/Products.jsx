@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Banner from './Banner'
-import Plans from './Plans'
+// import Plans from './Plans'
 import MenuPlans from './MenuPlans'
 import CardPlan from './CardPlan'
 
