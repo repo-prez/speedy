@@ -23,7 +23,8 @@ export default {
         'bounce-slow': 'bounce 3s linear infinite'
       },
       colors: {
-        primary: '#AD272E',
+        primary: '#1E3FAE',
+        'primary-dark': '#172554',
         secondary: '#EA3392',
         background: '#474747',
         degraded: '#5C0005'

@@ -16,7 +16,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full p-4 lg:h-32 `}>
+    <div className={`relative bg-gradient-to-r from-primary to-primary-dark text-white w-full p-4 lg:h-32 `}>
 
       {/* Header */}
       <div className={`justify-between hidden md:flex `}>
