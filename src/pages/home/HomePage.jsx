@@ -23,10 +23,10 @@ const HomePage = () => {
 
       <NavBar />
       <Products />
-      <Form />
-      <Info />
-      <Map />
-      <Footer />
+      {/* <Form /> */}
+      {/* <Info /> */}
+      {/* <Map /> */}
+      {/* <Footer /> */}
 
 
     </div>

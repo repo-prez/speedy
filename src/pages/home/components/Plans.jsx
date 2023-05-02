@@ -150,7 +150,7 @@ const Plans = ({ activeProduct, setActiveProduct }) => {
   const { home, business, tv, dual } = activeProduct
 
   return (
-    <div>
+    <div className="">
 
       <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 

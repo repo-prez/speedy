@@ -15,10 +15,10 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
   return (
     <div className='flex flex-col items-center'>
-      <div className="flex flex-row flex-wrap justify-center items-center p-1 w-11/12 ">
+      <div className="flex flex-row flex-wrap justify-center items-center  w-10/12 ">
 
         <button
-          className={`flex items-center justify-center p-4  border-slate-500  ${home ? 'bg-secondary' : 'bg-slate-50'}
+          className={`flex items-center justify-center p-4  border-slate-500 bg-white ${home ? 'font-bold' : ''} 
           w-1/2 border-2 border-r-0 rounded-l-2xl 
           md:w-1/3
           lg:w-1/4`}
@@ -30,7 +30,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
         <button
-          className={`flex items-center justify-center p-4  border-slate-500 ${business ? 'bg-secondary' : 'bg-slate-50'}
+          className={`flex items-center justify-center p-4  border-slate-500 bg-white ${business ? 'font-bold' : ''}
           w-1/2 border-2 rounded-r-2xl 
           md:w-1/3 md:rounded-none
           lg:w-1/4`}
@@ -42,7 +42,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
         <button
-          className={`flex items-center justify-center  p-4  border-slate-500 ${tv ? 'bg-secondary' : 'bg-slate-50'}
+          className={`flex items-center justify-center  p-4  border-slate-500 bg-white ${tv ? 'font-bold' : ''}
           w-1/2 border-2 border-r-0 border-t-0 rounded-l-2xl 
           md:w-1/3 md:border-t-2 md:border-r-2 md:rounded-l-none md:border-l-0 md:rounded-r-2xl
           lg:w-1/4 lg:rounded-r-none lg:border-r-0`}
@@ -55,7 +55,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
         <button
-          className={`flex items-center justify-center  p-4 border-slate-500 ${dual ? 'bg-secondary' : 'bg-slate-50'}
+          className={`flex items-center justify-center  p-4 border-slate-500 bg-white ${dual ? 'font-bold' : ''}
           w-1/2 border-2  border-t-0 rounded-r-2xl 
           md:w-1/3 md:rounded-r-none md:rounded-br-2xl md:rounded-bl-2xl
           lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}

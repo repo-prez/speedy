@@ -63,6 +63,8 @@ const Banner = ({ activeProduct }) => {
 
 
 
+
+
     </div>
   )
 }
