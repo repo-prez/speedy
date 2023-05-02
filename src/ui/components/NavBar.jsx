@@ -16,10 +16,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full lg:h-32 `}>
+    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full p-4 lg:h-32 `}>
 
       {/* Header */}
-      <div className={`flex justify-between hidden md:flex h-12`}>
+      <div className={`justify-between hidden md:flex `}>
 
         {/* Menu Plans */}
         <div className="flex items-center">
@@ -39,9 +39,9 @@ const NavBar = () => {
 
       {/* Menu */}
 
-      <div className='px-6 py-4 '>
-        <div className='absolute bottom-2'>
-          <img src={homeLogo} alt="" width={200} />
+      <div className=' '>
+        <div className='absolute '>
+          <img src={homeLogo} alt="icon speedy" width={200} />
         </div>
 
         <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
@@ -71,48 +71,65 @@ const NavBar = () => {
         {/* Burger menu */}
 
         <button
-          className='absolute bottom-6 right-4 md:hidden '
+          className='absolute bottom-12 right-4 md:hidden '
           onClick={toggleBurgerMenu}
         >
           {
             showBurgerMenu
-              ? <img src={burgerMenuIcon} alt="" width={30} />
-              : <img src={closeMenuIcon} alt="" width={30} />
+              ? <img src={burgerMenuIcon} alt="icon burger menu" width={30} />
+              : <img src={closeMenuIcon} alt="icon close burger menu" width={30} />
           }
         </button>
 
-        <div className={`absolute z-20 top-32 right-0 flex flex-col justify-center items-center w-screen  my-2  bg-slate-200 text-slate-700 md:hidden ${showBurgerMenu && `hidden`} 
+        <div className={`absolute z-20 top-30 right-0 flex flex-col justify-center items-start w-full p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
         animate__animated animate__faster animate__fadeInRight
         `}>
 
 
-          <Link to={'/'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Inicio</p>
+          <Link
+            to={'/'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Inicio</p>
           </Link>
 
-          <Link to={'/nosotros'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Nosotros</p>
+          <Link
+            to={'/nosotros'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Nosotros</p>
           </Link>
 
-          <Link to={'/planes'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Planes de Internet</p>
+          <Link
+            to={'/planes'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Inicio</p>
           </Link>
 
-          <Link to={'/speedytv'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Speedy TV</p>
+          <Link
+            to={'/speedytv'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>SpeedyTv</p>
           </Link>
 
-          <Link to={'/pagos'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Paga tu cuenta</p>
+
+          <Link
+            to={'/pagos'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Pagos</p>
           </Link>
 
-          <Link to={'/sucursales'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Sucursales y Oficinas</p>
+          <Link
+            to={'/sucursales'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Sucursales</p>
           </Link>
 
-          <Link to={'/contacto'}>
-            <p className="py-2 cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full text-center" >Contáctanos</p>
+          <Link
+            to={'/contacto'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Contacto</p>
           </Link>
+
+
         </div>
 
       </div>

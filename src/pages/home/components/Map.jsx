@@ -41,7 +41,7 @@ const Map = () => {
 
 
       {/* Map */}
-      <img className='lg:w-1/2' src={bannerEcuador} alt="" />
+      <img className='lg:w-1/2' src={bannerEcuador} alt="cobertura ecuador" />
 
 
     </div>

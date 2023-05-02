@@ -11,7 +11,7 @@ const Info = () => {
     <div className="p-4 lg:px-52">
 
       <div className="relative my-4 rounded-xl ">
-        <img className="object-cover object-right h-32 w-full rounded-xl" src={bannerSpeedyTv} alt="" />
+        <img className="object-cover object-right h-32 w-full rounded-xl" src={bannerSpeedyTv} alt="banner tv" />
 
         <div className="absolute top-1 sm:top-2 left-2 sm:left-2 text-white  ">
           <p className="text-green-500 font-bold text-xl " >Speedy Tv</p>
@@ -25,7 +25,7 @@ const Info = () => {
       <div className="md:flex">
 
         <div className="relative flex my-4 md:mr-2 ">
-          <img className="rounded-xl" src={bannerSpeedTest} alt="" />
+          <img className="rounded-xl" src={bannerSpeedTest} alt="banner test de velocidad" />
 
           <div className="absolute z-10 top-1 sm:top-2 md:top-3 right-2  w-2/3  text-white text-right">
             <p className="text-md sm:text-xl md:text-lg font-bold ">Test de velocidad</p>
@@ -40,7 +40,7 @@ const Info = () => {
         </div>
 
         <div className="relative my-4 md:ml-2">
-          <img className="rounded-xl" src={bannerHelp} alt="" />
+          <img className="rounded-xl" src={bannerHelp} alt="banner ayuda" />
 
           <div className="absolute z-10 top-1 sm:top-2 md:top-3 left-3 w-2/3 text-white text-left">
             <p className="text-md sm:text-md font-bold">¿Eres cliente de Speedy Hogar?</p>
@@ -60,7 +60,7 @@ const Info = () => {
 
 
       <div className="relative my-4">
-        <img className="object-cover object-left h-32 w-full rounded-xl" src={bannerSupport} alt="" />
+        <img className="object-cover object-left h-32 w-full rounded-xl" src={bannerSupport} alt="banner soporte técnico" />
 
         <div className="absolute top-0 sm:top-0 right-2  sm:right-4  text-right w-1/2">
           <p className="text-blue-800 font-bold text-xl " >Soporte</p>

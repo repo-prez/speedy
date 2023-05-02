@@ -3,6 +3,9 @@ import svgInternetCorporativo from '../../../assets/icons/svgInternetCorporativo
 import svgSpeedy from '../../../assets/icons/svgSpeedy.svg'
 import svgsvgDualPack from '../../../assets/icons/svgDualPack.svg'
 
+
+
+
 const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
   const { home, business, tv, dual } = activeProduct
@@ -21,7 +24,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4`}
           onClick={() => setActiveProduct({ home: true, business: false, tv: false, dual: false })}
         >
-          <img src={svgInternetHome} width={50} alt="" />
+          <img src={svgInternetHome} width={50} alt="icon internet home" />
           <p>Internet Hogar</p>
         </button>
 
@@ -33,7 +36,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4`}
           onClick={() => setActiveProduct({ home: false, business: true, tv: false, dual: false })}
         >
-          <img src={svgInternetCorporativo} width={50} alt="" />
+          <img src={svgInternetCorporativo} width={50} alt="ion internet corporativo" />
           <p>Internet Corporativo </p>
         </button>
 
@@ -45,7 +48,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4 lg:rounded-r-none lg:border-r-0`}
           onClick={() => setActiveProduct({ home: false, business: false, tv: true, dual: false })}
         >
-          <img src={svgSpeedy} width={50} alt="" />
+          <img src={svgSpeedy} width={50} alt="icon speedy tv" />
           <p>Speedy TV</p>
         </button>
 
@@ -58,7 +61,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
           onClick={() => setActiveProduct({ home: false, business: false, tv: false, dual: true })}
         >
-          <img src={svgsvgDualPack} width={50} alt="" />
+          <img src={svgsvgDualPack} width={50} alt="icon speedy dual pack" />
           <p>Dual Pack</p>
         </button>
 

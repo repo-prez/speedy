@@ -6,6 +6,7 @@ import svgMail from '../../assets/icons/svgMail.svg'
 import svgPhone from '../../assets/icons/svgPhone.svg'
 import svgWhatsapp from '../../assets/icons/svgWhatsapp.svg'
 
+import { Helmet } from 'react-helmet'
 
 const oficinas = [
   {
@@ -73,6 +74,12 @@ const oficinas = [
 const ContactPage = () => {
   return (
     <>
+      <Helmet >
+        <html lang="es" />
+        <title>Speedy | Contáctanos</title>
+        <meta name="description" content="Speedy | Contáctanos" />
+      </Helmet>
+
       <NavBar />
 
       <div className='flex flex-col justify-center items-center bg-slate-200'>
@@ -92,7 +99,7 @@ const ContactPage = () => {
           <div className='p-4'>
 
             <div className='flex items-start py-3'>
-              <img className='mx-2' width={50} src={svgMail} alt="" />
+              <img className='mx-2' width={50} src={svgMail} alt="icon mail" />
               <div>
                 <p className='font-bold text-lg'>Escríbenos a nuestro e-mail</p>
                 <p className='text-slate-600'>servicioalcliente@speedy.com.ec</p>
@@ -100,7 +107,7 @@ const ContactPage = () => {
             </div>
 
             <div className='flex items-start py-3'>
-              <img className='mx-2' width={50} src={svgPhone} alt="" />
+              <img className='mx-2' width={50} src={svgPhone} alt="icon phone" />
               <div>
                 <p className='font-bold text-lg'>Llámanos</p>
                 <p className='text-slate-600'>☎️ (02) 4 700 600</p>
@@ -110,7 +117,7 @@ const ContactPage = () => {
 
 
             <div className='flex items-start py-3'>
-              <img className='mx-2' width={50} src={svgWhatsapp} alt="" />
+              <img className='mx-2' width={50} src={svgWhatsapp} alt="icon whatsapp" />
               <div>
                 <p className='font-bold text-lg'>WhatsApp</p>
                 <p className='text-slate-600'>https://walink.co/834871</p>

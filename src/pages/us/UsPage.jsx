@@ -6,6 +6,8 @@ import svgBuilding from '../../assets/icons/svgBuilding.svg'
 import svgNetworks from '../../assets/icons/svgNetwork.svg'
 import CardQuality from "./components/CardQuality"
 
+import { Helmet } from "react-helmet"
+
 
 const qualities = [
   {
@@ -39,6 +41,12 @@ const qualities = [
 const UsPage = () => {
   return (
     <div>
+      <Helmet >
+        <html lang="es" />
+        <title>Speedy | Nosotros</title>
+        <meta name="description" content="Speedy | Nosotros" />
+      </Helmet>
+
       <NavBar />
       <p className="text-center p-12 bg-green-400">Nosotros aqui va un banner con la imagen de nosotros</p>
 
@@ -55,13 +63,13 @@ const UsPage = () => {
       <div className="flex flex-col md:flex-row py-4 px-12    ">
 
         <div className="flex flex-col items-center shadow-xl  my-12 md:w-1/2  md:mx-4">
-          <img className="w-16" src={svgBuilding} alt="" />
+          <img className="w-16" src={svgBuilding} alt="icon mision" />
           <p className="text-4xl text-center font-bold p-4">Misión</p>
           <p className="p-4">Brindar soluciones integrales de telecomunicaciones con la más alta tecnología con talento humano apasionado por su trabajo enfocado a satisfacer las necesidades y expectativas de nuestros clientes.</p>
         </div>
 
         <div className="flex flex-col items-center shadow-xl my-12  md:w-1/2  md:mx-4">
-          <img className="w-16" src={svgNetworks} alt="" />
+          <img className="w-16" src={svgNetworks} alt="icon vision" />
           <p className="text-4xl text-center font-bold p-4">Visión</p>
           <p className="p-4">Ser una compañía de conocimiento y entretenimiento digital en la Zona Centro del Ecuador, gracias a nuestras soluciones innovadoras de productos y servicios, para así lograr ser reconocidos por nuestro servicio de calidad humana y profesional.</p>
         </div>
