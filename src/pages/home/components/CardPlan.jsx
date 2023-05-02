@@ -21,8 +21,8 @@ const CardPlan = ({ planData }) => {
       </div>
 
       <div className='flex justify-center items-center cursor-pointer'>
-        <p className='border-2  border-pink-600 bg-pink-600 rounded-l-full px-1  text-white'>{`${promoDiscount}% dcto.`}</p>
-        <p className=' border-2 border-pink-600 bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
+        <p className='border-2  border-secondary bg-secondary rounded-l-full px-1  text-white'>{`${promoDiscount}% dcto.`}</p>
+        <p className=' border-2 border-secondary bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
       </div>
 
       <div className='flex flex-col items-center p-4 justify-center'>

@@ -1,4 +1,3 @@
-import React from 'react'
 import svgLocation from '../../../assets/icons/svgLocation.svg'
 
 const CardDirection = ({ ciudad, oficina, direccion }) => {

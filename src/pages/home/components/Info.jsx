@@ -31,7 +31,7 @@ const Info = () => {
             <p className="text-md sm:text-xl md:text-lg font-bold ">Test de velocidad</p>
             <p className="text-xs sm:text-sm md:text-sm">Conoce que tan rápida es tu navegación a través de tu computadora o móvil.</p>
             <button
-              className="text-xs sm:text-sm  bg-pink-600 hover:bg-pink-700 border-2 border-white px-2 py-1 my-1 rounded-full "
+              className="text-xs sm:text-sm  bg-secondary hover:bg-pink-700 border-2 border-white px-2 py-1 my-1 rounded-full "
               onClick={() => window.open("https://www.speedtest.net/es", "_blank")}
             >
               Ir al Test de velocidad

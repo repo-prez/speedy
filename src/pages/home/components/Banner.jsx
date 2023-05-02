@@ -4,7 +4,7 @@ import bannerTv from '../../../assets/img/banners/bannerTv.png'
 import bannerDual from '../../../assets/img/banners/bannerDual.png'
 
 import "@animxyz/core";
-import { XyzTransition } from "@animxyz/react";
+import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 
 
 
@@ -19,19 +19,19 @@ const Banner = ({ activeProduct }) => {
     <div className=' relative flex '>
 
 
-      <XyzTransition appear xyz="fade short-50% delay-5  ">
+      <XyzTransition appear xyz="fade up big ">
         {home && <img className='object-cover h-56 w-full ' src={bannerInternetHome} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade short-50% delay-5  ">
+      <XyzTransition appear xyz="fade up big ">
         {business && <img className='object-cover h-56 w-full ' src={bannerCorporativo} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade short-50% delay-5  ">
+      <XyzTransition appear xyz="fade up big ">
         {tv && <img className='object-cover h-56 w-full ' src={bannerTv} alt="" />}
       </XyzTransition>
 
-      <XyzTransition appear xyz="fade short-50% delay-5  ">
+      <XyzTransition appear xyz="fade up big ">
         {dual && <img className='object-cover h-56 w-full ' src={bannerDual} alt="" />}
       </XyzTransition>
 
@@ -51,7 +51,7 @@ const Banner = ({ activeProduct }) => {
           <p className='text-xl font-bold'>$22/50/mes</p>
           <p className='text-sm'>Contrátalo ahora</p>
           <button
-            className='bg-pink-600 px-2 py-1 rounded-md mt-2 hover:bg-pink-700'
+            className='bg-secondary px-2 py-1 rounded-md mt-2 hover:bg-pink-700'
           >
             Revisa tu Factibilidad
           </button>
