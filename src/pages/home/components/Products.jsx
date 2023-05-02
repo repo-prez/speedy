@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Banner from './Banner'
-// import Plans from './Plans'
 import MenuPlans from './MenuPlans'
 import CardPlan from './CardPlan'
 
@@ -161,35 +160,35 @@ const Products = () => {
 
       <Banner activeProduct={activeProduct} />
 
-      {/* <Plans  activeProduct={activeProduct} setActiveProduct={setActiveProduct} /> */}
 
 
-      <div className="absolute z-20 top-56 md:top-48 ">
+      <div className="absolute z-20 top-56 md:top-48 w-full ">
 
         <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={`flex flex-wrap justify-center ${!activeProduct.home ? 'hidden' : 'flex'}`}>
+        <div className={` ${!activeProduct.home ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center '}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
           <CardPlan planData={homeInternet.plan4} />
         </div>
 
-        <div className={`flex flex-wrap justify-center ${!activeProduct.business ? 'hidden' : 'flex'}`}>
+
+        <div className={` ${!activeProduct.business ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center '}`}>
           <CardPlan planData={businessInternet.plan1} />
           <CardPlan planData={businessInternet.plan2} />
           <CardPlan planData={businessInternet.plan3} />
           <CardPlan planData={businessInternet.plan4} />
         </div>
 
-        <div className={`flex flex-wrap justify-center ${!activeProduct.tv ? 'hidden' : 'flex'}`}>
+        <div className={`${!activeProduct.tv ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center'}`}>
           <CardPlan planData={tvPlans.plan1} />
           <CardPlan planData={tvPlans.plan2} />
           <CardPlan planData={tvPlans.plan3} />
           <CardPlan planData={tvPlans.plan4} />
         </div>
 
-        <div className={`flex flex-wrap justify-center ${!activeProduct.dual ? 'hidden' : 'flex'}`}>
+        <div className={`${!activeProduct.dual ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center'}`}>
           <CardPlan planData={dualPlans.plan1} />
           <CardPlan planData={dualPlans.plan2} />
           <CardPlan planData={dualPlans.plan3} />

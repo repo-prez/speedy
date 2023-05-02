@@ -9,12 +9,12 @@ const CardPlan = ({ planData }) => {
 
   const { title, speed, promoDiscount, pricePromo, price, extensor } = planData
   return (
-    <div className='flex flex-col items-center border-2 m-4  bg-slate-50  border-slate-500 rounded-xl shadow-xl w-4/5 md:w-2/5 lg:w-1/5'>
+    <div className='flex flex-col items-center ml-4 my-4 w-80 bg-slate-50 border-2 border-slate-500 rounded-xl shadow-xl '>
 
-      <div className=' w-full'>
-        <p className='p-3 text-start text-xl w-2/3 h-24'>Internet <span className='font-bold'>{title}</span> </p>
+      <div className='px-8 pt-4 w-80'>
+        <p className='text-start text-xl  pt-8'>Internet <span className='font-bold'>{title}</span> </p>
 
-        <div className='flex p-3 items-center jus'>
+        <div className='flex  items-center py-4'>
           <img className='mr-3' src={iconRouter} width={30} alt="iconRouter" />
           <p>Router</p>
         </div>
@@ -26,7 +26,7 @@ const CardPlan = ({ planData }) => {
       </div>
 
       <div className='flex flex-col items-center p-4 justify-center'>
-        <p className='text-3xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}/mes`}</p>
+        <p className='text-4xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}`}<span className='text-xs'>/mes</span></p>
         <p className=''>Por 4 meses, luego  <span className='font-bold'>{`$${price.toFixed(2)}/mes`}</span></p>
       </div>
 
