@@ -137,7 +137,7 @@ const Form = () => {
           />
 
           <button
-            className='bg-pink-600 hover:bg-pink-700 text-white font-bold p-4 rounded-xl'
+            className='bg-secondary hover:bg-pink-700 text-white font-bold p-4 rounded-xl'
             type='submit'
           >
             Enviar

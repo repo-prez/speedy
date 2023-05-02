@@ -8,6 +8,8 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
   const { home, business, tv, dual } = activeProduct
 
 
+
+
   return (
     <div className='flex flex-col items-center'>
       <div className="flex flex-row flex-wrap justify-center items-center p-1 w-11/12 ">
