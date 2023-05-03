@@ -24,7 +24,7 @@ const NavBar = () => {
 
 
         {/* Header */}
-        <div className={`justify-between  md:flex `}>
+        <div className={`justify-between  md:flex md:mb-2`}>
 
           <div className="flex items-center">
             <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Personas</p>

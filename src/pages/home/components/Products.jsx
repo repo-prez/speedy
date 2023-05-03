@@ -156,7 +156,7 @@ const Products = () => {
   })
 
   return (
-    <div className='relative  w-screen bg-blue-200'>
+    <div className='relative  w-screen '>
 
       <Banner activeProduct={activeProduct} />
 
@@ -166,7 +166,7 @@ const Products = () => {
 
         <MenuPlans className='absolute' activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.home ? 'hidden' : 'flex bg-green-200'}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.home ? 'hidden' : 'flex '}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
@@ -174,21 +174,21 @@ const Products = () => {
         </div>
 
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.business ? 'hidden' : 'flex bg-green-200'}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.business ? 'hidden' : 'flex '}`}>
           <CardPlan planData={businessInternet.plan1} />
           <CardPlan planData={businessInternet.plan2} />
           <CardPlan planData={businessInternet.plan3} />
           {/* <CardPlan planData={businessInternet.plan4} /> */}
         </div>
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.tv ? 'hidden' : 'flex bg-green-200'}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.tv ? 'hidden' : 'flex '}`}>
           <CardPlan planData={tvPlans.plan1} />
           <CardPlan planData={tvPlans.plan2} />
           <CardPlan planData={tvPlans.plan3} />
           {/* <CardPlan planData={tvPlans.plan4} /> */}
         </div>
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.dual ? 'hidden' : 'flex bg-green-200'}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-24   ${!activeProduct.dual ? 'hidden' : 'flex '}`}>
           <CardPlan planData={dualPlans.plan1} />
           <CardPlan planData={dualPlans.plan2} />
           <CardPlan planData={dualPlans.plan3} />

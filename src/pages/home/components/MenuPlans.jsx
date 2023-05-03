@@ -16,7 +16,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
       {/*Menu Plans  */}
-      <div className="flex flex-wrap justify-center items-center text-xs md:w-full lg:w-screen lg:px-24  bg-red-200">
+      <div className="flex flex-wrap justify-center items-center text-xs md:w-full lg:w-screen lg:px-24 ">
 
         <button
           className={`flex items-center justify-start md:justify-center  py-4  border-slate-500 bg-white ${home ? 'font-bold' : ''} 
