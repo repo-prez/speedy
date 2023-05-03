@@ -16,7 +16,7 @@ const Banner = ({ activeProduct }) => {
 
 
   return (
-    <div className=' relative flex '>
+    <div className=' relative flex justify-center items-center w-screen  '>
 
 
       <XyzTransition appear xyz="fade up big ">

@@ -8,7 +8,8 @@ import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
   return (
-    <div className='flex flex-col items-center bg-slate-200'>
+    <div className='bg-yellow-300  w-screen'>
+
 
       {/* <Helmet >
         <html lang="es" />
@@ -23,10 +24,10 @@ const HomePage = () => {
 
       <NavBar />
       <Products />
-      <Form />
-      <Info />
-      <Map />
-      <Footer />
+      {/* <Form /> */}
+      {/* <Info /> */}
+      {/* <Map /> */}
+      {/* <Footer /> */}
 
 
     </div>

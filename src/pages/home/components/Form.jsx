@@ -41,7 +41,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-xl mt-[60rem] md:mt-[100rem] lg:mt-[95rem] xl:mt-[55rem] w-4/5 md:w-3/5 lg:w-8/12 m-10  lg:mx-52 lg:flex-row ">
+    <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-xl mt-[60rem] md:mt-[100rem] lg:mt-[95rem] xl:mt-[55rem] w-10/12 md:w-3/5 lg:w-8/12 m-10  lg:mx-52 lg:flex-row ">
 
       <img className="rounded-lg lg:w-3/5 " src={bannerForm} alt="imagen formulario" />
 
