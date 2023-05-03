@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-import homeLogo from '../../assets/img/logoSpeedy.png'
+import homeLogo from '../../assets/img/logoSpeedy.svg'
 import burgerMenuIcon from '../../assets/icons/svgBurgerMenu.svg'
 import closeMenuIcon from '../../assets/icons/svgCloseMenu.svg'
 import { Link } from 'react-router-dom'
