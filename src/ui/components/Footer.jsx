@@ -50,7 +50,7 @@ const Footer = () => {
             <div>
         
               <div className='text-white '>
-                <p className='my-4 font-bold'>Si deseas Cambiate a SPEEDY</p>
+                <p className='my-4 font-bold'>Si deseas Cambiate a SPEEDY </p>
               </div>
               <div className='flex'>
                 <img className='mr-2' src={logoCambiate} width={20} alt="" />
