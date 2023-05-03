@@ -31,8 +31,8 @@ const Footer = () => {
     <div className='lg:flex lg:flex-col bg-gradient-to-r from-blue-800 to-blue-950 w-full p-8 lg:px-32 ' >
 
       <div className='md:flex md:justify-between lg:flex'>
-        <img className='w-1/2 md:w-48' src={logoSpeedy}  alt="logoSpeedy" />
-        
+        <img className='w-1/2 md:w-48' src={logoSpeedy} alt="logoSpeedy" />
+
         <div className='flex justify-left items-center space-x-5 my-8' >
           <img src={logoTiktok} width={25} />
           <img src={logoTwitter} width={25} />
@@ -46,56 +46,55 @@ const Footer = () => {
       <div className='lg:flex lg:justify-between'>
         <div className='lg:flex md:flex-col'>
           {/* Left Column */}
-          <div className='md:flex justify-between text-s'>
+          <div className='md:flex justify-between text-sm'>
             <div>
-        
+
               <div className='text-white '>
                 <p className='my-4 font-bold'>Si deseas Cambiate a SPEEDY </p>
               </div>
               <div className='flex'>
                 <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                <a><p className='my-3 font-bold text-white'>CAMBIATE AQUÍ</p></a>
+                <p className='my-3 font-bold text-white'>CAMBIATE AQUÍ</p>
               </div>
               <div className='flex'>
                 <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                <a><p className='my-3 font-bold flex text-white'>O si prefieres <p className='text-secondary ml-1'>te llamamos</p></p></a>
+                <p className='my-3 font-bold flex text-white'>O si prefieres <span className='text-secondary ml-1'>te llamamos</span></p>
               </div>
               <div className='flex'>
                 <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                <a><p className='my-3 text-secondary font-bold'>Conoce nuestra cobertura</p></a>
+                <p className='my-3 text-secondary font-bold'>Conoce nuestra cobertura</p>
               </div>
-        
+
             </div>
-        
+
             <div className='lg:ml-10'>
               <div className='items-start justify-start divide-y divide-slate-400 text-sm '>
                 <div><p className='my-4 font-bold text-white'>Si eres Cliente:</p></div>
                 <div className='flex'>
                   <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                  <a><p className='my-3 flex text-white'>Llamanos desde tu celular al<p className='text-secondary ml-1'>0994505050</p></p></a>
+                  <p className='my-3 flex text-white'>Llamanos desde tu celular al<span className='text-secondary ml-1'>0994505050</span></p>
                 </div>
                 <div className='flex flex-col'>
                   <div className='flex justify-start'>
                     <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                    <a><p className='my-3 flex text-white'>Escribenos por WhatsApp:<p className='text-secondary ml-1'>+593 994 505050</p></p></a>
+                    <p className='my-3 flex text-white'>Escribenos por WhatsApp:<span className='text-secondary ml-1'>+593 994 505050</span></p>
                   </div>
                   <div className='flex '>
                     <img className='mr-2' src={logoCambiate} width={20} alt="" />
-                    <a><p className='my-3 flex text-white'>Llámanos al:<p className='text-secondary ml-1'>+593 994 505050</p></p></a>
+                    <p className='my-3 flex text-white'>Llámanos al:<span className='text-secondary ml-1'>+593 994 505050</span></p>
                   </div>
-            </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div className="lg:flex sm:text-white sm:divide-y sm:divide-slate-400 text-sm md:divide-y-reverse md:flex md:justify-between">
+
+        <div className="lg:flex text-white sm:divide-y md:divide-y-0 text-sm md:flex md:justify-between">
           <div>
-            <Link to={''}>
-              <div className='mt-3 mb-3'>
-        
+              <div className='mt-3 mb-3 lg:mr-14'>
+
                 <div className='flex justify-between'>
-                  <p className="hover:border-b-2 font-bold md:mb-3">Te ayudamos</p>
+                  <p className="font-bold md:mb-3">Te ayudamos</p>
                   <div className='md:hidden'>
                     <button
                       onClick={() => setMenuHelp(!menuHelp)}
@@ -105,89 +104,90 @@ const Footer = () => {
                     </button>
                   </div>
                 </div>
-        
-        
-                <div className='md:block md:mb-6'> 
-                  <div className={` ${!menuHelp ? 'sm:hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+
+
+                <div className='md:block md:mb-3'>
+                  <div className={` ${!menuHelp ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
                     <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b-2">Centro de Ayuda</p>
+                      <p className="mt-3 mb-3 hover:border-b">Centro de Ayuda</p>
                     </Link>
-                  
+
                     <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b-2">Servicio técnico</p>
+                      <p className="mt-3 mb-3 hover:border-b">Servicio técnico</p>
                     </Link>
-                  
+
                     <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b-2">Norma Multibanda</p>
+                      <p className="mt-3 mb-3 hover:border-b">Norma Multibanda</p>
                     </Link>
-                  
+
                     <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b-2">Reclamos</p>
+                      <p className="mt-3 mb-3 hover:border-b">Reclamos</p>
                     </Link>
                     <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b-2">Conoce tus derechos</p>
+                      <p className="mt-3 mb-3 hover:border-b">Conoce tus derechos</p>
                     </Link>
                   </div>
                 </div>
-        
-        
+
+
               </div>
-            </Link>
+    
           </div>
-        
-          <div>
-            <Link to={''}>
+
+          <div className='lg:mr-14'>
+           
               <div className='flex justify-between mt-3 mb-3'>
-                <p className="hover:border-b-2 md:mb-3 font-bold">Sobre Speedy</p>
-               <div className='md:hidden'>
-                 <button
-                     onClick={() => setMenuSpeedy(!menuSpeedy)}
-                   >
-                     <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                     <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
-                   </button>
-               </div>
-              </div>
-        
-        
-              <div className={` ${!menuSpeedy ? 'sm:hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
-                  <Link to={''}>
-                    <p className="mt-3 mb-3 hover:border-b-2">Nosotros</p>
-                  </Link>
-        
-                  <Link to={''}>
-                    <p className="mt-3 mb-3 hover:border-b-2">Trabaja con nosotros</p>
-                  </Link>
-                </div>
-        
-        
-            </Link>
-          </div>
-        
-          <div>
-            <Link to={''}>
-              <div className='flex justify-between mt-3 mb-2'>
-                <p className="hover:border-b-2 md:mb-3 font-bold">Terminos Legales</p>
+                <p className="md:mb-3 font-bold">Sobre Speedy</p>
                 <div className='md:hidden'>
                   <button
-                      onClick={() => setMenuLegal(!menuLegal)}
-                    >
-                      <img className={` ${menuLegal ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                      <img className={` ${!menuLegal ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
-                    </button>
+                    onClick={() => setMenuSpeedy(!menuSpeedy)}
+                  >
+                    <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
+                    <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                  </button>
                 </div>
               </div>
-              <div className={` ${!menuLegal ? 'sm:hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
-                  <Link to={''}>
-                    <p className="mt-3 mb-3 hover:border-b-2">Legal</p>
-                  </Link>
+
+
+              <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+               <div className='lg:block'>
+                 <Link to={''}>
+                   <p className="mt-3 mb-3 hover:border-b">Nosotros</p>
+                 </Link>
+                
+                 <Link to={''}>
+                   <p className="mt-3 mb-3 hover:border-b">Trabaja con nosotros</p>
+                 </Link>
+               </div>
+              </div>
+
+
+        
+          </div>
+
+          <div>
+              <div className='flex justify-between mt-3 mb-2'>
+                <p className="md:mb-3 font-bold">Terminos Legales</p>
+                <div className='md:hidden'>
+                  <button
+                    onClick={() => setMenuLegal(!menuLegal)}
+                  >
+                    <img className={` ${menuLegal ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
+                    <img className={` ${!menuLegal ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                  </button>
                 </div>
-            </Link>
+              </div>
+              <div className={` ${!menuLegal ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+                <Link to={''}>
+                  <p className="mt-3 mb-3 hover:border-b">Legal</p>
+                </Link>
+              </div>
+  
           </div>
         </div>
       </div>
 
-      <p className='text-white border-t-2 p-1 text-justify'>Copyright © 2023 All Rights Reserved by <a className='underline' href="https://agenciaprez.com/" target='_blank' rel="noreferrer">Agencia Prez</a>.</p>
+      <p className='text-white border-t-2 p-1 text-justify'>Copyright © 2023 All Rights Reserved by <a href=''>AGENCIAPREZ</a></p>
 
     </div >
   )
