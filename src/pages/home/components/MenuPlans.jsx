@@ -14,7 +14,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
   return (
     <div className='flex flex-col items-center w-screen px-8 '>
 
-      <div className="flex flex-wrap justify-start  items-center  text-xs  ">
+      <div className="flex flex-wrap justify-center items-center  text-xs  ">
 
         <button
           className={`flex items-center justify-start py-4  border-slate-500 bg-white ${home ? 'font-bold' : ''} 
@@ -66,6 +66,8 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
       </div>
 
+
+      {/* Text plans */}
 
       <div className={`flex flex-col items-center  py-6 ${!home ? 'hidden' : 'flex'}`}>
         <p className='text-center text-2xl md:text-3xl font-bold text-blue-950'>Internet Hogar Fibra Óptica</p>
