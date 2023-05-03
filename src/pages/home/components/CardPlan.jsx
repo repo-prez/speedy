@@ -9,7 +9,7 @@ const CardPlan = ({ planData }) => {
 
   const { title, speed, promoDiscount, pricePromo, price, extensor } = planData
   return (
-    <div className='flex flex-col items-center ml-4 my-4 w-80 bg-slate-50 border-2 border-slate-500 rounded-xl shadow-xl '>
+    <div className='flex flex-col items-center ml-4 lg:m-0 md:m-4 my-4 w-80 bg-slate-50 border-2 border-slate-500 rounded-xl shadow-xl '>
 
       <div className='px-8 pt-4 w-80'>
         <p className='text-start text-xl  pt-8'>Internet <span className='font-bold'>{title}</span> </p>

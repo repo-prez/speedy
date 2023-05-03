@@ -81,7 +81,7 @@ const NavBar = () => {
           }
         </button>
 
-        <div className={`absolute z-20 top-30 right-0 flex flex-col justify-center items-start w-full p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
+        <div className={`absolute z-30 top-30 right-0 flex flex-col justify-center items-start w-full p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
         animate__animated animate__faster animate__fadeInRight
         `}>
 

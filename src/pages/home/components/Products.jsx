@@ -162,11 +162,11 @@ const Products = () => {
 
 
 
-      <div className="absolute z-20 top-56 md:top-48 w-full ">
+      <div className="absolute z-20 top-56 md:top-48 w-screen md:w-full ">
 
         <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={` ${!activeProduct.home ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center '}`}>
+        <div className={` ${!activeProduct.home ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center lg:justify-around px-4 lg:px-12'}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
@@ -174,21 +174,21 @@ const Products = () => {
         </div>
 
 
-        <div className={` ${!activeProduct.business ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center '}`}>
+        <div className={` ${!activeProduct.business ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center lg:justify-around px-4 lg:px-12'}`}>
           <CardPlan planData={businessInternet.plan1} />
           <CardPlan planData={businessInternet.plan2} />
           <CardPlan planData={businessInternet.plan3} />
           <CardPlan planData={businessInternet.plan4} />
         </div>
 
-        <div className={`${!activeProduct.tv ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center'}`}>
+        <div className={`${!activeProduct.tv ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center lg:justify-around px-4 lg:px-12'}`}>
           <CardPlan planData={tvPlans.plan1} />
           <CardPlan planData={tvPlans.plan2} />
           <CardPlan planData={tvPlans.plan3} />
           <CardPlan planData={tvPlans.plan4} />
         </div>
 
-        <div className={`${!activeProduct.dual ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md: justify-center'}`}>
+        <div className={`${!activeProduct.dual ? 'hidden' : 'flex sm:overflow-x-scroll md:flex md:flex-wrap md:justify-center lg:justify-around px-4 lg:px-12'}`}>
           <CardPlan planData={dualPlans.plan1} />
           <CardPlan planData={dualPlans.plan2} />
           <CardPlan planData={dualPlans.plan3} />

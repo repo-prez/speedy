@@ -24,15 +24,15 @@ const Banner = ({ activeProduct }) => {
       </XyzTransition>
 
       <XyzTransition appear xyz="fade up big ">
-        {business && <img className='object-cover h-56 w-full ' src={bannerCorporativo} alt="banner internet corporativo" />}
+        {business && <img className='object-cover h-56 w-full ' src={bannerInternetHome} alt="banner internet corporativo" />}
       </XyzTransition>
 
       <XyzTransition appear xyz="fade up big ">
-        {tv && <img className='object-cover h-56 w-full ' src={bannerTv} alt="banner tv" />}
+        {tv && <img className='object-cover h-56 w-full ' src={bannerInternetHome} alt="banner tv" />}
       </XyzTransition>
 
       <XyzTransition appear xyz="fade up big ">
-        {dual && <img className='object-cover h-56 w-full ' src={bannerDual} alt="banner dual" />}
+        {dual && <img className='object-cover h-56 w-full ' src={bannerInternetHome} alt="banner dual" />}
       </XyzTransition>
 
 

@@ -12,9 +12,9 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
   return (
-    <div className='flex flex-col items-center w-screen '>
+    <div className='flex flex-col items-center '>
 
-      <div className="flex flex-row flex-wrap justify-center items-center w-5/6 ">
+      <div className="flex flex-row flex-wrap justify-center items-center px-8  md:w-11/12 md:px-4 lg:px-12 lg:w-full  ">
         <button
           className={`flex items-center justify-center p-4  border-slate-500 bg-white ${home ? 'font-bold' : ''} 
           w-1/2 border-2 border-r-0 rounded-l-2xl 
@@ -34,7 +34,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4`}
           onClick={() => setActiveProduct({ home: false, business: true, tv: false, dual: false })}
         >
-          <img src={svgInternetCorporativo} width={50} alt="ion internet corporativo" />
+          <img src={svgInternetCorporativo} width={50} alt="icon internet home" />
           <p>Internet Corporativo </p>
         </button>
 
