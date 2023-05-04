@@ -5,6 +5,7 @@ import Info from './components/Info'
 import Map from './components/Map'
 import Products from './components/Products'
 import { Helmet } from 'react-helmet'
+import Blogs from './components/Blogs'
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       <Form />
       <Info />
       <Map />
+      {/* <Blogs /> */}
       <Footer />
 
 

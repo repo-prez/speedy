@@ -24,7 +24,6 @@ const Info = () => {
         </div>
 
 
-
         <div className="md:flex">
 
           <div className="relative flex justify-end items-center my-4 md:mr-2 ">

@@ -42,7 +42,7 @@ const CardPlan = ({ planData }) => {
       </div>
 
       <button className='bg-blue-900 w-5/6 p-3 my-4  rounded-full font-bold text-white text-xl hover:bg-blue-950'>
-        Lo quiero
+        Más información
       </button>
 
       <div className='  divide-y '>
