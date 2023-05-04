@@ -91,103 +91,103 @@ const Footer = () => {
 
         <div className="lg:flex text-white sm:divide-y md:divide-y-0 text-sm md:flex md:justify-between">
           <div>
-              <div className='mt-3 mb-3 lg:mr-14'>
+            <div className='mt-3 mb-3 lg:mr-14'>
 
-                <div className='flex justify-between'>
-                  <p className="font-bold md:mb-3">Te ayudamos</p>
-                  <div className='md:hidden'>
-                    <button
-                      onClick={() => setMenuHelp(!menuHelp)}
-                    >
-                      <img className={` ${menuHelp ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                      <img className={` ${!menuHelp ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
-                    </button>
-                  </div>
+              <div className='flex justify-between'>
+                <p className="font-bold md:mb-3">Te ayudamos</p>
+                <div className='md:hidden'>
+                  <button
+                    onClick={() => setMenuHelp(!menuHelp)}
+                  >
+                    <img className={` ${menuHelp ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
+                    <img className={` ${!menuHelp ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                  </button>
                 </div>
-
-
-                <div className='md:block md:mb-3'>
-                  <div className={` ${!menuHelp ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
-                    <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b">Centro de Ayuda</p>
-                    </Link>
-
-                    <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b">Servicio técnico</p>
-                    </Link>
-
-                    <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b">Norma Multibanda</p>
-                    </Link>
-
-                    <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b">Reclamos</p>
-                    </Link>
-                    <Link to={''}>
-                      <p className="mt-3 mb-3 hover:border-b">Conoce tus derechos</p>
-                    </Link>
-                  </div>
-                </div>
-
-
               </div>
-    
+
+
+              <div className='md:block md:mb-3 lg:h-36'>
+                <div className={` ${!menuHelp ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+                  <Link to={''}>
+                    <p className="mt-3 mb-3 hover:border-b ">Centro de Ayuda</p>
+                  </Link>
+
+                  <Link to={''}>
+                    <p className="mt-3 mb-3 hover:border-b">Servicio técnico</p>
+                  </Link>
+
+                  <Link to={''}>
+                    <p className="mt-3 mb-3 hover:border-b">Norma Multibanda</p>
+                  </Link>
+
+                  <Link to={''}>
+                    <p className="mt-3 mb-3 hover:border-b">Reclamos</p>
+                  </Link>
+                  <Link to={''}>
+                    <p className="mt-3 mb-3 hover:border-b">Conoce tus derechos</p>
+                  </Link>
+                </div>
+              </div>
+
+
+            </div>
+
           </div>
 
           <div className='lg:mr-14'>
-           
-              <div className='flex justify-between mt-3 mb-3'>
-                <p className="md:mb-3 font-bold">Sobre Speedy</p>
-                <div className='md:hidden'>
-                  <button
-                    onClick={() => setMenuSpeedy(!menuSpeedy)}
-                  >
-                    <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                    <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
-                  </button>
-                </div>
+
+            <div className='flex justify-between mt-3 mb-3'>
+              <p className="md:mb-3 font-bold">Sobre Speedy</p>
+              <div className='md:hidden'>
+                <button
+                  onClick={() => setMenuSpeedy(!menuSpeedy)}
+                >
+                  <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
+                  <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                </button>
               </div>
+            </div>
 
 
-              <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
-               <div className='lg:block'>
-                 <Link to={''}>
-                   <p className="mt-3 mb-3 hover:border-b">Nosotros</p>
-                 </Link>
-                
-                 <Link to={''}>
-                   <p className="mt-3 mb-3 hover:border-b">Trabaja con nosotros</p>
-                 </Link>
-               </div>
+            <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+              <div className='lg:block'>
+                <Link to={''}>
+                  <p className="mt-3 mb-3 hover:border-b">Nosotros</p>
+                </Link>
+
+                <Link to={''}>
+                  <p className="mt-3 mb-3 hover:border-b">Trabaja con nosotros</p>
+                </Link>
               </div>
+            </div>
 
 
-        
+
           </div>
 
           <div>
-              <div className='flex justify-between mt-3 mb-2'>
-                <p className="md:mb-3 font-bold">Terminos Legales</p>
-                <div className='md:hidden'>
-                  <button
-                    onClick={() => setMenuLegal(!menuLegal)}
-                  >
-                    <img className={` ${menuLegal ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                    <img className={` ${!menuLegal ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
-                  </button>
-                </div>
+            <div className='flex justify-between mt-3 mb-2'>
+              <p className="md:mb-3 font-bold">Terminos Legales</p>
+              <div className='md:hidden'>
+                <button
+                  onClick={() => setMenuLegal(!menuLegal)}
+                >
+                  <img className={` ${menuLegal ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
+                  <img className={` ${!menuLegal ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                </button>
               </div>
-              <div className={` ${!menuLegal ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
-                <Link to={''}>
-                  <p className="mt-3 mb-3 hover:border-b">Legal</p>
-                </Link>
-              </div>
-  
+            </div>
+            <div className={` ${!menuLegal ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+              <Link to={''}>
+                <p className="mt-3 mb-3 hover:border-b">Legal</p>
+              </Link>
+            </div>
+
           </div>
         </div>
       </div>
 
-      <p className='text-white border-t-2 p-1 text-justify'>Copyright © 2023 All Rights Reserved by <a href=''>AGENCIAPREZ</a></p>
+      <p className='text-white border-t-2 p-1 text-justify '>Copyright © 2023 All Rights Reserved by <a href=''>AGENCIAPREZ</a></p>
 
     </div >
   )
