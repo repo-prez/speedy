@@ -11,18 +11,18 @@ const CardPlan = ({ planData }) => {
 
   const { title, speed, promoDiscount, pricePromo, price, extensor } = planData
   return (
-    <div className='flex flex-col items-center  mr-8 my-4 lg:mr-0 md:w-1/3 lg:w-64 xl:w-72  bg-white  border-2 border-slate-500 rounded-xl '>
+    <div className='flex flex-col items-center  mr-4 my-4 lg:mr-0 md:w-1/3 lg:w-64 xl:w-[17rem]  bg-white  border-2 border-slate-500 rounded-xl '>
 
-      <div className='  w-[15rem] h-16 '>
-        <p className='text-start text-xl  pt-4'>Internet <span className='font-bold'>{title}</span> </p>
+      <div className='  w-[15rem] h-16  '>
+        <p className='text-start text-2xl  p-4'>Internet <span className='font-extrabold'>{title}</span> </p>
       </div>
 
 
 
 
 
-      <div className='flex flex-col items-center p-2 justify-center'>
-        <p className='text-4xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}/`}<span className='text-xs lg:text-2xl'>mes</span></p>
+      <div className='flex flex-col items-center pt-8 pb-2 justify-center'>
+        <p className='text-4xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}/`}<span className='text-2xl font-bold text-secondary'>mes</span></p>
       </div>
 
       {/* <div className='flex justify-center items-center cursor-pointer'>
@@ -38,7 +38,7 @@ const CardPlan = ({ planData }) => {
 
       <div className='flex items-center px-12 py-4 w-full  '>
         <img className='' src={iconRouter} width={20} alt="iconTransfer" />
-        <p className='mx-2'> Router principal <span className='font-bold'>incluido</span></p>
+        <p className='mx-2'> Router 4 antenas WI-FI 6</p>
       </div>
 
       <button className='bg-blue-900 w-5/6 p-3 my-4  rounded-full font-bold text-white text-xl hover:bg-blue-950'>

@@ -48,7 +48,7 @@ const Banner = ({ activeProduct }) => {
 
         <div className=' text-white  p-2 md:backdrop-blur-sm md:bg-white/20 md:rounded-xl animate__animated animate-pulse animate__slower'>
           <p className='text-xl lg:text-3xl font-bold'>200 Megas</p>
-          <p className='text-xl lg:text-4xl font-bold'>$22/50/mes</p>
+          <p className='text-xl lg:text-4xl font-bold'>$22.50/mes</p>
           <p className='text-sm font-bold'>Contrátalo ahora</p>
           <button
             className='bg-secondary px-2 py-1 rounded-md mt-2 hover:bg-pink-700 font-bold'

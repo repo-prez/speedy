@@ -16,7 +16,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className={`relative text-white    `}>
+    <div className={`relative text-white   xl:text-xl `}>
 
 
       {/* Normal Menu */}
@@ -24,25 +24,27 @@ const NavBar = () => {
 
 
         {/* Header */}
-        <div className={`justify-between  md:flex md:mb-2`}>
+        <div className={`justify-between  md:flex md:mb-2 `}>
 
           <div className="flex items-center">
-            <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Personas</p>
-            <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Corporativo</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Personas</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Corporativo</p>
           </div>
 
           <div className="flex items-center">
-            <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Paga tu cuenta</p>
-            <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Sucursales y Oficinas</p>
-            <p className="my-1 mx-3 cursor-pointer hover:border-b-2">My Speedy</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Paga tu Cuenta</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Sucursales y Oficinas</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">My Speedy</p>
           </div>
 
         </div>
 
+
+
         <div className=' relative justify-center items-center md:flex '>
           <img className=' w-[175px] absolute left-0' src={speedyLogo} alt="icon speedy" />
 
-          <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
+          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
 
             <Link to={'/'}>
               <p className="m-2 p-2 hover:border-b-2">Inicio</p>

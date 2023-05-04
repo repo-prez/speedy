@@ -155,18 +155,24 @@ const Products = () => {
     dual: false
   })
 
+  // setTimeout(() => {
+
+  //   console.log(window.innerWidth)
+  // }, 5000);
+
+
   return (
-    <div className='relative  '>
+    <div className='relative w-full xl:flex flex-col items-center'>
 
       <Banner activeProduct={activeProduct} />
 
 
 
-      <div className="relative z-20 md:-top-10 flex flex-col lg:items-center">
+      <div className="relative z-20  md:-top-10 flex flex-col lg:items-center w-full ">
 
-        <MenuPlans className='absolute' activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
+        <MenuPlans className='' activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar md:w-full   pl-8 lg:px-36   ${!activeProduct.home ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-8/12 xl:w pl-8 lg:pl-0   ${!activeProduct.home ? 'hidden' : 'flex '}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />

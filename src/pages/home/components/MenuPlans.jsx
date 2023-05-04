@@ -12,11 +12,11 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
   return (
-    <div className='flex flex-col items-center w-full px-8 '>
+    <div className='flex flex-col items-center w-full px-8 lg:px-0 lg:w-8/12'>
 
 
       {/*Menu Plans  */}
-      <div className="flex flex-wrap justify-center items-center text-xs md:w-full lg:w-8/12   lg:text-lg ">
+      <div className="flex flex-wrap justify-center items-center text-xs md:w-full    lg:text-lg ">
 
         <button
           className={`flex items-center justify-start md:justify-center h-16  border-slate-500 bg-white ${home ? 'font-bold text-text-menu' : ''} 
