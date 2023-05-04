@@ -28,7 +28,7 @@ const HomePage = () => {
       <Form />
       <Info />
       <Map />
-      {/* <Blogs /> */}
+      <Blogs />
       <Footer />
 
 

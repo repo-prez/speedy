@@ -46,13 +46,13 @@ const Form = () => {
 
 
 
-      <div className="flex flex-col items-center justify-center lg:justify-between rounded-lg shadow-xl bg-white md:m-8 lg:m-0  lg:w-4/6  lg:flex-row ">
+      <div className="flex flex-col items-center justify-center lg:justify-between rounded-lg shadow-xl bg-white md:m-8 lg:m-0  lg:w-10/12  lg:flex-row ">
 
 
-        <img className="rounded-lg object-cover  md:w-auto lg:w-7/12 xl:w-6/12" src={bannerForm} alt="imagen formulario" />
+        <img className="rounded-lg object-cover  md:w-auto lg:h-full lg:w-6/12 xl:w-6/12" src={bannerForm} alt="imagen formulario" />
 
 
-        <div className='flex flex-col items-center w-full lg:w-5/12 px-4 xl:mx-12 '>
+        <div className='flex flex-col items-center px-4 lg:mr-10 w-full h-full lg:w-5/12  xl:mx-12 '>
           <div className='flex flex-col items-center my-6 lg:mb-4'>
             <p className='text-2xl xl:text-3xl  text-blue-800 font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
             <p className='text-justify xl:text-xl'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>

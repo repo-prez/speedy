@@ -8,15 +8,15 @@ import bannerSupport from '../../../assets/img/banners/bannerSupport.png'
 
 const Info = () => {
   return (
-    <div className="flex flex-col items-center  px-8 lg:px-0 my-12">
+    <div className="flex flex-col items-center  px-8 lg:px-0 my-12 ">
 
-      <div className="lg:w-4/6">
+      <div className="lg:w-10/12">
 
 
         <div className="relative flex justify-start lg:justify-around items-center my-4 rounded-xl ">
           <img className="object-cover object-right h-32 w-full rounded-xl" src={bannerSpeedyTv} alt="banner tv" />
 
-          <div className="absolute z-10 w-9/12 mx-4 text-white text-left">
+          <div className="absolute z-10 w-full px-4 mx-4 text-white text-left">
             <p className="text-highlight font-bold text-xl lg:text-3xl" >Speedy Tv</p>
             <p className="font-bold" >Nuestro nuevo servicio de TV</p>
             <p className="" >Mayor variedad para todos</p>
@@ -60,10 +60,10 @@ const Info = () => {
         </div>
 
 
-        <div className="relative flex justify-end items-center my-4 md:mr-2 ">
-          <img className="object-cover object-left h-32 w-full rounded-xl" src={bannerSupport} alt="banner soporte t" />
+        <div className="relative flex justify-start lg:justify-around items-center my-4 rounded-xl ">
+          <img className="object-cover object-right h-32 w-full rounded-xl" src={bannerSupport} alt="banner tv" />
 
-          <div className="absolute w-9/12 mx-4 text-right ">
+          <div className="absolute w-11/12 mx-4 text-right ">
             <p className="text-blue-800 font-bold text-xl lg:text-3xl" >Soporte</p>
             <p className="text-xs lg:text-base" >Nuestro equipo de soporte técnico está aquí para
               ayudarte a navegar en un mundo conectado.</p>
@@ -74,9 +74,10 @@ const Info = () => {
             >
               Contáctanos
             </button>
-
           </div>
         </div>
+
+
 
 
       </div>

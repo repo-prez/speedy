@@ -19,8 +19,6 @@ const CardPlan = ({ planData }) => {
 
 
 
-
-
       <div className='flex flex-col items-center pt-8 pb-2 justify-center'>
         <p className='text-4xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}/`}<span className='text-2xl font-bold text-secondary'>mes</span></p>
       </div>
@@ -36,7 +34,7 @@ const CardPlan = ({ planData }) => {
       <p className='mt-2'>Por 4 meses, luego  <span className='font-bold'>{`$${price.toFixed(2)}/mes`}</span></p>
 
 
-      <div className='flex items-center px-12 py-4 w-full  '>
+      <div className='flex items-center justify-start pl-4 py-4 w-full  '>
         <img className='' src={iconRouter} width={20} alt="iconTransfer" />
         <p className='mx-2'> Router 4 antenas WI-FI 6</p>
       </div>
@@ -45,26 +43,26 @@ const CardPlan = ({ planData }) => {
         Más información
       </button>
 
-      <div className='  divide-y '>
+      <div className=' divide-y pl-4'>
 
-        <div className='flex px-4 py-2  items-start  '>
-          <img className='mx-2' src={iconTransfer} width={20} alt="iconTransfer" />
-          <div>
-            <p>Velocidad simétrica</p>
-            <p>Hasta <span className='font-bold' >{`${speed}Mbps`}</span> de subida y de bajada.</p>
+        <div className='flex  py-2  items-start  '>
+          <img className='' src={iconTransfer} width={20} alt="iconTransfer" />
+          <div >
+            <p className='mx-2'>Velocidad simétrica</p>
+            <p className='mx-2'>Hasta <span className='font-bold' >{`${speed}Mbps`}</span> de subida y de bajada.</p>
           </div>
         </div>
 
 
-        <div className='flex px-4 py-2  items-start  '>
-          <img className='mx-2' src={iconRouter} width={20} alt="iconTransfer" />
-          <p>Router principal <span className='font-bold'>incluido</span></p>
+        <div className='flex py-2  items-start  '>
+          <img className='' src={iconRouter} width={20} alt="iconTransfer" />
+          <p className='px-2'>Router principal <span className='font-bold'>incluido</span></p>
         </div>
 
 
-        <div className='flex px-4 py-2  items-start '>
-          <img className='mx-2' src={iconConfig} width={20} alt="iconTransfer" />
-          <p>Costo de instalación <span className='font-bold'>$0</span></p>
+        <div className='flex  py-2  items-start '>
+          <img className='' src={iconConfig} width={20} alt="iconTransfer" />
+          <p className='mx-2'>Costo de instalación <span className='font-bold'>$0</span></p>
         </div>
 
       </div >

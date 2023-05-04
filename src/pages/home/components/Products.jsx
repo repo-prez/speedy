@@ -162,7 +162,7 @@ const Products = () => {
 
 
   return (
-    <div className='relative w-full xl:flex flex-col items-center'>
+    <div className='relative w-full xl:flex flex-col items-center '>
 
       <Banner activeProduct={activeProduct} />
 
@@ -172,7 +172,7 @@ const Products = () => {
 
         <MenuPlans className='' activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-8/12 xl:w pl-8 lg:pl-0   ${!activeProduct.home ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl lg:flex-wrap lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-8/12 xl:w pl-8 lg:pl-0  ${!activeProduct.home ? 'hidden' : 'flex '}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />

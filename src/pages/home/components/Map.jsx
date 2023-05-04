@@ -10,7 +10,7 @@ const Map = () => {
     <div className='flex justify-center  px-8 lg:px-0 '>
 
 
-      <div className='flex flex-col items-center lg:flex-row lg:w-4/6'>
+      <div className='flex flex-col items-center lg:flex-row lg:w-10/12'>
         {/* Data */}
         <div className=''>
           <div className='flex flex-col  my-4'>
