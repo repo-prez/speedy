@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
       {/* Normal Menu */}
-      <div className='p-4 bg-gradient-to-r from-primary to-primary-dark hidden md:flex flex-col '>
+      <div className='px-4 bg-gradient-to-r from-primary to-primary-dark hidden md:flex flex-col '>
 
 
         {/* Header */}
@@ -40,7 +40,7 @@ const NavBar = () => {
         </div>
 
         <div className=' relative justify-center items-center md:flex '>
-          <img className=' w-1/6 absolute left-0' src={speedyLogo} alt="icon speedy" />
+          <img className=' w-[175px] absolute left-0' src={speedyLogo} alt="icon speedy" />
 
           <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
 

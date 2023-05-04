@@ -19,17 +19,26 @@ export default {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      fontFamily: {
+        'sans': ['Barlow', 'sans-serif'],
+        'serif': ['Barlow ', 'serif'],
+        'mono': ['Barlow ', 'monospace'],
+
+      },
       animation: {
         'bounce-slow': 'bounce 3s linear infinite'
       },
       colors: {
-        primary: '#1E3FAE',
-        'primary-dark': '#172554',
-        secondary: '#EA3392',
+        primary: '#052C8B',
+        'primary-dark': '#041337',
+        secondary: '#CC0076',
+        highlight: '#42D9A1',
+        'text-menu': '#0468B9',
         background: '#474747',
         degraded: '#5C0005'
 
-      }
+      },
+
     }
   },
   plugins: [],

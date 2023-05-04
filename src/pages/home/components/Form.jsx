@@ -42,7 +42,7 @@ const Form = () => {
 
   return (
 
-    <div className=' flex justify-center lg:px-24 m-8 lg:m-0 '>
+    <div className=' flex justify-center lg:px-36 m-8 lg:m-0 '>
 
       <div className="flex flex-col items-center justify-center lg:justify-between rounded-lg shadow-xl bg-white md:w-1/2  lg:w-full  lg:flex-row ">
 
@@ -51,9 +51,9 @@ const Form = () => {
 
 
         <div className='flex flex-col items-center w-full lg:w-5/12 px-4 xl:mx-12 '>
-          <div className='flex flex-col items-center my-2'>
-            <p className='text-2xl xl:text-2xl text-blue-800 font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
-            <p className='text-justify'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
+          <div className='flex flex-col items-center my-6'>
+            <p className='text-2xl xl:text-3xl  text-blue-800 font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
+            <p className='text-justify xl:text-xl'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
           </div>
           <form onSubmit={handleSubmit} className="flex flex-col w-full lg:">
 
