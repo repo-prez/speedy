@@ -24,6 +24,7 @@ export default {
         'serif': ['Barlow ', 'serif'],
         'mono': ['Barlow ', 'monospace'],
 
+
       },
       animation: {
         'bounce-slow': 'bounce 3s linear infinite'

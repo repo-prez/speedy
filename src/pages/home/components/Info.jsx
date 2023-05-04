@@ -8,7 +8,7 @@ import bannerSupport from '../../../assets/img/banners/bannerSupport.png'
 
 const Info = () => {
   return (
-    <div className="flex flex-col items-center  md:px-8 lg:px-0 my-12">
+    <div className="flex flex-col items-center  px-8 lg:px-0 my-12">
 
       <div className="lg:w-4/6">
 

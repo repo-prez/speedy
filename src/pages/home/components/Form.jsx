@@ -42,7 +42,7 @@ const Form = () => {
 
   return (
 
-    <div className='flex justify-center'>
+    <div className='flex justify-center px-8 md:px-0'>
 
 
 

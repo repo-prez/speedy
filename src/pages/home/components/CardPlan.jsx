@@ -45,13 +45,13 @@ const CardPlan = ({ planData }) => {
         Lo quiero
       </button>
 
-      <div className=' px-4 divide-y '>
+      <div className='  divide-y '>
 
         <div className='flex px-4 py-2  items-start  '>
           <img className='mx-2' src={iconTransfer} width={20} alt="iconTransfer" />
           <div>
             <p>Velocidad simétrica</p>
-            <p>Hasta <span>{`${speed}Mbps`}</span> de subida y de bajada.</p>
+            <p>Hasta <span className='font-bold' >{`${speed}Mbps`}</span> de subida y de bajada.</p>
           </div>
         </div>
 

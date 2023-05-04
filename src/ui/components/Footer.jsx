@@ -28,9 +28,9 @@ const Footer = () => {
   const [menuLegal, setMenuLegal] = useState(false)
 
   return (
-    <div className='lg:flex lg:flex-col bg-gradient-to-r from-blue-800 to-blue-950 w-full p-8 lg:px-32 ' >
+    <div className='lg:flex lg:flex-col bg-gradient-to-r from-blue-800 to-blue-950 w-full p-8 lg:px-32' >
 
-      <div className='md:flex md:justify-between lg:flex'>
+      <div className='md:flex md:justify-between lg:flex '>
         <img className='w-1/2 md:w-48' src={logoSpeedy} alt="logoSpeedy" />
 
         <div className='flex justify-left items-center space-x-5 my-8' >
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='lg:flex lg:justify-between'>
+      <div className='lg:flex lg:justify-between '>
         <div className='lg:flex md:flex-col'>
           {/* Left Column */}
           <div className='md:flex justify-between text-sm'>
@@ -107,7 +107,7 @@ const Footer = () => {
 
 
               <div className='md:block md:mb-3 lg:h-36'>
-                <div className={` ${!menuHelp ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+                <div className={` ${!menuHelp ? 'hidden md:block' : 'flex flex-col animate__animated animate__slideInDown animate__faster'}`}>
                   <Link to={''}>
                     <p className="mt-3 mb-3 hover:border-b ">Centro de Ayuda</p>
                   </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
             </div>
 
 
-            <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+            <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__slideInDown animate__faster'}`}>
               <div className='lg:block'>
                 <Link to={''}>
                   <p className="mt-3 mb-3 hover:border-b">Nosotros</p>
@@ -177,7 +177,7 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-            <div className={` ${!menuLegal ? 'hidden md:block' : 'flex flex-col animate__animated animate__fadeInDown'}`}>
+            <div className={` ${!menuLegal ? 'hidden md:block' : 'flex flex-col animate__animated animate__slideInDown animate__faster'}`}>
               <Link to={''}>
                 <p className="mt-3 mb-3 hover:border-b">Legal</p>
               </Link>
