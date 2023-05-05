@@ -74,11 +74,11 @@ const oficinas = [
 const ContactPage = () => {
   return (
     <>
-      <Helmet >
+      {/* <Helmet >
         <html lang="es" />
         <title>Speedy | Contáctanos</title>
         <meta name="description" content="Speedy | Contáctanos" />
-      </Helmet>
+      </Helmet> */}
 
       <NavBar />
 

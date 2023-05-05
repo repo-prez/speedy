@@ -41,11 +41,11 @@ const qualities = [
 const UsPage = () => {
   return (
     <div>
-      <Helmet >
+      {/* <Helmet >
         <html lang="es" />
         <title>Speedy | Nosotros</title>
         <meta name="description" content="Speedy | Nosotros" />
-      </Helmet>
+      </Helmet> */}
 
       <NavBar />
       <p className="text-center p-12 bg-green-400">Nosotros aqui va un banner con la imagen de nosotros</p>

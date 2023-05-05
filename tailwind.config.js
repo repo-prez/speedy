@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      sm: '425px',
+      sm: '320px',
       // => @media (min-width: 425px) { ... }
 
       md: '768px',
@@ -15,20 +15,31 @@ export default {
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: '1536px'
+      xl: '1640px'
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      fontFamily: {
+        'sans': ['Barlow', 'sans-serif'],
+        'serif': ['Barlow ', 'serif'],
+        'mono': ['Barlow ', 'monospace'],
+
+
+      },
       animation: {
         'bounce-slow': 'bounce 3s linear infinite'
       },
       colors: {
-        primary: '#AD272E',
-        secondary: '#EA3392',
+        primary: '#052C8B',
+        'primary-dark': '#041337',
+        secondary: '#CC0076',
+        highlight: '#42D9A1',
+        'text-menu': '#0468B9',
         background: '#474747',
         degraded: '#5C0005'
 
-      }
+      },
+
     }
   },
   plugins: [],

@@ -1,91 +1,197 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 
 
-import homeLogo from '../../assets/img/logoSpeedy.png'
+import speedyLogo from '../../assets/img/logoSpeedy.svg'
 import burgerMenuIcon from '../../assets/icons/svgBurgerMenu.svg'
 import closeMenuIcon from '../../assets/icons/svgCloseMenu.svg'
 import { Link } from 'react-router-dom'
+import { AppContext } from '../../context/AppContext'
 
 
 const NavBar = () => {
 
+  const { setFilterHome } = useContext(AppContext)
+
   const [showBurgerMenu, setShowBurgerMenu] = useState(true)
+
 
   const toggleBurgerMenu = () => {
     setShowBurgerMenu(!showBurgerMenu)
   }
 
+
+  const handleShowMenu = (e) => {
+    setFilterHome(true)
+  }
+
+  const handleHideMenu = () => {
+    setFilterHome(false)
+  }
+
   return (
-    <div className={`relative bg-gradient-to-r from-blue-800 to-blue-950 text-white w-full p-4 lg:h-32 `}>
+    <div className={`relative text-white   xl:text-xl `}>
 
-      {/* Header */}
-      <div className={`justify-between hidden md:flex `}>
 
-        {/* Menu Plans */}
-        <div className="flex items-center">
-          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Personas</p>
-          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Corporativo</p>
+      {/* Normal Menu */}
+      <div className='px-4 bg-gradient-to-r from-primary to-primary-dark hidden md:flex flex-col '>
+
+
+        {/* Header */}
+        <div className={`justify-between  md:flex md:mb-2 `}>
+
+          <div className="flex items-center">
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Personas</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Corporativo</p>
+          </div>
+
+          <div className="flex items-center">
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Paga tu Cuenta</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Sucursales y Oficinas</p>
+            <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">My Speedy</p>
+          </div>
+
         </div>
 
-        {/* Contact Data */}
-        <div className="flex items-center">
-          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Paga tu cuenta</p>
-          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">Sucursales y Oficinas</p>
-          <p className="my-1 mx-3 cursor-pointer hover:border-b-2">My Speedy</p>
+
+
+        <div className=' relative justify-center items-center md:flex '>
+          <img className=' w-[175px] absolute left-0' src={speedyLogo} alt="icon speedy" />
+
+          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
+
+
+
+
+
+            <div className='py-4'>
+              <Link
+                to='/'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Inicio </p>
+              </Link>
+            </div>
+
+
+
+
+            <div  >
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Nosotros</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+            <div  >
+              <div
+                id='planes'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+            <div  >
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Soporte</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+
+            <div className='py-4'>
+              <Link
+                to='/contacto'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Contáctanos </p>
+              </Link>
+            </div>
+
+
+
+
+
+
+
+          </div>
         </div>
+
+
 
       </div>
 
 
-      {/* Menu */}
-
-      <div className=' '>
-        <div className='absolute '>
-          <img src={homeLogo} alt="icon speedy" width={200} />
-        </div>
-
-        <div className="flex  md:justify-end lg:justify-center  invisible md:visible">
-
-          <Link to={'/'}>
-            <p className="m-2 p-2 hover:border-b-2">Inicio</p>
-          </Link>
-
-          <Link to={'/nosotros'}>
-            <p className="m-2 p-2 hover:border-b-2">Nosotros</p>
-          </Link>
-
-          <Link to={'/planes'}>
-            <p className="m-2 p-2 hover:border-b-2">Planes de Internet</p>
-          </Link>
-
-          <Link to={'/contacto'}>
-            <p className="m-2 p-2 hover:border-b-2">Contáctanos</p>
-          </Link>
 
 
 
-        </div>
 
 
 
-        {/* Burger menu */}
 
-        <button
-          className='absolute bottom-12 right-4 md:hidden '
-          onClick={toggleBurgerMenu}
-        >
-          {
-            showBurgerMenu
-              ? <img src={burgerMenuIcon} alt="icon burger menu" width={30} />
-              : <img src={closeMenuIcon} alt="icon close burger menu" width={30} />
+
+      {/* Burger Menu */}
+      <div className='flex flex-col md:hidden '>
+
+        <div className='flex justify-between  p-4 bg-gradient-to-r from-primary to-primary-dark'>
+          <img className='w-1/2' src={speedyLogo} alt="" />
+          {showBurgerMenu ?
+            <img className='' width={50} src={burgerMenuIcon} alt="" onClick={toggleBurgerMenu} />
+            :
+            <img className='' width={50} src={closeMenuIcon} alt="" onClick={toggleBurgerMenu} />
           }
-        </button>
 
-        <div className={`absolute z-20 top-30 right-0 flex flex-col justify-center items-start w-full p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
+        </div>
+
+        <div className={` absolute  z-30 top-[80px] w-full  flex flex-col justify-center items-start  p-4  bg-slate-200 text-slate-700 text-xl  divide-y divide-slate-400    md:hidden ${showBurgerMenu && `hidden`} 
         animate__animated animate__faster animate__fadeInRight
         `}>
-
-
           <Link
             to={'/'}
             className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
@@ -129,11 +235,8 @@ const NavBar = () => {
             <p>Contacto</p>
           </Link>
 
-
         </div>
-
       </div>
-
 
 
 
