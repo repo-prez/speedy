@@ -32,7 +32,7 @@ const Blogs = () => {
     <div>
       <p className='w-full text-center my-12 text-primary text-4xl font-bold'>Speedy Blog's</p>
 
-      <div className='flex flex-col md:flex-row md:flex-wrap md:justify-center lg:justify-between lg:flex-nowrap lg:px-28 items-center my-9'>
+      <div className='flex flex-col md:flex-row md:flex-wrap md:justify-center lg:justify-between  lg:px-28 items-center my-9'>
 
         {
           dataForms.map((item, index) => (

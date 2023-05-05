@@ -37,8 +37,8 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4`}
           onClick={() => setActiveProduct({ home: false, business: true, tv: false, dual: false })}
         >
-          <img src={svgInternetCorporativo} width={50} alt="icon internet home" />
-          <p className='text-center w-1/3  '>Internet Corporativo </p>
+          <img src={svgsvgDualPack} width={50} alt="icon speedy dual pack" />
+          <p className='text-center w-1/4'>Dual Pack</p>
         </button>
 
 
@@ -62,8 +62,9 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
           lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
           onClick={() => setActiveProduct({ home: false, business: false, tv: false, dual: true })}
         >
-          <img src={svgsvgDualPack} width={50} alt="icon speedy dual pack" />
-          <p className='text-center w-1/4'>Dual Pack</p>
+
+          <img src={svgInternetCorporativo} width={50} alt="icon internet home" />
+          <p className='text-center w-1/3  '>Internet Corporativo </p>
         </button>
 
       </div>

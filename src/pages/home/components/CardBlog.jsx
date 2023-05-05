@@ -6,7 +6,7 @@ const CardBlog = ({ img, date, title, hero, description }) => {
 
   return (
 
-    <div className='flex  relative m-2 w-5/6 md:w-5/12 lg:w-4/12  shadow-lg overflow-hidden shadow-xl' >
+    <div className='flex  relative m-2 w-5/6 md:w-5/12 bg-red-200 p-2  shadow-lg overflow-hidden shadow-xl' >
       <img src={img} alt="" />
 
       <div className='absolute top-0 flex flex-col items-center bg-secondary text-white w-16'>

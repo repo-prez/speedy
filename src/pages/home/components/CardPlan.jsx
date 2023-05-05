@@ -11,10 +11,10 @@ const CardPlan = ({ planData }) => {
 
   const { title, speed, promoDiscount, pricePromo, price, extensor } = planData
   return (
-    <div className='flex flex-col items-center  mr-4 my-4 lg:mr-0 md:w-1/3 lg:w-64 xl:w-[17rem]  bg-white  border-2 border-slate-500 rounded-xl '>
+    <div className='flex flex-col items-center  mr-4 my-4  md:w-1/3 lg:w-64 xl:w-[17rem] bg-white  border-2 border-slate-500 rounded-xl '>
 
       <div className='  w-[15rem] h-16  '>
-        <p className='text-start text-2xl  p-4'>Internet <span className='font-extrabold'>{title}</span> </p>
+        <p className='text-start text-2xl p-4 leading-none ' >Internet <span className='font-extrabold'>{title}</span> </p>
       </div>
 
 

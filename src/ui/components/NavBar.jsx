@@ -1,18 +1,31 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 
 
 import speedyLogo from '../../assets/img/logoSpeedy.svg'
 import burgerMenuIcon from '../../assets/icons/svgBurgerMenu.svg'
 import closeMenuIcon from '../../assets/icons/svgCloseMenu.svg'
 import { Link } from 'react-router-dom'
+import { AppContext } from '../../context/AppContext'
 
 
 const NavBar = () => {
 
+  const { setFilterHome } = useContext(AppContext)
+
   const [showBurgerMenu, setShowBurgerMenu] = useState(true)
+
 
   const toggleBurgerMenu = () => {
     setShowBurgerMenu(!showBurgerMenu)
+  }
+
+
+  const handleShowMenu = (e) => {
+    setFilterHome(true)
+  }
+
+  const handleHideMenu = () => {
+    setFilterHome(false)
   }
 
   return (
@@ -46,21 +59,104 @@ const NavBar = () => {
 
           <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
 
-            <Link to={'/'}>
-              <p className="m-2 p-2 hover:border-b-2">Inicio</p>
-            </Link>
 
-            <Link to={'/nosotros'}>
-              <p className="m-2 p-2 hover:border-b-2">Nosotros</p>
-            </Link>
 
-            <Link to={'/planes'}>
-              <p className="m-2 p-2 hover:border-b-2">Planes de Internet</p>
-            </Link>
 
-            <Link to={'/contacto'}>
-              <p className="m-2 p-2 hover:border-b-2">Contáctanos</p>
-            </Link>
+
+            <div className='py-4'>
+              <Link
+                to='/'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Inicio </p>
+              </Link>
+            </div>
+
+
+
+
+            <div  >
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Nosotros</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+            <div  >
+              <div
+                id='planes'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+            <div  >
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="peer p-4  "
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Soporte</p>
+              </div>
+
+              {/* HoverMenu */}
+              <div
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+              >
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+              </div>
+            </div>
+
+
+
+            <div className='py-4'>
+              <Link
+                to='/contacto'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Contáctanos </p>
+              </Link>
+            </div>
+
+
+
+
 
 
 
@@ -70,6 +166,14 @@ const NavBar = () => {
 
 
       </div>
+
+
+
+
+
+
+
+
 
 
       {/* Burger Menu */}
