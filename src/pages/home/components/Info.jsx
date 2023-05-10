@@ -10,7 +10,7 @@ const Info = () => {
   return (
     <div className="flex flex-col items-center  px-8 lg:px-0 my-12 ">
 
-      <div className="lg:w-10/12">
+      <div className="lg:w-10/12 xl:w-8/12">
 
 
         <div className="relative flex justify-start lg:justify-around items-center my-4 rounded-xl ">

@@ -28,7 +28,7 @@ const Footer = () => {
   const [menuLegal, setMenuLegal] = useState(false)
 
   return (
-    <div className='lg:flex lg:flex-col bg-gradient-to-r from-blue-800 to-blue-950 w-full p-8 lg:px-32' >
+    <div className='lg:flex lg:flex-col bg-gradient-to-r from-primary to-primary-dark w-full p-8 lg:px-32' >
 
       <div className='md:flex md:justify-between lg:flex '>
         <img className='w-1/2 md:w-48' src={logoSpeedy} alt="logoSpeedy" />

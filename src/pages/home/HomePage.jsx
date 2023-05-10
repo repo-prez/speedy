@@ -18,7 +18,7 @@ const HomePage = () => {
   const size = window.innerWidth
 
   return (
-    <div className={`relative bg-slate-200`}>
+    <div className={`relative  bg-slate-200`}>
 
 
       {/* <Helmet >
@@ -48,8 +48,8 @@ const HomePage = () => {
       <Blogs />
       <Footer />
 
-      
-      
+
+
 
     </div>
   )
