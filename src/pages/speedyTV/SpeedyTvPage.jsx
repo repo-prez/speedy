@@ -12,8 +12,8 @@ const SpeedyTvPage = () => {
       <NavBar />
       <TvPlans />
 
-
       <WpPopUp />
+
       <Footer />
 
 

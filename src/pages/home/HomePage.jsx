@@ -28,9 +28,8 @@ const HomePage = () => {
         <meta name="description" content="Speedy, la empresa proveedora de Internet líder en el centro del país." />
         <meta name="author" content="Prez" />
         <meta name="robots" content="index" />
-
-
       </Helmet> */}
+
 
       <NavBar />
       {

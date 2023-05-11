@@ -75,6 +75,334 @@ const channels = [
     img: disneyJrLogo,
     category: '5',
   },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: true,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '2',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '4',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '4',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '3',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
+  {
+    number: 655,
+    name: 'Disney Jr',
+    hd: true,
+    lite: false,
+    img: disneyJrLogo,
+    category: '5',
+  },
 
 ]
 
@@ -86,21 +414,21 @@ const TableChannels = () => {
 
 
   return (
-    <div className='m-8 bg-white rounded-xl shadow-2xl'>
+    <div className='w-10/12 mx-8 lg:m-8  md:m-0 md:p-0 md:w-11/12 lg:w-8/12 bg-white rounded-xl shadow-2xl  '>
 
       {/* Menu Channels */}
-      <div className='flex  overflow-x-scroll'>
+      <div className='flex  overflow-x-scroll no-scrollbar md:justify-center'>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
-          <p>Películas</p>
+          <p className=''>Todos los canales</p>
         </button>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '1' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '1' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('1')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
@@ -108,15 +436,15 @@ const TableChannels = () => {
         </button>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '2' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '2' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('2')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
-          <p>Películas</p>
+          <p>Deportes</p>
         </button>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '3' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '3' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('3')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
@@ -124,7 +452,7 @@ const TableChannels = () => {
         </button>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '4' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '4' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('4')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
@@ -132,7 +460,7 @@ const TableChannels = () => {
         </button>
 
         <button
-          className={`px-4 my-4 flex flex-col items-center border-b-4 ${category === '5' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
+          className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '5' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('5')}
         >
           <img className='w-10 text-center' src={svgMovies} alt="" />
@@ -149,12 +477,12 @@ const TableChannels = () => {
       </div>
 
 
-      <div className='flex justify-between divide-x overflow-y-scroll no-scrollbar h-[30rem]'>
+      <div className='flex justify-between divide-x overflow-y-scroll no-scrollbar h-[20rem]'>
 
-        <div className=' w-1/2'>
+        <div className='flex flex-wrap gap-0 w-1/2 '>
           {
             channels.filter(channel => channel.category === category || category === '').map((channel, index) => (
-              <div key={index} className='flex flex-col items-center p-4' >
+              <div key={index} className='flex flex-col items-center   md:w-1/2 lg:w-1/3 mb-4 lg:mb-10' >
                 <img className={`w-2/4 ${channel.lite ? `grayscale` : ``}`} src={channel.img} alt="Logo Tv Channel" />
                 <p className={`text-sm ${channel.lite && `line-through`}  `}>
                   <span className='font-bold'>{channel.number}</span>
@@ -166,10 +494,10 @@ const TableChannels = () => {
           }
         </div>
 
-        <div className='w-1/2'>
+        <div className='flex flex-wrap  w-1/2'>
           {
             channels.filter(channel => channel.category === category || category === '').map((channel, index) => (
-              <div key={index} className='flex flex-col items-center p-4'>
+              <div key={index} className='flex flex-col items-center  md:w-1/2 lg:w-1/3 mb-4 lg:mb-10' >
                 <img className={`w-2/4 `} src={channel.img} alt="Logo Tv Channel" />
                 <p className={`text-sm `}>
                   <span className='font-bold'>{channel.number}</span>

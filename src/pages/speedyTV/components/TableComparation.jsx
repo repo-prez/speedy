@@ -1,7 +1,7 @@
 
 const TableComparation = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 lg:px-0 w-full md:w-full lg:w-8/12 ">
 
       <div className="relative overflow-x-auto rounded-xl shadow-2xl">
         <table className="w-full text-sm text-left text-slate-700 ">

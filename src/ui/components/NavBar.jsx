@@ -108,40 +108,27 @@ const NavBar = () => {
             </div>
 
 
-            <div  >
-              <div
-                onMouseEnter={(e) => handleShowMenu(e)}
-                onMouseLeave={() => handleHideMenu()}
-                className="peer p-4  "
-              >
-                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Soporte</p>
-              </div>
-
-              {/* HoverMenu */}
-              <div
-                onMouseEnter={(e) => handleShowMenu(e)}
-                onMouseLeave={() => handleHideMenu()}
-                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
-              >
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
-              </div>
-            </div>
-
-
 
             <div className='py-4'>
               <Link
-                to='/contacto'
+                to='/cobertura'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Contáctanos </p>
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Cobertura </p>
               </Link>
             </div>
 
 
+            <div className='py-4'>
+              <Link
+                to='/serviciocliente'
+                onMouseEnter={(e) => handleShowMenu(e)}
+                onMouseLeave={() => handleHideMenu()}
+              >
+                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Servicio al cliente </p>
+              </Link>
+            </div>
 
 
 
