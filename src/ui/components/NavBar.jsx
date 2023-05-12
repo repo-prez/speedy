@@ -68,6 +68,7 @@ const NavBar = () => {
                 to='/'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
+                onClick={() => handleHideMenu()}
               >
                 <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Inicio </p>
               </Link>
@@ -78,6 +79,7 @@ const NavBar = () => {
                 to='/speedytv'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
+                onClick={() => handleHideMenu()}
               >
                 <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Speedy TV </p>
               </Link>
@@ -90,16 +92,18 @@ const NavBar = () => {
                 id='planes'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
+                onClick={() => handleHideMenu()}
                 className="peer p-4  "
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1 hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
+                <p className='rounded-xl cursor-pointer px-3 py-1 xl:py-[2px] hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
               </div>
 
               {/* HoverMenu */}
               <div
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
-                className="absolute z-50  w-1/6 rounded-b-lg border-t-4 border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
+                onClick={() => handleHideMenu()}
+                className="absolute z-50  w-1/6 rounded-b-lg border-t-4  border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
               >
                 <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
                 <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
@@ -114,6 +118,7 @@ const NavBar = () => {
                 to='/cobertura'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
+                onClick={() => handleHideMenu()}
               >
                 <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Cobertura </p>
               </Link>
@@ -125,6 +130,7 @@ const NavBar = () => {
                 to='/serviciocliente'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
+                onClick={() => handleHideMenu()}
               >
                 <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Servicio al cliente </p>
               </Link>
@@ -188,6 +194,12 @@ const NavBar = () => {
             to={'/speedytv'}
             className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
             <p>SpeedyTv</p>
+          </Link>
+
+          <Link
+            to={'/serviciocliente'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Servicio al cliente</p>
           </Link>
 
 

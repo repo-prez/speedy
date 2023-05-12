@@ -5,6 +5,7 @@ import HomePage from "./pages/home/HomePage"
 import UsPage from "./pages/us/UsPage"
 import ContactPage from "./pages/contact/ContactPage"
 import SpeedyTvPage from './pages/speedyTV/SpeedyTvPage'
+import CustomerServicePage from './pages/customerService/CustomerServicePage'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/nosotros' element={<UsPage />} />
         <Route path='/cobertura' element={<ContactPage />} />
         <Route path='/speedytv' element={<SpeedyTvPage />} />
+        <Route path='/serviciocliente' element={<CustomerServicePage />} />
       </Routes>
 
     </AppProvider>

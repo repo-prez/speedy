@@ -4,9 +4,9 @@ import iconDeco from '../../../assets/icons/svgDeco.svg'
 
 const CardTvPlans = ({ title, channels, channelsHd }) => {
   return (
-    <div className='bg-white rounded-lg p-4 mb-2 mt-2 mr-4 md:mr-10'>
+    <div className='bg-white rounded-lg p-4 mb-2 mt-2 mr-4 md:mr-10 '>
 
-      <div className='w-[10rem] md:w-[12rem]'>
+      <div className='w-[10rem] md:w-[12rem] lg:w-full'>
         <p>Speedy TV</p>
         <p className='font-bold text-xl text-primary'>{title}</p>
         <p className='text-secondary text-3xl font-bold'>{`${channels} canales`}</p>

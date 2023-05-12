@@ -3,8 +3,6 @@ import bannerCorporativo from '../../../assets/img/banners/bannerCorporativo.web
 import bannerTv from '../../../assets/img/banners/bannerTv.webp'
 import bannerDual from '../../../assets/img/banners/bannerDual.webp'
 
-import "@animxyz/core";
-import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 
 
 
@@ -18,24 +16,13 @@ const Banner = ({ activeProduct }) => {
   return (
     <div className=' relative flex justify-center items-center '>
 
+      {home && <img className='object-cover h-[330px] w-auto ' src={bannerInternetHome} alt="banner internet home" />}
 
-      <XyzTransition appear xyz="fade up big ">
-        {home && <img className='object-cover h-[330px] w-auto ' src={bannerInternetHome} alt="banner internet home" />}
-      </XyzTransition>
+      {business && <img className='object-cover h-[330px] w-full ' src={bannerCorporativo} alt="banner internet corporativo" />}
 
-      <XyzTransition appear xyz="fade up big ">
-        {business && <img className='object-cover h-[330px] w-full ' src={bannerCorporativo} alt="banner internet corporativo" />}
-      </XyzTransition>
+      {tv && <img className='object-cover h-[330px] w-full ' src={bannerTv} alt="banner tv" />}
 
-      <XyzTransition appear xyz="fade up big ">
-        {tv && <img className='object-cover h-[330px] w-full ' src={bannerTv} alt="banner tv" />}
-      </XyzTransition>
-
-      <XyzTransition appear xyz="fade up big ">
-        {dual && <img className='object-cover h-[330px] w-full ' src={bannerDual} alt="banner dual" />}
-      </XyzTransition>
-
-
+      {dual && <img className='object-cover h-[330px] w-full ' src={bannerDual} alt="banner dual" />}
 
 
       <div className='absolute z-10 my-4 md:my-12 w-full flex flex-col items-end justify-around md:flex-row md:items-center md:justify-around h-4/6'>
