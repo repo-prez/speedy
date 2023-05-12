@@ -4,9 +4,9 @@ import iconDeco from '../../../assets/icons/svgDeco.svg'
 
 const CardTvPlans = ({ title, channels, channelsHd }) => {
   return (
-    <div className='bg-white rounded-lg p-8 mb- w-5/6  md:w-5/12   '>
+    <div className='bg-white rounded-lg p-4 mb-2 mt-2 mr-4 md:mr-10'>
 
-      <div className='w-5/6'>
+      <div className='w-[10rem] md:w-[12rem]'>
         <p>Speedy TV</p>
         <p className='font-bold text-xl text-primary'>{title}</p>
         <p className='text-secondary text-3xl font-bold'>{`${channels} canales`}</p>
@@ -20,12 +20,12 @@ const CardTvPlans = ({ title, channels, channelsHd }) => {
         <div className='flex justify-between my-4 '>
 
           <div className='flex flex-col items-center justify-start text-sm w-1/2'>
-            <img className='w-1/6' src={iconTwoUsers} alt="icon users" />
+            <img className='w-1/2 lg:w-1/4' src={iconTwoUsers} alt="icon users" />
             <p>Hasta dos dispositivos simultaneos</p>
           </div>
 
           <div className='flex flex-col items-center justify-start text-sm w-1/2'>
-            <img className='w-1/6' src={iconDeco} alt="icon receptor tv" />
+            <img className='w-1/2 lg:w-1/4' src={iconDeco} alt="icon receptor tv" />
             <p>Receptor TV</p>
           </div>
         </div>

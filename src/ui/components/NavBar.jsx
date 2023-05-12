@@ -54,8 +54,8 @@ const NavBar = () => {
 
 
 
-        <div className=' relative justify-center items-center md:flex '>
-          <img className=' w-[175px] absolute left-0' src={speedyLogo} alt="icon speedy" />
+        <div className=' relative justify-center items-center md:flex md:justify-end lg:justify-center '>
+          <img className=' w-[175px] md:w-[150px] absolute left-0' src={speedyLogo} alt="icon speedy" />
 
           <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
 

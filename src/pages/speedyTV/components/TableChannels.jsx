@@ -414,7 +414,7 @@ const TableChannels = () => {
 
 
   return (
-    <div className='w-10/12 mx-8 lg:m-8  md:m-0 md:p-0 md:w-11/12 lg:w-8/12 bg-white rounded-xl shadow-2xl  '>
+    <div className='w-full  lg:m-8   bg-white rounded-xl shadow-2xl  '>
 
       {/* Menu Channels */}
       <div className='flex  overflow-x-scroll no-scrollbar md:justify-center'>
@@ -471,9 +471,9 @@ const TableChannels = () => {
 
 
 
-      <div className='flex w-full'>
-        <p className=' bg-secondary py-4 text-lg text-center font-bold text-white w-1/2'>SpedyTV Lite (50)</p>
-        <p className='bg-secondary py-4 text-lg text-center font-bold text-white w-1/2' > SpedyTV Full (100)</p>
+      <div className='flex w-full divide-x'>
+        <p className='bg-primary py-4 text-lg text-center font-bold text-white w-1/2'>SpedyTV Lite (50)</p>
+        <p className='bg-primary py-4 text-lg text-center font-bold text-white w-1/2' > SpedyTV Full (100)</p>
       </div>
 
 
