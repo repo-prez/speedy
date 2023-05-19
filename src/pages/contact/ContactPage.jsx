@@ -13,19 +13,19 @@ const oficinas = [
     ciudad: 'Ambato',
     oficina: 'Oficina Central',
     direccion: 'Frutillas y Av. Los Guaytambos',
-    url: ''
+    url: 'https://goo.gl/maps/4GKeJRB2invcY7Dw9'
   },
   {
     ciudad: 'Ambato',
     oficina: 'Oficina 2',
     direccion: 'Quito y Sucre (esquina)',
-    url: ''
+    url: 'https://goo.gl/maps/4UYXLt1NVUxBAH6HA'
   },
   {
     ciudad: 'Ambato',
     oficina: 'Oficina 3',
-    direccion: 'Av. Los Guaytambos junto al nuevo Supermaxi',
-    url: ''
+    direccion: 'Mall de los Andes',
+    url: 'https://goo.gl/maps/nEP7bCHqcND8NhDV8'
   },
   {
     ciudad: 'Latacunga',
@@ -84,7 +84,7 @@ const ContactPage = () => {
 
       <div className='flex flex-col justify-center items-center bg-slate-200'>
 
-        <p className='  p-2 m-4 text-center text-4xl border-t-2 border-b-2 border-secondary text-slate-700'>Contactos</p>
+        <p className='  p-2 m-4 text-center text-4xl border-t-2 border-b-2 border-secondary text-slate-700'>Oficinas</p>
 
         <div className='flex flex-wrap justify-start lg:justify-center px-8 lg:mx-16'>
           {

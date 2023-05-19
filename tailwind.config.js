@@ -19,13 +19,24 @@ export default {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(180deg)' },
+        },
+        spin2: {
+          '0%': { transform: 'rotate(180deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
+      },
+      animation: {
+        spin: 'spin 0.1s linear ',
+        spin2: 'spin2 0.1s linear ',
+      },
       fontFamily: {
         'sans': ['Barlow', 'sans-serif'],
         'serif': ['Barlow ', 'serif'],
         'mono': ['Barlow ', 'monospace'],
-      },
-      animation: {
-        'bounce-slow': 'bounce 3s linear infinite'
       },
       colors: {
         primary: '#052C8B',

@@ -2,7 +2,7 @@ import React from 'react'
 import iconWireless from '../../../assets/icons/iconWireless.svg'
 import iconUser from '../../../assets/icons/iconUser.svg'
 import iconWifi from '../../../assets/icons/iconWiffi.svg'
-import bannerEcuador from '../../../assets/img/banners/bannerEcuador.png'
+import bannerEcuador from '../../../assets/img/banners/bannerEcuador.webp'
 
 
 const Map = () => {

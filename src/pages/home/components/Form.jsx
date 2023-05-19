@@ -2,7 +2,7 @@
 import { useForm } from '../../../hooks/useForm'
 import TextField from '@mui/material/TextField';
 
-import bannerForm from "../../../assets/img/banners/bannerForm.jpg"
+import bannerForm from "../../../assets/img/banners/bannerForm.webp"
 import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 const initialFrom = {

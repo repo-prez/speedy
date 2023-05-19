@@ -55,12 +55,11 @@ const NavBar = () => {
 
 
         <div className=' relative justify-center items-center md:flex md:justify-end lg:justify-center '>
-          <img className=' w-[175px] md:w-[150px] absolute left-0' src={speedyLogo} alt="icon speedy" />
+          <Link to='/'>
+            <img className=' w-[175px] md:w-[150px] absolute left-0 top-1' src={speedyLogo} alt="icon speedy" />
+          </Link>
 
           <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
-
-
-
 
 
             <div className='py-4'>
@@ -98,6 +97,10 @@ const NavBar = () => {
                 <p className='rounded-xl cursor-pointer px-3 py-1 xl:py-[2px] hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
               </div>
 
+
+
+
+
               {/* HoverMenu */}
               <div
                 onMouseEnter={(e) => handleShowMenu(e)}
@@ -105,9 +108,8 @@ const NavBar = () => {
                 onClick={() => handleHideMenu()}
                 className="absolute z-50  w-1/6 rounded-b-lg border-t-4  border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
               >
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 1</a>
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 2</a>
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Item 3</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Internet Hogar</a>
+                <a className="px-5 py-3 hover:bg-gray-200" href="#">Internet Corporativo</a>
               </div>
             </div>
 
@@ -160,7 +162,9 @@ const NavBar = () => {
       <div className='flex flex-col md:hidden '>
 
         <div className='flex justify-between  p-4 bg-gradient-to-r from-primary to-primary-dark'>
-          <img className='w-1/2' src={speedyLogo} alt="" />
+          <Link to='/'>
+            <img className='w-1/2' src={speedyLogo} alt="logo" />
+          </Link>
           {showBurgerMenu ?
             <img className='' width={50} src={burgerMenuIcon} alt="" onClick={toggleBurgerMenu} />
             :
