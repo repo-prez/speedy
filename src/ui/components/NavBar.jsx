@@ -37,7 +37,7 @@ const NavBar = () => {
 
 
         {/* Header */}
-        <div className={`justify-between  md:flex md:mb-2 `}>
+        {/* <div className={`justify-between  md:flex md:mb-2 `}>
 
           <div className="flex items-center">
             <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">Personas</p>
@@ -50,13 +50,13 @@ const NavBar = () => {
             <p className="my-1 mx-3 cursor-pointer hover:border-b-2 h-5">My Speedy</p>
           </div>
 
-        </div>
+        </div> */}
 
 
 
-        <div className=' relative justify-center items-center md:flex md:justify-end lg:justify-center '>
+        <div className=' relative justify-center items-center md:flex md:justify-end lg:justify-center mt-4'>
           <Link to='/'>
-            <img className=' w-[175px] md:w-[150px] absolute left-0 top-1' src={speedyLogo} alt="icon speedy" />
+            <img className=' w-[175px] md:w-[150px] absolute left-0 top-1  ' src={speedyLogo} alt="icon speedy" />
           </Link>
 
           <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
@@ -75,7 +75,8 @@ const NavBar = () => {
 
             <div className='py-4'>
               <Link
-                to='/speedytv'
+                // to='/speedytv'
+                to='/'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}

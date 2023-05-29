@@ -1,7 +1,7 @@
 import NavBar from '../../ui/components/NavBar'
 import Footer from '../../ui/components/Footer'
 import DownArrowAnimation from '../../components/DownArrowAnimation'
-import BlogCard from './BlogCard'
+import BlogCard from './components/BlogCard'
 
 import { dataBlogs } from '../../data/blog.js'
 import { useContext } from 'react'
@@ -13,6 +13,8 @@ const BlogsPage = () => {
 
   const categories = [...new Set(dataBlogs.map(blog => blog.category))]
   const { filterHome } = useContext(AppContext)
+
+
   return (
     <div className='bg-slate-200'>
       <NavBar />
@@ -35,6 +37,8 @@ const BlogsPage = () => {
       <div className='flex flex-wrap justify-center p-8'>
         {dataBlogs.map(blog => (<BlogCard key={blog.id} {...blog} />))}
       </div>
+
+
 
       <Footer />
     </div>

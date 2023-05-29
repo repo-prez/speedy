@@ -16,13 +16,13 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
       {/*Menu Plans  */}
-      <div className="flex flex-wrap justify-center items-center text-xs md:w-full    lg:text-lg ">
+      <div className="flex flex-wrap justify-center items-center text-xs w-full lg:text-lg ">
 
         <button
           className={`flex items-center justify-start md:justify-center h-20  border-slate-500 bg-white ${home ? 'font-bold text-text-menu' : ''} 
           w-1/2 border-2 border-r-0 rounded-l-2xl 
-          md:w-1/3
-          lg:w-1/4`}
+          md:w-1/2
+          lg:w-1/3`}
           onClick={() => setActiveProduct({ home: true, business: false, tv: false, dual: false })}
         >
           <img src={svgInternetHome} width={50} alt="icon internet home" />
@@ -30,7 +30,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
         </button>
 
 
-        <button
+        {/* <button
           className={`flex items-center justify-start md:justify-center h-20 border-slate-500 bg-white ${business ? 'font-bold text-text-menu' : ''}
           w-1/2 border-2 rounded-r-2xl 
           md:w-1/3 md:rounded-none
@@ -51,15 +51,15 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
         >
           <img src={svgSpeedy} width={50} alt="icon speedy tv" />
           <p className='text-center w-1/3 '>Speedy TV</p>
-        </button>
+        </button> */}
 
 
 
         <button
           className={`flex items-center justify-start md:justify-center  h-20 border-slate-500 bg-white ${dual ? 'font-bold text-text-menu' : ''}
-          w-1/2 border-2  border-t-0 rounded-r-2xl 
-          md:w-1/3 md:rounded-r-none md:rounded-br-2xl md:rounded-bl-2xl
-          lg:w-1/4 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
+          w-1/2 border-2 rounded-r-2xl 
+          md:w-1/2 
+          lg:w-1/3 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
           onClick={() => setActiveProduct({ home: false, business: false, tv: false, dual: true })}
         >
 

@@ -4,7 +4,7 @@ import CardDirection from './components/CardDirection'
 
 import svgMail from '../../assets/icons/svgMail.svg'
 import svgPhone from '../../assets/icons/svgPhone.svg'
-import svgWhatsapp from '../../assets/icons/svgWhatsapp.svg'
+import svgWhatsapp from '../../assets/icons/svgWhatsappColored.svg'
 
 import { Helmet } from 'react-helmet'
 
@@ -120,7 +120,7 @@ const ContactPage = () => {
               <img className='mx-2' width={50} src={svgWhatsapp} alt="icon whatsapp" />
               <div>
                 <p className='font-bold text-lg'>WhatsApp</p>
-                <p className='text-slate-600'>https://walink.co/834871</p>
+                <a className='text-slate-600' href="https://walink.co/834871">Escríbenos</a>
               </div>
             </div>
 

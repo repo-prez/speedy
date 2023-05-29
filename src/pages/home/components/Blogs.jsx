@@ -2,6 +2,7 @@ import CardBlog from './CardBlog'
 
 
 import { dataBlogs } from '../../../data/blog.js'
+import { Link } from 'react-router-dom'
 
 
 const Blogs = () => {
@@ -18,7 +19,7 @@ const Blogs = () => {
 
       <div className='lg:w-10/12 xl:w-8/12 sm:hidden lg:flex flex-wrap justify-between'>
 
-        <div
+        <Link to={`/blogs/${dataBlogs[0].id}`} target='_top'
           className='flex flex-col justify-between w-7/12 h-[22rem] mr-4 mb-4'
           style={{ backgroundImage: `url(${dataBlogs[0].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -33,10 +34,10 @@ const Blogs = () => {
             <p className='font-bold'>{dataBlogs[0].title}</p>
             <p className='font-light'>{dataBlogs[0].hero}  </p>
           </div>
-        </div>
+        </Link>
 
 
-        <div
+        <Link to={`/blogs/${dataBlogs[1].id}`} target='_top'
           className='flex flex-col justify-between w-4/12 h-[22rem]'
           style={{ backgroundImage: `url(${dataBlogs[1].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -50,9 +51,9 @@ const Blogs = () => {
             <p className='font-bold'>{dataBlogs[1].title}</p>
             <p className='font-light'>{dataBlogs[1].hero}  </p>
           </div>
-        </div>
+        </Link>
 
-        <div
+        <Link to={`/blogs/${dataBlogs[2].id}`} target='_top'
           className='flex flex-col justify-between w-[20rem] h-[22rem]  mb-4'
           style={{ backgroundImage: `url(${dataBlogs[2].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -66,9 +67,9 @@ const Blogs = () => {
             <p className='font-bold'>{dataBlogs[2].title}</p>
             <p className='font-light'>{dataBlogs[2].hero}  </p>
           </div>
-        </div>
+        </Link>
 
-        <div
+        <Link to={`/blogs/${dataBlogs[3].id}`} target='_top'
           className='flex flex-col justify-between w-[20rem] h-[22rem] mb-4'
           style={{ backgroundImage: `url(${dataBlogs[3].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -82,9 +83,9 @@ const Blogs = () => {
             <p className='font-bold'>{dataBlogs[3].title}</p>
             <p className='font-light'>{dataBlogs[3].hero}  </p>
           </div>
-        </div>
+        </Link>
 
-        <div
+        <Link to={`/blogs/${dataBlogs[4].id}`} target='_top'
           className='flex flex-col justify-between w-4/12 h-[22rem]  mb-4'
           style={{ backgroundImage: `url(${dataBlogs[4].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -98,7 +99,7 @@ const Blogs = () => {
             <p className='font-bold'>{dataBlogs[4].title}</p>
             <p className='font-light'>{dataBlogs[4].hero}  </p>
           </div>
-        </div>
+        </Link>
 
 
 

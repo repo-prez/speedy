@@ -21,6 +21,8 @@ const Info = () => {
             <p className="font-bold" >Nuestro nuevo servicio de TV</p>
             <p className="" >Mayor variedad para todos</p>
           </div>
+
+          <p className="absolute top-0 right-0 md:right-1/3 md:top-1/3 lg:right-1/2 lg:top-1/3 font-bold text-white text-2xl animate-pulse ">Proximamente...</p>
         </div>
 
 
@@ -69,7 +71,7 @@ const Info = () => {
               ayudarte a navegar en un mundo conectado.</p>
 
             <button
-              className="text-sm lg:text-base  bg-primary hover:bg-slate-300 hover:text-primary-dark hover:font-bold border-white text-white  px-2 py-1 my-1 rounded-full "
+              className="text-sm lg:text-lg  bg-primary hover:bg-slate-300 hover:text-primary-dark hover:font-bold border-[1px] border-primary text-white  px-2 py-1 my-1 rounded-full "
               onClick={() => window.open("", "_blank")}
             >
               Contáctanos
