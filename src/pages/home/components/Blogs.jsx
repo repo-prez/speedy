@@ -20,7 +20,7 @@ const Blogs = () => {
       <div className='lg:w-10/12 xl:w-8/12 sm:hidden lg:flex flex-wrap justify-between'>
 
         <Link to={`/blogs/${dataBlogs[0].id}`} target='_top'
-          className='flex flex-col justify-between w-7/12 h-[22rem] mr-4 mb-4'
+          className='flex flex-col justify-between w-7/12 h-[22rem] mr-4 mb-4 cursor-pointer'
           style={{ backgroundImage: `url(${dataBlogs[0].img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
 

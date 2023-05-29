@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom"
 
-const CardBlog = ({ img, date, title, hero, description }) => {
+const CardBlog = ({ id, img, date, title, hero, description }) => {
 
   const { day, month, year } = date
 
   return (
 
-    <div
+    <Link to={`/blogs/${id}`} target="_blank"
       className='flex   relative ml-8 lg:ml-0 lg:mr-8 h-96  '
       style={{
         backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center',
@@ -26,7 +27,7 @@ const CardBlog = ({ img, date, title, hero, description }) => {
         <p className=' text-lg'>{hero}</p>
       </div>
 
-    </div >
+    </Link >
   )
 }
 

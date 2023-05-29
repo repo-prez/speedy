@@ -29,7 +29,7 @@ const BlogPage = ({ id, date, title, category, hero, description, img, content }
           <h1 className="text-4xl font-bold">{title}</h1>
         </div>
 
-        <div className="flex flex-col items-start w-full lg:w-8/12 ">
+        <div className="flex flex-col px-8 items-start w-full lg:w-8/12 ">
           <p className="text-sm italic text-slate-500">{`Fecha: ${date.day}/${date.month}/${date.year}`}</p>
           <p className="text-sm italic text-slate-500">{`Cateroría: ${category}`}</p>
         </div>
