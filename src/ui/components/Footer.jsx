@@ -142,8 +142,8 @@ const Footer = () => {
                 <button
                   onClick={() => setMenuSpeedy(!menuSpeedy)}
                 >
-                  <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="" />
-                  <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="" />
+                  <img className={` ${menuSpeedy ? 'hidden' : ''}`} src={logoMas} width={15} alt="icon" />
+                  <img className={` ${!menuSpeedy ? 'hidden' : ''}`} src={logoX} width={20} alt="icon" />
                 </button>
               </div>
             </div>
@@ -151,8 +151,8 @@ const Footer = () => {
 
             <div className={` ${!menuSpeedy ? 'hidden md:block' : 'flex flex-col animate__animated animate__slideInDown animate__faster'}`}>
               <div className='lg:block'>
-                <Link to={''}>
-                  <p className="mt-3 mb-3 hover:border-b">Nosotros</p>
+                <Link to={'/blogs'}>
+                  <p className="mt-3 mb-3 hover:border-b">Blogs</p>
                 </Link>
 
                 <Link to={''}>
@@ -187,7 +187,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className='text-white border-t-2 p-1 text-justify '>Copyright © 2023 All Rights Reserved by <a href=''>AGENCIAPREZ</a></p>
+      <p className='text-white border-t-2 p-1 text-justify '>Copyright © 2023 All Rights Reserved by <a href='https://agenciaprez.com/'>AGENCIAPREZ</a></p>
 
     </div >
   )
