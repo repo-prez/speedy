@@ -32,7 +32,7 @@ const QAndA = () => {
     <div className='flex flex-col items-center w-full'>
 
       <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xl:w-f'>
-        <img className='mr-4 w-[4rem]' src={svgQuestion} alt="" />
+        <img className='mr-4 w-[4rem]' src={svgQuestion} alt="icon" />
         <p className='text-xl font-bold'>Preguntas Frecuentes</p>
       </div>
 

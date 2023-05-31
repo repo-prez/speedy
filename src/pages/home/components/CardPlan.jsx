@@ -29,7 +29,7 @@ const CardPlan = ({ planData }) => {
         <p className=' border-2 border-secondary bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
       </div>
 
-      {/* <img className='lg:w-4/5' src={iconDescuento} alt="" /> */}
+      {/* <img className='lg:w-4/5' src={iconDescuento} alt="icon " /> */}
 
 
       <p className='mt-2'>Por 4 meses, luego  <span className='font-bold'>{`$${price.toFixed(2)}/mes`}</span></p>

@@ -25,7 +25,7 @@ const HomeInternetPage = () => {
       <NavBar />
       {filterHome && <div className={`absolute z-40 w-full h-[2000px]  backdrop-opacity-20 backdrop-invert bg-indigo-400/20	border-t-2 border-secondary ease-in-out duration-300`} />}
 
-      <img className='object-cover h-[330px] w-auto ' src={bannerHomerInternet} alt="" />
+      <img className='object-cover h-[330px] w-auto ' src={bannerHomerInternet} alt="icons" />
 
       <div className='flex flex-col items-center'>
         <h1 className='text-4xl font-bold text-center pt-8 text-primary'>Internet Hogar Fibra Óptica</h1>
@@ -126,19 +126,19 @@ const HomeInternetPage = () => {
 
             <div className='flex flex-col items-center  px-8 py-4 md:w-2/3'>
               <p className='text-xl py-2 text-primary'>Cantidad de dispositivos</p>
-              <img className='w-[5rem] h-auto py-2' src={svgMultipleDevices} alt="" />
+              <img className='w-[5rem] h-auto py-2' src={svgMultipleDevices} alt="icons" />
               <p>La velocidad se comparte entre los dispositivos que tienes conectados simultáneamente. Además la cobertura de tu red se puede ver afectada mientras más dispositivos tengas conectados al mismo tiempo.</p>
             </div>
 
             <div className='flex flex-col items-center  px-8 py-4 md:w-2/3'>
               <p className='text-xl py-2 text-primary'>Interferencia y Obstáculos</p>
-              <img className='h-[3rem] w-auto py-2 md:my-4' src={svgInterference} alt="" />
+              <img className='h-[3rem] w-auto py-2 md:my-4' src={svgInterference} alt="icons" />
               <p>La señal de WIFI podrá verse obstaculizada por muros, vidrios, entre otras cosas. Además la cercanía con otros dispositivos electrónicos pueden causar interferencia en la señal.</p>
             </div>
 
             <div className='flex flex-col items-center  px-8 py-4 md:w-2/3'>
               <p className='text-xl py-2 text-primary'>Distancia entre dispositivos</p>
-              <img className='h-[3rem] w-auto py-2 md:my-4' src={svgDistance} alt="" />
+              <img className='h-[3rem] w-auto py-2 md:my-4' src={svgDistance} alt="icons" />
               <p>La señal se debilita a medida que te alejas del router, es por eso que la velocidad de navegación se ve afectada.</p>
             </div>
 

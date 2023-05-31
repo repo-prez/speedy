@@ -158,9 +158,9 @@ const NavBar = () => {
             <img className='w-1/2' src={speedyLogo} alt="logo" />
           </Link>
           {showBurgerMenu ?
-            <img className='' width={50} src={burgerMenuIcon} alt="" onClick={toggleBurgerMenu} />
+            <img className='' width={50} src={burgerMenuIcon} alt="icon" onClick={toggleBurgerMenu} />
             :
-            <img className='' width={50} src={closeMenuIcon} alt="" onClick={toggleBurgerMenu} />
+            <img className='' width={50} src={closeMenuIcon} alt="icon" onClick={toggleBurgerMenu} />
           }
 
         </div>

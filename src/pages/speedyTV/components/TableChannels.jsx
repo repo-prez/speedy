@@ -423,7 +423,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p className=''>Todos los canales</p>
         </button>
 
@@ -431,7 +431,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '1' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('1')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p>Películas</p>
         </button>
 
@@ -439,7 +439,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '2' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('2')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p>Deportes</p>
         </button>
 
@@ -447,7 +447,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '3' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('3')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p>Películas</p>
         </button>
 
@@ -455,7 +455,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '4' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('4')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p>Películas</p>
         </button>
 
@@ -463,7 +463,7 @@ const TableChannels = () => {
           className={`w-36 px-4 my-4 flex flex-col items-center border-b-4 ${category === '5' ? 'text-secondary font-bold border-secondary ease-in' : 'text-slate-600'}`}
           onClick={() => setCategory('5')}
         >
-          <img className='w-10 text-center' src={svgMovies} alt="" />
+          <img className='w-10 text-center' src={svgMovies} alt="icon" />
           <p>Películas</p>
         </button>
 

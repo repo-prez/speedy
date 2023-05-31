@@ -20,7 +20,7 @@ const Deco = () => {
             <p className="font-bold text-lg md:text-2xl mb-2">Si quieres una mejor experiencia o tu Smart TV no es compatible con la APP ¡Lleva tu Deco Speedy TV!</p>
             <p className="text-base">El Deco Speedy TV tiene una interfaz Android TV la cual permite que puedas ver el contenido de TV Lite y aplicaciones de Google Play.</p>
           </div>
-          <img className='w-4/6 lg:w-3/6' src="https://mundotek.com.ec/wp-content/uploads/2021/06/box_s_main.png" alt="" />
+          <img className='w-4/6 lg:w-3/6' src="https://mundotek.com.ec/wp-content/uploads/2021/06/box_s_main.png" alt="Imagen blog" />
         </div>
 
         <p className="text-center text-xl font-bold">Accede a tus Apps Favoritas</p>

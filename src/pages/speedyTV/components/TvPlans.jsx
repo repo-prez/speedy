@@ -11,10 +11,10 @@ const TvPlans = () => {
 
     <div className='w-full flex flex-col items-center mb-20 '>
 
-      <img className='object-cover h-[300px] w-auto  ' src={imgBannerTv} alt="" />
+      <img className='object-cover h-[300px] w-auto  ' src={imgBannerTv} alt="Banner speedy tv" />
 
       <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xl:w-f'>
-        <img className='mr-4' src={iconTv} alt="" />
+        <img className='mr-4' src={iconTv} alt="icon" />
         <p className='text-xl font-bold'>Nuestros planes de TV</p>
       </div>
 

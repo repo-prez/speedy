@@ -34,7 +34,7 @@ const CorpInternetPage = () => {
       <NavBar />
       {filterHome && <div className={`absolute z-40 w-full h-[2000px]  backdrop-opacity-20 backdrop-invert bg-indigo-400/20	border-t-2 border-secondary ease-in-out duration-300`} />}
 
-      <img className='object-cover h-[330px] w-auto ' src={banner} alt="" />
+      <img className='object-cover h-[330px] w-auto ' src={banner} alt="Banner internet corporativo" />
 
       <div className='px-8 flex flex-col items-center'>
 
