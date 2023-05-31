@@ -24,12 +24,12 @@ const CardPlan = ({ planData }) => {
         <p className='text-4xl font-bold text-blue-900'>{`$${pricePromo.toFixed(2)}/`}<span className='text-2xl font-bold text-secondary'>mes</span></p>
       </div>
 
-      {/* <div className='flex justify-center items-center cursor-pointer'>
+      <div className='flex justify-center items-center cursor-pointer'>
         <p className='border-2  border-secondary bg-secondary rounded-l-full px-1  text-white'>{`${promoDiscount}% dcto.`}</p>
         <p className=' border-2 border-secondary bg-white rounded-r-full px-1 font-bold'>Oferta Online</p>
-      </div> */}
+      </div>
 
-      <img className='lg:w-4/5' src={iconDescuento} alt="" />
+      {/* <img className='lg:w-4/5' src={iconDescuento} alt="" /> */}
 
 
       <p className='mt-2'>Por 4 meses, luego  <span className='font-bold'>{`$${price.toFixed(2)}/mes`}</span></p>
@@ -40,9 +40,14 @@ const CardPlan = ({ planData }) => {
         <p className='mx-2'> Router 4 antenas WI-FI 6</p>
       </div>
 
-      <button className='bg-blue-900 w-5/6 p-3 my-4  rounded-full font-bold text-white text-xl hover:bg-blue-950'>
+
+      <a
+        className='bg-blue-900 w-5/6 p-3 my-4  rounded-full font-bold text-center text-white text-xl hover:bg-blue-950'
+        href={`https://api.whatsapp.com/send/?phone=593994505050&text=Hola+me+interesa+en+plan+de+${speed}+Mb&type=phone_number&app_absent=0`}
+        target='_blank' rel="noreferrer"
+      >
         Más información
-      </button>
+      </a>
 
       <div className=' divide-y pl-4'>
 

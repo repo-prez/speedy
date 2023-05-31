@@ -19,7 +19,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
       <div className="flex flex-wrap justify-center items-center text-xs w-full lg:text-lg ">
 
         <button
-          className={`flex items-center justify-start md:justify-center h-20  border-slate-500 bg-white ${home ? 'font-bold text-text-menu' : ''} 
+          className={`flex items-center justify-start md:justify-center h-20  border-slate-500 bg-white ${home ? 'font-bold text-primary' : ''} 
           w-1/2 border-2 border-r-0 rounded-l-2xl 
           md:w-1/2
           lg:w-1/3`}
@@ -56,11 +56,11 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
         <button
-          className={`flex items-center justify-start md:justify-center  h-20 border-slate-500 bg-white ${dual ? 'font-bold text-text-menu' : ''}
+          className={`flex items-center justify-start md:justify-center  h-20 border-slate-500 bg-white ${business ? 'font-bold text-primary  ' : ''}
           w-1/2 border-2 rounded-r-2xl 
           md:w-1/2 
           lg:w-1/3 lg:border-t-2 lg:rounded-l-none lg:rounded-r-2xl`}
-          onClick={() => setActiveProduct({ home: false, business: false, tv: false, dual: true })}
+          onClick={() => setActiveProduct({ home: false, business: true, tv: false, dual: false })}
         >
 
           <img src={svgInternetCorporativo} width={50} alt="icon internet home" />
@@ -73,23 +73,23 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
       {/* Text plans */}
 
       <div className={`flex flex-col items-center  py-2 ${!home ? 'hidden' : 'flex'}`}>
-        <p className='text-center text-2xl md:text-3xl font-bold text-blue-950'>Internet Hogar Fibra Óptica</p>
-        <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
+        <p className='text-center text-2xl md:text-3xl font-bold text-primary'>Internet Hogar Fibra Óptica</p>
+        <p className='text-center md:text-xl px-4 py-0 text-primary'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
       <div className={`flex flex-col items-center  py-2 ${!business ? 'hidden' : 'flex'}`}>
-        <p className='text-center text-2xl md:text-3xl font-bold text-blue-950'>Internet Corporativo Fibra Óptica</p>
-        <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
+        <p className='text-center text-2xl md:text-3xl font-bold text-primary'>Internet Corporativo Fibra Óptica</p>
+        <p className='text-center md:text-xl px-4 py-0 text-primary'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
       <div className={`flex flex-col items-center  py-2 ${!tv ? 'hidden' : 'flex'}`}>
-        <p className='text-center text-2xl md:text-3xl font-bold text-blue-950'>Speedy TV</p>
-        <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
+        <p className='text-center text-2xl md:text-3xl font-bold text-primary'>Speedy TV</p>
+        <p className='text-center md:text-xl px-4 py-0 text-primary'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
       <div className={`flex flex-col items-center  py-2 ${!dual ? 'hidden' : 'flex'}`}>
-        <p className='text-center text-2xl md:text-3xl font-bold text-blue-950'>Dual Pack</p>
-        <p className='text-center md:text-xl px-4 py-0'>Mejor experiencia de internet con más velocidad y estabilidad</p>
+        <p className='text-center text-2xl md:text-3xl font-bold text-primary'>Dual Pack</p>
+        <p className='text-center md:text-xl px-4 py-0 text-primary'>Mejor experiencia de internet con más velocidad y estabilidad</p>
       </div>
 
 

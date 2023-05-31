@@ -10,6 +10,9 @@ import BlogsPage from './pages/blogs/BlogsPage'
 import BlogPage from './pages/blogs/BlogPage'
 
 import { dataBlogs } from './data/blog'
+import UnderConstruction from './pages/speedyTV/UnderConstruction'
+import HomeInternetPage from './pages/internet/HomeInternetPage'
+import CorpInternetPage from './pages/internet/CorpInternetPage'
 
 function App() {
 
@@ -19,9 +22,14 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/hogar' element={<HomeInternetPage />} />
+        <Route path='/corporativo' element={<CorpInternetPage />} />
         <Route path='/nosotros' element={<UsPage />} />
         <Route path='/cobertura' element={<ContactPage />} />
+
         {/* <Route path='/speedytv' element={<SpeedyTvPage />} /> */}
+
+        <Route path='/speedytv' element={<UnderConstruction />} />
         <Route path='/serviciocliente' element={<CustomerServicePage />} />
         <Route path='/blogs' element={<BlogsPage />} />
         <Route path='/blogs/1' element={<BlogPage key={dataBlogs[0].id} {...dataBlogs[0]} />} />

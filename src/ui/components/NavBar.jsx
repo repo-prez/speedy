@@ -59,8 +59,8 @@ const NavBar = () => {
             <img className=' w-[175px] md:w-[150px] absolute left-0 top-1  ' src={speedyLogo} alt="icon speedy" />
           </Link>
 
-          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
 
+          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
 
             <div className='py-4'>
               <Link
@@ -75,8 +75,7 @@ const NavBar = () => {
 
             <div className='py-4'>
               <Link
-                // to='/speedytv'
-                to='/'
+                to='/speedytv'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}
@@ -92,14 +91,10 @@ const NavBar = () => {
                 id='planes'
                 onMouseEnter={(e) => handleShowMenu(e)}
                 onMouseLeave={() => handleHideMenu()}
-                onClick={() => handleHideMenu()}
                 className="peer p-4  "
               >
                 <p className='rounded-xl cursor-pointer px-3 py-1 xl:py-[2px] hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
               </div>
-
-
-
 
 
               {/* HoverMenu */}
@@ -109,8 +104,8 @@ const NavBar = () => {
                 onClick={() => handleHideMenu()}
                 className="absolute z-50  w-1/6 rounded-b-lg border-t-4  border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
               >
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Internet Hogar</a>
-                <a className="px-5 py-3 hover:bg-gray-200" href="#">Internet Corporativo</a>
+                <Link className="px-5 py-3 hover:bg-gray-200" to='/hogar'>Internet Hogar</Link>
+                <Link className="px-5 py-3 hover:bg-gray-200" to='/corporativo'>Internet Corporativo</Link>
               </div>
             </div>
 
@@ -187,12 +182,6 @@ const NavBar = () => {
             to={'/nosotros'}
             className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
             <p>Nosotros</p>
-          </Link>
-
-          <Link
-            to={'/planes'}
-            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
-            <p>Inicio</p>
           </Link>
 
           <Link

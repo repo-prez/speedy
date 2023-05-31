@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const CardDirection = ({ ciudad, oficina, direccion, url }) => {
   return (
     <a
-      className='flex my-4 mx-2 xl:mx-6 w-full h-[7rem] md:w-[20rem] lg:w-3/12  rounded-xl bg-white  hover:shadow-[0.2px_0.2px_5px_0.2px] hover:shadow-secondary hover:scale-105 transform transition-all ease-in-out duration-300'
+      className='flex my-4 mx-2 xl:mx-6 w-full h-[7rem] md:w-[20rem] lg:w-[19rem]  rounded-xl bg-white  hover:shadow-[0.2px_0.2px_5px_0.2px] hover:shadow-secondary hover:scale-105 transform transition-all ease-in-out duration-300'
       href={url}
       target='_blank' rel="noreferrer"
     >

@@ -11,8 +11,6 @@ const Banner = ({ activeProduct }) => {
 
   const { home, business, tv, dual } = activeProduct
 
-
-
   return (
     <div className=' relative flex justify-center items-center '>
 
@@ -32,8 +30,11 @@ const Banner = ({ activeProduct }) => {
           <p className='text-lg text-center lg:font-bold lg:py-2'>La fibra que todos quieren</p>
         </div>
 
-
-        <div className='relative flex flex-col items-center rounded-xl mx-2 text-white backdrop-blur-sm md:backdrop-blur-0  bg-white/30 md:rounded-xl animate__animated animate-pulse animate__slower' >
+        <a
+          className='relative flex flex-col items-center rounded-xl mx-2 text-white backdrop-blur-sm md:backdrop-blur-0 bg-white/30 md:rounded-xl animate__animated animate-pulse animate__slower'
+          href={`https://api.whatsapp.com/send/?phone=593994505050&text=Hola+me+interesa+en+plan+de+200+Mb&type=phone_number&app_absent=0`}
+          target='_blank' rel="noreferrer"
+        >
 
           <div className='flex p-6'>
 
@@ -48,8 +49,8 @@ const Banner = ({ activeProduct }) => {
             </div>
           </div>
 
-          <p className='absolute -bottom-4 bg-secondary w-2/3 rounded-xl text-center'>Contrata ahora</p>
-        </div>
+          <button className='absolute -bottom-4 bg-secondary w-2/3 rounded-xl text-center'>Contrata ahora  </button>
+        </a>
 
 
       </div>

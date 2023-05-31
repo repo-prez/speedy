@@ -86,7 +86,7 @@ const ContactPage = () => {
 
         <p className='  p-2 m-4 text-center text-4xl border-t-2 border-b-2 border-secondary text-slate-700'>Oficinas</p>
 
-        <div className='flex flex-wrap justify-start lg:justify-center px-8 lg:mx-16'>
+        <div className='flex flex-wrap justify-start lg:justify-center px-8 '>
           {
             oficinas.map((oficina, index) => (
               <CardDirection key={index} {...oficina} />
@@ -116,13 +116,16 @@ const ContactPage = () => {
             </div>
 
 
-            <div className='flex items-start py-3'>
+            <a
+              href="https://walink.co/834871"
+              className='flex items-start py-3'
+            >
               <img className='mx-2' width={50} src={svgWhatsapp} alt="icon whatsapp" />
               <div>
                 <p className='font-bold text-lg'>WhatsApp</p>
-                <a className='text-slate-600' href="https://walink.co/834871">Escríbenos</a>
+                <p className='text-slate-600'>Escríbenos</p>
               </div>
-            </div>
+            </a>
 
             <div>
 

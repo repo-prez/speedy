@@ -41,16 +41,20 @@ const Footer = () => {
         <div className=''>
 
           {/* Logos */}
-          <div className='px-8 lg:px-0 py-4 flex flex-col md:flex-row md:justify-between lg:w-10/12 xl:w-8/12 '>
+          <div className='px-8 lg:px-0 pt-4 flex flex-col md:flex-row md:justify-between lg:w-10/12 xl:w-8/12 '>
+
             <img className='w-1/3 lg:w-[10rem]' src={logoSpeedy} alt="icon speddy" />
 
-            <div className='flex py-4 justify-between md:w-2/4 lg:w-1/4  '>
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoWhatsappWhite} alt="icon whatsapp" />
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoInstagram} alt="icon instagram" />
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoTwitter} alt="icon twitter" />
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoTiktok} alt="icon tiktok" />
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoFacebook} alt="icon facebook" />
-              <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoYoutube} alt="icon youtube" />
+            <div className='flex pt-4 justify-start md:w-2/4 lg:w-1/4  '>
+
+              <a href="https://www.facebook.com/speedyinternetec/" target='_blank' rel="noreferrer">
+                <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoFacebook} alt="icon facebook" />
+              </a>
+
+              <a href="https://www.instagram.com/internetspeedy/" target='_blank' rel="noreferrer">
+                <img className='w-[1.5rem] mr-2 lg:mr-4 hover:scale-125 transition' src={logoWhatsappWhite} alt="icon whatsapp" />
+              </a>
+
             </div>
           </div>
 
@@ -111,11 +115,11 @@ const Footer = () => {
             <p>Servicio multibanda</p>
           </div>
 
-          <div className='my-6 mx-2'>
-            <p className='font-bold border-b-[1px] mb-2'>Sobre Speedy</p>
+          <div className='flex flex-col my-6 mx-2'>
+            <p className='font-bold border-b-[1px] mb-2'>Links de interés</p>
 
-            <a href="/blogs" target='_top'>Blogs</a>
-            <p>Trabaja con nosotros</p>
+            <Link to='/blogs'>Blogs</Link>
+            <Link to='/serviciocliente'>Preguntas Frecuentes</Link>
           </div>
 
           <div className='mt-6 mx-2 pb-4'>
