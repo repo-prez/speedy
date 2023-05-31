@@ -15,11 +15,16 @@ import bannerHomerInternet from '../../assets/img/banners/bannerInternetHome.web
 import CardPlan from '../home/components/CardPlan'
 
 import { homeInternet } from '../../data/internetHomePrices'
+import { useContext } from 'react'
+import { AppContext } from '../../context/AppContext'
 
 const HomeInternetPage = () => {
+  const { filterHome } = useContext(AppContext)
   return (
     <>
       <NavBar />
+      {filterHome && <div className={`absolute z-40 w-full h-[2000px]  backdrop-opacity-20 backdrop-invert bg-indigo-400/20	border-t-2 border-secondary ease-in-out duration-300`} />}
+
       <img className='object-cover h-[330px] w-auto ' src={bannerHomerInternet} alt="" />
 
       <div className='flex flex-col items-center'>

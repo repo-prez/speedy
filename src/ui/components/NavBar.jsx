@@ -150,10 +150,6 @@ const NavBar = () => {
 
 
 
-
-
-
-
       {/* Burger Menu */}
       <div className='flex flex-col md:hidden '>
 
@@ -179,15 +175,33 @@ const NavBar = () => {
           </Link>
 
           <Link
-            to={'/nosotros'}
-            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
-            <p>Nosotros</p>
-          </Link>
-
-          <Link
             to={'/speedytv'}
             className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
             <p>SpeedyTv</p>
+          </Link>
+
+          <Link
+            to={'/hogar'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Internet Hogar</p>
+          </Link>
+
+          <Link
+            to={'/corporativo'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Internet Corporativo</p>
+          </Link>
+
+          <Link
+            to={'/cobertura'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Cobertura</p>
+          </Link>
+
+          <Link
+            to={'/blogs'}
+            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
+            <p>Blogs</p>
           </Link>
 
           <Link
@@ -196,30 +210,8 @@ const NavBar = () => {
             <p>Servicio al cliente</p>
           </Link>
 
-
-          <Link
-            to={'/pagos'}
-            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
-            <p>Pagos</p>
-          </Link>
-
-          <Link
-            to={'/sucursales'}
-            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
-            <p>Sucursales</p>
-          </Link>
-
-          <Link
-            to={'/contacto'}
-            className=' cursor-pointer hover:bg-slate-700 hover:text-white hover:font-bold w-full p-2'>
-            <p>Contacto</p>
-          </Link>
-
         </div>
       </div>
-
-
-
 
 
     </div>

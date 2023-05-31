@@ -24,7 +24,6 @@ import CarouselBrand from './components/CarouselBrands'
 import { AppContext } from '../../context/AppContext'
 
 
-
 const CorpInternetPage = () => {
 
   const { filterHome } = useContext(AppContext)
