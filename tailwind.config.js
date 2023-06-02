@@ -12,6 +12,13 @@ export default {
       xl: '1640px'
     },
     extend: {
+
+      // animations
+      animation: {
+        spin: 'spin 0.1s linear ',
+        spin2: 'spin2 0.1s linear ',
+      },
+
       keyframes: {
         spin: {
           '0%': { transform: 'rotate(0deg)' },
@@ -22,10 +29,8 @@ export default {
           '100%': { transform: 'rotate(360deg)' },
         }
       },
-      animation: {
-        spin: 'spin 0.1s linear ',
-        spin2: 'spin2 0.1s linear ',
-      },
+
+
       fontFamily: {
         'sans': ['Barlow', 'sans-serif'],
         'serif': ['Barlow ', 'serif'],

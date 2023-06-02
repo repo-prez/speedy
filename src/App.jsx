@@ -24,10 +24,10 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/hogar' element={<HomeInternetPage />} />
         <Route path='/corporativo' element={<CorpInternetPage />} />
-        <Route path='/nosotros' element={<UsPage />} />
         <Route path='/cobertura' element={<ContactPage />} />
 
         {/* <Route path='/speedytv' element={<SpeedyTvPage />} /> */}
+        {/* <Route path='/nosotros' element={<UsPage />} /> */}
 
         <Route path='/speedytv' element={<UnderConstruction />} />
         <Route path='/serviciocliente' element={<CustomerServicePage />} />

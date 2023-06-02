@@ -31,8 +31,8 @@ const Products = () => {
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
           <CardPlan planData={homeInternet.plan4} />
-          <CardPlan planData={homeInternet.plan5} />
-          <CardPlan planData={homeInternet.plan6} />
+          {/* <CardPlan planData={homeInternet.plan5} /> */}
+          {/* <CardPlan planData={homeInternet.plan6} /> */}
         </div>
 
         <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-full  pl-8 lg:pl-0  ${!activeProduct.business ? 'hidden' : 'flex '}`}>

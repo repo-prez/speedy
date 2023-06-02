@@ -6,6 +6,7 @@ import { dataBlogs } from '../../data/blog'
 import BlogCard2 from "./components/BlogCard2"
 import { useContext, useEffect, useState } from "react"
 import { AppContext } from "../../context/AppContext"
+import { Helmet } from "react-helmet"
 
 
 const BlogPage = ({ id, date, title, category, hero, description, img, content }) => {
@@ -19,6 +20,17 @@ const BlogPage = ({ id, date, title, category, hero, description, img, content }
   return (
     <>
       <NavBar />
+
+      <Helmet >
+        <html lang="es" />
+        <title>Speedy Blogs</title>
+        <meta title='Speedy | Blog' />
+        <meta name="description" content="Speedy, la empresa proveedora de Internet líder en el centro del país." />
+        <meta name={`speedy ${title}`} />
+        <meta name="author" content="Prez by Célimo Constante" />
+      </Helmet>
+
+
       {filterHome && <div className={`absolute z-40 w-full h-[2000px]  backdrop-opacity-20 backdrop-invert bg-indigo-400/20	border-t-2 border-secondary ease-in-out duration-300`}> </div>}
 
       <div className="flex flex-col   items-center justify-center">

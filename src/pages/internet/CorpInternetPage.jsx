@@ -22,6 +22,7 @@ import brand14 from '../../assets/img/brands/ambato-logos-14.png'
 
 import CarouselBrand from './components/CarouselBrands'
 import { AppContext } from '../../context/AppContext'
+import { Helmet } from 'react-helmet'
 
 
 const CorpInternetPage = () => {
@@ -32,6 +33,16 @@ const CorpInternetPage = () => {
   return (
     <>
       <NavBar />
+
+
+      <Helmet >
+        <html lang="es" />
+        <title>Internet Corporativo</title>
+        <meta title='Speedy | Internet sin límites' />
+        <meta name="description" content="Speedy, la empresa proveedora de Internet líder en el centro del país." />
+        <meta name="author" content="Prez by Célimo Constante" />
+      </Helmet>
+
       {filterHome && <div className={`absolute z-40 w-full h-[2000px]  backdrop-opacity-20 backdrop-invert bg-indigo-400/20	border-t-2 border-secondary ease-in-out duration-300`} />}
 
       <img className='object-cover h-[330px] w-auto ' src={banner} alt="Banner internet corporativo" />
