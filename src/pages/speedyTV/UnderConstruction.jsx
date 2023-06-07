@@ -27,7 +27,7 @@ const UnderConstruction = () => {
 
       <div className='flex justify-center'>
 
-        <div className='flex flex-col lg:flex-row-reverse lg:items-center  lg:w-10/12 xl:w-8/12'>
+        <div className='flex flex-col lg:flex-row-reverse lg:items-center  lg:w-10/12 xxl:w-8/12'>
           <img className='my-8 animate-pulse px-8 lg:w-2/3' src={underConstruction} alt="Image Designed by Freepik" />
 
           <div className='flex-col justify-center items-center w-full lg:w-1/3 py-10 text-primary'>

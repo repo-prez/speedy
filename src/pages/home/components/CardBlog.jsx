@@ -6,42 +6,29 @@ const CardBlog = ({ id, img, date, title, hero, description }) => {
 
   return (
 
-    <Link to={`/blogs/${id}`} target="_blank"
-      className='flex   relative ml-8 lg:ml-0 lg:mr-8 h-96  '
-      style={{
-        backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center',
-      }}
-    >
+    <Link to={`/blogs/${id}`} target="_blank">
+      <div
+        className={`
+      w-full md:w-[20rem] rounded-xl my-4 md:mx-2 lg:mx-0 bg-background-light
+      ${id === 1 || id === 2 ? 'lg:w-[25rem] xl:w-[37rem] xxl:w-[38rem] ' : 'lg:w-[16.3rem] xl:w-[23rem] xxl:w-[25rem] '}
+      `}
+      >
 
+        <img className="rounded-t-xl w-full h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[16rem] object-cover" src={img} alt={'img' + title} />
 
-      <div className=' absolute top-0 flex flex-col items-center bg-secondary text-white w-16'>
-        <p className='font-bold text-4xl'>{day}</p>
-        <p className=''>{month}</p>
-        <p className=''>{year}</p>
-      </div>
+        <div className="bg-gradient-to-r from-secondary to-text via-primary-dark h-[0.3rem]" />
 
-      <p className='w-80 invisible'>p</p>
+        <div className="mx-4 py-2 h-[7rem] ">
+          <h3 className="text-text text-2xl lg:text-lg xl:text-2xl font-bold">{title}</h3>
+          <p className="text-sm lg:text-base">{description}</p>
+        </div>
 
-      <div className={`absolute bottom-2 h-[10rem] p-2 mx-2 backdrop-blur-sm text-white  overflow-hidden lg:mr-4 xl:w-2/3 rounded-lg back bg-white/40 `}>
-        <p className='font-bold'>{title}</p>
-        <p className=' text-lg'>{hero}</p>
       </div>
 
     </Link >
   )
 }
 
-CardBlog.defaultProps = {
-  img: 'https://images.unsplash.com/photo-1622837137190-4b7b0b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-  date: {
-    day: '01',
-    month: 'Ene',
-    year: '2021'
-  },
-  title: 'WiFi-6',
-  hero: 'La nueva era de la conectividad inalámbrica con velocidades más rápidas y mayor capacidad de dispositivos.',
-  description: 'La nueva era de la conectividad inalámbrica con velocidades más rápidas y mayor capacidad de dispositivos.',
 
-}
 
 export default CardBlog

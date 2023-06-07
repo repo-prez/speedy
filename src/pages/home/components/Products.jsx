@@ -16,17 +16,17 @@ const Products = () => {
   })
 
   return (
-    <div className='relative w-full xl:flex flex-col items-center bg-c  '>
+    <div className='relative w-full xxl:flex flex-col items-center bg-c  '>
 
       <Banner activeProduct={activeProduct} />
 
 
 
-      <div className="relative z-20  md:-top-10 flex flex-col lg:items-center  xl:w-8/12 ">
+      <div className="relative z-20  mt-5 flex flex-col lg:items-center  xxl:w-8/12 ">
 
-        <MenuPlans className='' activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
+        <MenuPlans activeProduct={activeProduct} setActiveProduct={setActiveProduct} />
 
-        <div className={`flex rounded-xl  lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-full  pl-8 lg:pl-0 ${!activeProduct.home ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl  lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xxl:w-full  pl-8 lg:pl-0 ${!activeProduct.home ? 'hidden' : 'flex '}`}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
@@ -35,21 +35,21 @@ const Products = () => {
           {/* <CardPlan planData={homeInternet.plan6} /> */}
         </div>
 
-        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-full  pl-8 lg:pl-0  ${!activeProduct.business ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xxl:w-full  pl-8 lg:pl-0  ${!activeProduct.business ? 'hidden' : 'flex '}`}>
           <CardPlan planData={businessInternet.plan1} />
           <CardPlan planData={businessInternet.plan2} />
           <CardPlan planData={businessInternet.plan3} />
           <CardPlan planData={businessInternet.plan4} />
         </div>
 
-        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-full pl-8 lg:pl-0  ${!activeProduct.tv ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xxl:w-full pl-8 lg:pl-0  ${!activeProduct.tv ? 'hidden' : 'flex '}`}>
           <CardPlan planData={tvPlans.plan1} />
           <CardPlan planData={tvPlans.plan2} />
           <CardPlan planData={tvPlans.plan3} />
           <CardPlan planData={tvPlans.plan4} />
         </div>
 
-        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-full pl-8 lg:pl-0  ${!activeProduct.dual ? 'hidden' : 'flex '}`}>
+        <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xxl:w-full pl-8 lg:pl-0  ${!activeProduct.dual ? 'hidden' : 'flex '}`}>
           <CardPlan planData={dualPlans.plan1} />
           <CardPlan planData={dualPlans.plan2} />
           <CardPlan planData={dualPlans.plan3} />

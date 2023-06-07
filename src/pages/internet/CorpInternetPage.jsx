@@ -50,7 +50,7 @@ const CorpInternetPage = () => {
       <div className='px-8 flex flex-col items-center'>
 
         {/* Hero */}
-        <div className='my-8 lg:flex lg:items-center lg:w-10/12 xl:w-8/12'>
+        <div className='my-8 lg:flex lg:items-center lg:w-10/12 xxl:w-8/12'>
 
           <div className='lg:w-1/2'>
             <h1 className='text-4xl text-primary'>Internet de fibra óptica dedicado y seguro para tu Empresa.</h1>
@@ -63,7 +63,7 @@ const CorpInternetPage = () => {
 
 
         {/* Brands */}
-        <div className='flex-col items-center lg:flex lg:w-10/12 xl:w-8/12'>
+        <div className='flex-col items-center lg:flex lg:w-10/12 xxl:w-8/12'>
           <h1 className='text-4xl text-primary'>Empresas que confían en Speedy Internet.</h1>
           <CarouselBrand images={images} />
 

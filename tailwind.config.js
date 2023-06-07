@@ -9,7 +9,8 @@ export default {
       sm: '320px',
       md: '768px',
       lg: '1024px',
-      xl: '1640px'
+      xl: '1440px',
+      xxl: '1640px'
     },
     extend: {
 
@@ -35,13 +36,16 @@ export default {
         'sans': ['Barlow', 'sans-serif'],
         'serif': ['Barlow ', 'serif'],
         'mono': ['Barlow ', 'monospace'],
+        'bolt': ['bolt', 'sans-serif'],
       },
       colors: {
-        primary: '#052C8B',
-        'primary-dark': '#041337',
+        primary: '#005AD4',
+        'primary-dark': '#0E378A',
+        'primary-light': '#00B1FC',
         secondary: '#CC0076',
+        'background-light': '#F4F4F4',
         highlight: '#42D9A1',
-        'text-menu': '#0468B9',
+        text: '#0E378A',
         background: '#474747',
         degraded: '#5C0005'
 

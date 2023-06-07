@@ -40,7 +40,7 @@ const ModalHome = ({ isOpen, setModal }) => {
     >
       <div className='flex flex-col items-center mt-[10rem] sm:mt-[5rem] lg:mt-[1rem] '>
 
-        <div className='w-screen md:w-5/6 lg:w-1/2 lg:p-10 xl:p-10'>
+        <div className='w-screen md:w-5/6 lg:w-1/2 lg:p-10 xxl:p-10'>
 
           <button
             className='w-full relative'

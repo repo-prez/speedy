@@ -1,3 +1,11 @@
+import imgBlog1 from '../assets/img/blogs/blog1.webp'
+import imgBlog2 from '../assets/img/blogs/blog2.webp'
+import imgBlog3 from '../assets/img/blogs/blog3.webp'
+import imgBlog4 from '../assets/img/blogs/blog4.webp'
+import imgBlog5 from '../assets/img/blogs/blog5.webp'
+
+
+
 export const dataBlogs = [
   {
     id: 1,
@@ -6,7 +14,7 @@ export const dataBlogs = [
     category: 'internet',
     hero: 'Wi-Fi 6: La Revolución de la Conectividad Inalámbrica',
     description: 'La nueva era de la conectividad inalámbrica con velocidades más rápidas y mayor capacidad de dispositivos.',
-    img: 'https://www.zoostock.com/wp-content/uploads/2021/04/WiFi6E.jpg',
+    img: imgBlog1,
     content: `
 En la era digital en la que vivimos, la conectividad inalámbrica se ha convertido en una necesidad primordial. Desde transmitir contenido en alta definición hasta la interconexión de dispositivos inteligentes en nuestros hogares, el Wi-Fi juega un papel crucial en nuestra vida cotidiana. Con la llegada del Wi-Fi 6, una nueva generación de tecnología inalámbrica, se abren las puertas a una experiencia de conectividad más rápida y confiable.
 
@@ -27,7 +35,7 @@ En conclusión, el Wi-Fi 6 representa una revolución en la conectividad inalám
     category: 'internet',
     hero: 'Conexión ultrarrápida y confiable para una experiencia de Internet sin precedentes.',
     description: 'El Futuro de la Conectividad de Alta Velocidad',
-    img: 'https://empresas.blogthinkbig.com/wp-content/uploads/2020/11/Fibra-optica-mas-de-la-tecnologia-que-conecta-al-mundo.jpg?fit=1200%2C675',
+    img: imgBlog2,
     content: `
 En la era digital en la que vivimos, la velocidad y la confiabilidad de nuestra conexión a Internet son aspectos cruciales. La demanda de mayor ancho de banda para satisfacer nuestras necesidades de transmisión de datos, streaming de contenido en alta definición y comunicación en línea ha llevado a la aparición de tecnologías más avanzadas. Una de ellas es la fibra óptica, una innovadora solución que ofrece una conexión de alta velocidad y estabilidad sin precedentes. En este artículo, exploraremos qué es la fibra óptica y por qué es el futuro de la conectividad.
 
@@ -51,7 +59,7 @@ En resumen, la fibra óptica representa el futuro de la conectividad de alta vel
     date: { day: '12', month: 'Feb', year: '2021' },
     hero: 'Mejora tu conexión de Internet en casa y disfruta de velocidades rápidas y una experiencia en línea fluida',
     description: 'Mejora tu Conexión de Internet en Casa: Consejos Prácticos',
-    img: 'https://www.redeszone.net/app/uploads-redeszone.net/2022/07/aparatos-mejor-wifi.jpg',
+    img: imgBlog3,
     content: `
 La conexión a Internet se ha convertido en una parte fundamental de nuestras vidas, pero a veces podemos enfrentarnos a problemas de velocidad y estabilidad. Si quieres mejorar tu conexión de Internet en el hogar, aquí te ofrecemos algunos consejos prácticos que puedes seguir.
 
@@ -79,7 +87,7 @@ Sigue estos consejos prácticos y podrás mejorar significativamente tu conexió
     date: { day: '12', month: 'Feb', year: '2021' },
     hero: 'Cómo salvaguardar tu información personal en el mundo digital.',
     description: 'Protege tu Información Personal en la Red: Consejos Importantes',
-    img: 'https://media.minutouno.com/p/da8f500a5e740a17d6f2d06f766b4074/adjuntos/150/imagenes/025/866/0025866177/610x0/smart/hacker.png',
+    img: imgBlog4,
     content: `
 En la era digital en la que vivimos, la protección de nuestra información personal en línea se ha convertido en una prioridad esencial. Con el aumento de amenazas como el robo de identidad, el phishing y el malware, es fundamental tomar medidas para salvaguardar nuestros datos. A continuación, te ofrecemos algunos consejos importantes que puedes seguir para proteger tu información personal en la red.
 
@@ -105,7 +113,7 @@ Por último, instala y mantén actualizado un programa antivirus confiable en tu
     date: { day: '12', month: 'Feb', year: '2021' },
     hero: 'optimiza tu productividad y mantén la colaboración en línea.',
     description: 'La Importancia de una Conexión a Internet Confiable en el Teletrabajo',
-    img: 'https://www.iphe.gob.pa/content/post/principal/pri_b08dd16716360d67e5685022914386df-2020-06-18-10-57-15.jpeg',
+    img: imgBlog5,
     content: `
 En el mundo laboral actual, el teletrabajo se ha convertido en una práctica cada vez más común. Para aquellos que trabajan desde casa, contar con una conexión a Internet confiable y de calidad es fundamental para garantizar la productividad y el éxito en sus labores diarias. En este blog, exploraremos la importancia de una conexión a Internet confiable en el teletrabajo y proporcionaremos consejos prácticos para maximizar su eficiencia.
 

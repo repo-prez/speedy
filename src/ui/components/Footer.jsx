@@ -36,12 +36,12 @@ const Footer = () => {
     <div className='lg:flex lg:justify-center items-center bg-gradient-to-r from-primary to-primary-dark w-full ' >
 
 
-      <div className='flex flex-col lg:flex-row lg:justify-between lg:w-10/12 xl:w-8/12'>
+      <div className='flex flex-col lg:flex-row lg:justify-between lg:w-10/12 xxl:w-8/12'>
 
         <div className=''>
 
           {/* Logos */}
-          <div className='px-8 lg:px-0 pt-4 flex flex-col md:flex-row md:justify-between lg:w-10/12 xl:w-8/12 '>
+          <div className='px-8 lg:px-0 pt-4 flex flex-col md:flex-row md:justify-between lg:w-10/12 xxl:w-8/12 '>
 
             <img className='w-1/3 lg:w-[10rem]' src={logoSpeedy} alt="icon speddy" />
 
@@ -108,7 +108,8 @@ const Footer = () => {
         <div className='md:flex md:justify-between md:items-start lg:mt-20 px-8 text-white '>
 
           <div className='my-6  mx-2'>
-            <p className='font-bold border-b-[1px] mb-2'>Te ayudamos</p>
+            <p className='font-bold '>Te ayudamos</p>
+            <div className="bg-gradient-to-r from-secondary to-primary-light  h-[0.1rem]" />
 
             <p>Centro de ayuda</p>
             <p>Reclamos</p>
@@ -116,14 +117,17 @@ const Footer = () => {
           </div>
 
           <div className='flex flex-col my-6 mx-2'>
-            <p className='font-bold border-b-[1px] mb-2'>Links de interés</p>
-
+            <p className='font-bold '>Links de interés</p>
+            <div className="bg-gradient-to-r from-secondary to-primary-light  h-[0.1rem]" />
             <Link to='/blogs'>Blogs</Link>
             <Link to='/serviciocliente'>Preguntas Frecuentes</Link>
           </div>
 
           <div className='mt-6 mx-2 pb-4'>
-            <p className='font-bold border-b-[1px] mb-2'>Términos Legales</p>
+            <p className='font-bold'>Términos Legales</p>
+            <div className="bg-gradient-to-r from-secondary to-primary-light  h-[0.1rem]" />
+
+
 
             <p>Arcotel</p>
           </div>

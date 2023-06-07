@@ -1,6 +1,6 @@
 const homeInternet = {
   plan1: {
-    title: 'Fibra Hogar 100 Megas',
+    title: 'Fibra Hogar',
     speed: 100,
     promoDiscount: 20,
     pricePromo: 20,
@@ -8,7 +8,7 @@ const homeInternet = {
     extensor: false,
   },
   plan2: {
-    title: 'Fibra Hogar 150 Megas',
+    title: 'Fibra Hogar',
     speed: 150,
     promoDiscount: 20,
     pricePromo: 22.40,
@@ -16,7 +16,7 @@ const homeInternet = {
     extensor: false,
   },
   plan3: {
-    title: 'Fibra Hogar 200 Megas',
+    title: 'Fibra Hogar',
     speed: 200,
     promoDiscount: 25,
     pricePromo: 22.50,
@@ -24,7 +24,7 @@ const homeInternet = {
     extensor: true,
   },
   plan4: {
-    title: 'Fibra Hogar 250 Megas',
+    title: 'Fibra Hogar',
     speed: 250,
     promoDiscount: 25,
     pricePromo: 25.20,
@@ -32,7 +32,7 @@ const homeInternet = {
     extensor: false,
   },
   plan5: {
-    title: 'Fibra Hogar 275 Megas',
+    title: 'Fibra Hogar',
     speed: 275,
     promoDiscount: 25,
     pricePromo: 26.25,
@@ -40,7 +40,7 @@ const homeInternet = {
     extensor: false,
   },
   plan6: {
-    title: 'Fibra Hogar 350 Megas',
+    title: 'Fibra Hogar',
     speed: 350,
     promoDiscount: 25,
     pricePromo: 31.50,
@@ -52,7 +52,7 @@ const homeInternet = {
 const businessInternet = {
 
   plan1: {
-    title: 'Fibra Corporativa 150 Megas',
+    title: 'Fibra Corporativa',
     speed: 160,
     promoDiscount: 20,
     pricePromo: 22.40,
@@ -60,7 +60,7 @@ const businessInternet = {
     extensor: false,
   },
   plan2: {
-    title: 'Fibra Corporativa 150 Megas',
+    title: 'Fibra Corporativa',
     speed: 160,
     promoDiscount: 20,
     pricePromo: 22.40,
@@ -68,7 +68,7 @@ const businessInternet = {
     extensor: false,
   },
   plan3: {
-    title: 'Fibra Corporativa 150 Megas',
+    title: 'Fibra Corporativa',
     speed: 160,
     promoDiscount: 20,
     pricePromo: 22.40,
@@ -76,7 +76,7 @@ const businessInternet = {
     extensor: false,
   },
   plan4: {
-    title: 'Fibra Corporativa 150 Megas',
+    title: 'Fibra Corporativa',
     speed: 160,
     promoDiscount: 20,
     pricePromo: 22.40,

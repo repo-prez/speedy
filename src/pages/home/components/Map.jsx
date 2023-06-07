@@ -10,39 +10,40 @@ const Map = () => {
     <div className='flex justify-center  px-8 lg:px-0 w-full'>
 
 
-      <div className='flex flex-col items-center lg:flex-row lg:w-10/12 xl:w-8/12'>
+      <div className='flex  flex-col items-center lg:flex-row lg:w-10/12 xxl:w-8/12'>
+
+        {/* Map */}
+        <img className='md:w-2/3 lg:w-1/2' src={bannerEcuador} alt="cobertura ecuador" />
+
         {/* Data */}
         <div className=''>
           <div className='flex flex-col  my-4'>
             <div className='flex  my-2 '>
               <img src={iconWireless} width={30} alt="iconWireLess" />
-              <p className='mx-2 text-lg font-bold '>¿Qué es Internet Hogar Fibra WiFi Total?</p>
+              <p className='mx-2 text-lg font-bold '>Explora un mundo de posibilidades con nuestra cobertura de internet</p>
             </div>
-            <p className=' text-justify'>Internet WiFi Total es la nueva experiencia que Speedy y su servicio de Fibra Óptica tiene para ti. Entregamos velocidad y una mejor experiencia de internet para tu hogar.</p>
+            <p className=' text-justify'>Nuestra cobertura de internet llega a todos los rincones, conectando a personas de todo el mundo y brindando acceso confiable a información, servicios y oportunidades en línea. ¡Descubre un mundo de posibilidades con nuestro Speedy internet!</p>
           </div>
 
 
           <div className='flex flex-col my-4'>
             <div className='flex my-2 '>
               <img src={iconUser} width={35} alt="iconWireLess" />
-              <p className='mx-2 text-lg font-bold '>¿En qué consiste la experiencia de Internet Hogar Fibra WiFi Total?</p>
+              <p className='mx-2 text-lg font-bold '>Llevando nuestra cobertura de internet a cada rincón</p>
             </div>
-            <p className=' text-justify'>Nuestro internet hogar llega a ti a través de la tecnología Fibra Óptica. Esto asegura calidad y una mejor experiencia de conectividad con nuestros equipos, Router principal y/o Extensores WiFi.</p>
+            <p className=' text-justify'>Enfocados en cerrar la brecha digital, llevamos nuestra cobertura de internet a regiones y comunidades que han sido marginadas, ofreciendo una conexión confiable y asequible. Únete a nosotros y sé parte del cambio hacia una sociedad digitalmente inclusiva.</p>
           </div>
 
 
           <div className='flex flex-col my-4 '>
             <div className='flex my-2 '>
               <img src={iconWifi} width={35} alt="iconWireLess" />
-              <p className='mx-2 text-lg font-bold '>¿Qué es Router Principal?</p>
+              <p className='mx-2 text-lg font-bold '>Ampliando la cobertura de internet para un futuro digital equitativo</p>
             </div>
-            <p className=' text-justify'>El router principal es el equipo que permite emitir una señal WiFi. Cuenta con una tecnología Dual Band (2.4 GHz y 5 GHz) que te permitirá alcanzar altas velocidades y te brindará una gran experiencia de internet para tu hogar.</p>
+            <p className=' text-justify'>Con nuestro servicio de internet, estamos transformando vidas al ampliar la cobertura en áreas rurales, urbanas desfavorecidas. Nuestra misión es asegurar que nadie se quede atrás en la era digital. ¡Descubre la potencia de la conectividad con Speedy internet!</p>
           </div>
         </div>
 
-
-        {/* Map */}
-        <img className='md:w-2/3 lg:w-1/2' src={bannerEcuador} alt="cobertura ecuador" />
       </div>
 
 

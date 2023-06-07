@@ -42,20 +42,20 @@ const Form = () => {
 
   return (
 
-    <div className='flex justify-center px-8  md:px-0  xl:w-full'>
+    <div className='flex justify-center px-8  md:px-0  '>
 
 
 
-      <div className="flex flex-col items-center justify-center lg:flex-row  lg:justify-between  rounded-lg shadow-xl bg-white md:m-8 lg:m-0  lg:w-10/12  xl:w-8/12 ">
+      <div className="flex flex-col items-center justify-center lg:flex-row  lg:justify-between  rounded-3xl shadow-xl bg-background-light md:m-8 lg:m-0  lg:w-10/12  xxl:w-8/12 ">
 
 
-        <img className="rounded-lg object-cover  md:w-auto lg:h-full lg:w-6/12 xl:w-6/12" src={bannerForm} alt="imagen formulario" />
+        <img className="rounded-lg object-cover md:w-[43.4rem] md:h-96 md:object-[0px,-6rem] lg:object-center lg:h-full lg:w-6/12 xxl:w-6/12" src={bannerForm} alt="imagen formulario" />
 
 
-        <div className='flex flex-col items-center justify-center px-4  lg:p-4 lg:mr-10 w-full h-full lg:w-5/12  xl:mx-12 '>
+        <div className='flex flex-col items-center justify-center px-4  lg:p-4 lg:mr-10 w-full h-full lg:w-5/12  xxl:mx-12 '>
           <div className='flex flex-col items-center  lg:mb-4'>
-            <p className='text-2xl xl:text-3xl  text-blue-800 font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
-            <p className='text-justify xl:text-xl'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
+            <p className='text-2xl xxl:text-3xl  text-text font-bold'>¿Llega Fibra WIFI Total a tu casa?  </p>
+            <p className='text-justify xxl:text-xl'>Ingresa tu dirección para saber si este servicio esta disponible en tu zona.</p>
           </div>
           <form onSubmit={handleSubmit} className="flex flex-col w-full lg:">
 

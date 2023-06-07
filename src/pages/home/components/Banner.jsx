@@ -14,20 +14,20 @@ const Banner = ({ activeProduct }) => {
   return (
     <div className=' relative flex justify-center items-center '>
 
-      {home && <img className='object-cover h-[330px] w-auto ' src={bannerInternetHome} alt="banner internet home" />}
+      {home && <img className='object-cover h-[260px] w-full ' src={bannerInternetHome} alt="banner internet home" />}
 
-      {business && <img className='object-cover h-[330px] w-full ' src={bannerCorporativo} alt="banner internet corporativo" />}
+      {business && <img className='object-cover h-[260px] w-full ' src={bannerCorporativo} alt="banner internet corporativo" />}
 
-      {tv && <img className='object-cover h-[330px] w-full ' src={bannerTv} alt="banner tv" />}
+      {/* {tv && <img className='object-cover h-[330px] w-full ' src={bannerTv} alt="banner tv" />} */}
 
-      {dual && <img className='object-cover h-[330px] w-full ' src={bannerDual} alt="banner dual" />}
+      {/* {dual && <img className='object-cover h-[330px] w-full ' src={bannerDual} alt="banner dual" />} */}
 
 
       <div className='absolute z-10 my-4 md:my-12 w-full flex flex-col items-end justify-around md:flex-row md:items-center md:justify-around h-4/6'>
 
-        <div className=' text-white p-2'>
-          <p className='text-2xl text-center lg:text-4xl font-extrabold'>Speedy Fibra</p>
-          <p className='text-lg text-center lg:font-bold lg:py-2'>La fibra que todos quieren</p>
+        <div className=' text-white p-2 font-bolt'>
+          <p className='text-2xl text-center lg:text-4xl font-bold '>Speedy Fibra</p>
+          <p className='text-lg text-center lg:font-bold lg:py-2 font-thin'>La fibra que todos quieren</p>
         </div>
 
         <a

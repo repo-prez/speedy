@@ -1,5 +1,7 @@
 import { useContext, useState } from 'react'
 
+import svgSpeedyBlue from '../../assets/icons/svgSpeedyBlue.svg'
+import svgSpeedyWhite from '../../assets/icons/svgSpeedyWhite.svg'
 
 import speedyLogo from '../../assets/img/logoSpeedy.svg'
 import burgerMenuIcon from '../../assets/icons/svgBurgerMenu.svg'
@@ -29,11 +31,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className={`relative text-white   xl:text-xl `}>
+    <div className={`relative  xxl:text-xl `}>
 
 
       {/* Normal Menu */}
-      <div className='px-4 bg-gradient-to-r from-primary to-primary-dark hidden md:flex flex-col '>
+      <div className='px-4 bg-gradient-to-r from-primary to-primary-dark hidden md:flex flex-col text-white'>
 
 
         {/* Header */}
@@ -56,11 +58,11 @@ const NavBar = () => {
 
         <div className=' relative justify-center items-center md:flex md:justify-end lg:justify-center mt-4'>
           <Link to='/'>
-            <img className=' w-[175px] md:w-[150px] absolute left-0 top-1  ' src={speedyLogo} alt="icon speedy" />
+            <img className=' w-[175px] md:w-[150px] absolute left-0 top-1  ' src={svgSpeedyWhite} alt="icon speedy" />
           </Link>
 
 
-          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16">
+          <div className="flex  h-16 md:justify-end lg:justify-center  invisible md:visible md:ml-16 text-lg md:text-base">
 
             <div className='py-4'>
               <Link
@@ -69,7 +71,7 @@ const NavBar = () => {
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Inicio </p>
+                <p className='rounded-xl cursor-pointer px-3 md:px-2 py-1  hover:bg-indigo-600/30 ease-in-out duration-500 font-bold'>Inicio </p>
               </Link>
             </div>
 
@@ -80,7 +82,7 @@ const NavBar = () => {
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Speedy TV </p>
+                <p className='rounded-xl cursor-pointer px-3 md:px-2 py-1  hover:bg-indigo-600/30 ease-in-out duration-500 font-bold'>Speedy TV </p>
               </Link>
             </div>
 
@@ -93,7 +95,7 @@ const NavBar = () => {
                 onMouseLeave={() => handleHideMenu()}
                 className="peer p-4  "
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1 xl:py-[2px] hover:bg-indigo-600/30 ease-in-out duration-500'>Planes de Internet</p>
+                <p className='rounded-xl cursor-pointer px-3 md:px-2 py-1 xxl:py-[2px] hover:bg-indigo-600/30 ease-in-out duration-500 font-bold'>Planes de Internet</p>
               </div>
 
 
@@ -104,8 +106,8 @@ const NavBar = () => {
                 onClick={() => handleHideMenu()}
                 className="absolute z-50  w-1/6 rounded-b-lg border-t-4  border-secondary hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg text-black divide-y p-2 shadow-xl"
               >
-                <Link className="px-5 py-3 hover:bg-gray-200" to='/hogar'>Internet Hogar</Link>
-                <Link className="px-5 py-3 hover:bg-gray-200" to='/corporativo'>Internet Corporativo</Link>
+                <Link className="px-5 py-3 hover:bg-indigo-600/30 ease-in-out duration-500" to='/hogar'>Internet Hogar</Link>
+                <Link className="px-5 py-3 hover:bg-indigo-600/30 ease-in-out duration-500" to='/corporativo'>Internet Corporativo</Link>
               </div>
             </div>
 
@@ -118,7 +120,7 @@ const NavBar = () => {
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Cobertura </p>
+                <p className='rounded-xl cursor-pointer px-3 md:px-2 py-1  hover:bg-indigo-600/30 ease-in-out duration-500 font-bold'>Cobertura </p>
               </Link>
             </div>
 
@@ -130,7 +132,7 @@ const NavBar = () => {
                 onMouseLeave={() => handleHideMenu()}
                 onClick={() => handleHideMenu()}
               >
-                <p className='rounded-xl cursor-pointer px-3 py-1  hover:bg-indigo-600/30 ease-in-out duration-500'>Servicio al cliente </p>
+                <p className='rounded-xl cursor-pointer px-3 md:px-2 py-1  hover:bg-indigo-600/30 ease-in-out duration-500 font-bold'>Servicio al cliente </p>
               </Link>
             </div>
 

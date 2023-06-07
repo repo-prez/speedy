@@ -13,13 +13,13 @@ const TvPlans = () => {
 
       <img className='object-cover h-[300px] w-auto  ' src={imgBannerTv} alt="Banner speedy tv" />
 
-      <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xl:w-f'>
+      <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xxl:w-f'>
         <img className='mr-4' src={iconTv} alt="icon" />
         <p className='text-xl font-bold'>Nuestros planes de TV</p>
       </div>
 
 
-      <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar w-5/6    lg:w-10/12 xl:w-8/12   lg:pl-0 `}>
+      <div className={`flex rounded-xl lg:justify-between  overflow-x-scroll no-scrollbar w-5/6    lg:w-10/12 xxl:w-8/12   lg:pl-0 `}>
 
         <CardTvPlans />
         <CardTvPlans />

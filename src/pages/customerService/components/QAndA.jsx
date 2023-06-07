@@ -31,7 +31,7 @@ const QAndA = () => {
   return (
     <div className='flex flex-col items-center w-full'>
 
-      <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xl:w-f'>
+      <div className='flex items-center   py-6 w-5/6 lg:w-8/12 xxl:w-f'>
         <img className='mr-4 w-[4rem]' src={svgQuestion} alt="icon" />
         <p className='text-xl font-bold'>Preguntas Frecuentes</p>
       </div>

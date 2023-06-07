@@ -47,7 +47,7 @@ const HomeInternetPage = () => {
         {/* Products */}
 
 
-        <div className={`flex rounded-xl  lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xl:w-8/12 pl-8 lg:pl-0 `}>
+        <div className={`flex rounded-xl  lg:justify-between  overflow-x-scroll no-scrollbar  md:w-full lg:w-10/12 xxl:w-8/12 pl-8 lg:pl-0 `}>
           <CardPlan planData={homeInternet.plan1} />
           <CardPlan planData={homeInternet.plan2} />
           <CardPlan planData={homeInternet.plan3} />
