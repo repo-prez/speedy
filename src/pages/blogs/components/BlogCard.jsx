@@ -1,23 +1,25 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
-const BlogCard = ({ id, title, hero, img, date }) => {
-  const { day, month, year } = date
+const BlogCard = ({ id, img, date, title, hero, description }) => {
   return (
-    <Link to={`/blogs/${id}`}
-      className='flex flex-col justify-between w-full md:w-5/12 lg:w-4/12 h-[22rem] my-4 md:mx-4 '
-      style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-    >
-      <div className='bg-secondary w-[4rem] h-[6rem] text-white  text-xl'>
-        <p className='text-center text-4xl font-bold'>{day}</p>
-        <p className='text-center text-base'>{month}</p>
-        <p className='text-center text-base'>{year}</p>
+    <Link to={`/blogs/${id}`} target="_blank">
+      <div
+        className={`
+      w-full md:w-[20rem] rounded-xl my-4 md:mx-2 lg:mx-0 bg-background-light g:w-[16.3rem] xl:w-[23rem] xxl:w-[25rem] hover:shadow-[0.2px_0.2px_5px_0.2px] hover:shadow-secondary duration-300`}
+      >
+
+        <img className="rounded-t-xl w-full h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[16rem] object-cover" src={img} alt={'img' + title} />
+
+        <div className="bg-gradient-to-r from-secondary to-text via-primary-dark h-[0.3rem]" />
+
+        <div className="mx-4 py-2 h-[7rem] ">
+          <h3 className="text-text text-2xl lg:text-lg xl:text-2xl font-bold">{title}</h3>
+          <p className="text-sm lg:text-base">{description}</p>
+        </div>
+
       </div>
 
-      <div className='text-white m-2 p-4 text-xl rounded-lg backdrop-blur-sm bg-white/30 '>
-        <p className='font-bold'>{title}</p>
-        <p className='font-light'>{hero}  </p>
-      </div>
-    </Link>
+    </Link >
   )
 }
 

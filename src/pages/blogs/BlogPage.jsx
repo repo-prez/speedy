@@ -3,10 +3,11 @@ import Footer from "../../ui/components/Footer"
 
 import { dataBlogs } from '../../data/blog'
 
-import BlogCard2 from "./components/BlogCard2"
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import { AppContext } from "../../context/AppContext"
 import { Helmet } from "react-helmet"
+import CardBlog from "../home/components/CardBlog"
+import BlogCard from "./components/BlogCard"
 
 
 const BlogPage = ({ id, date, title, category, hero, description, img, content }) => {
@@ -56,8 +57,8 @@ const BlogPage = ({ id, date, title, category, hero, description, img, content }
 
           {/* Another Blogs */}
           <div className="px-8 md:flex lg:flex-col justify-center lg:w-4/12 ">
-            <BlogCard2 {...randomBlog1} />
-            <BlogCard2 {...randomBlog2} />
+            <BlogCard {...randomBlog1} />
+            <BlogCard {...randomBlog2} />
           </div>
 
         </div>

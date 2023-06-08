@@ -20,11 +20,11 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
       {/*Menu Plans  */}
-      <div className="flex flex-wrap justify-center items-center  text-xs w-full lg:text-lg divide-x-4 divide-white">
+      <div className="flex flex-wrap justify-center items-center  text-xs w-full lg:text-lg divide-x-2 lg:divide-x-0 divide-white">
 
         <button
-          className={`flex items-center justify-center md:justify-center h-20   bg-background-light text-text ${home && 'font-bold'} 
-          w-1/2  border-r-0 rounded-l-3xl 
+          className={`flex items-center justify-center md:justify-center h-20 mr-[0px] lg:mx-2 bg-background-light text-text ${home && 'font-bold'} hover:shadow-[0.2px_0.2px_5px_0.2px] hover:shadow-secondary duration-300
+          w-1/2   rounded-l-2xl 
           md:w-1/2
           lg:w-1/3`}
           onClick={() => setActiveProduct({ home: true, business: false, tv: false, dual: false })}
@@ -40,7 +40,7 @@ const MenuPlans = ({ activeProduct, setActiveProduct }) => {
 
 
         <button
-          className={`flex items-center justify-center md:justify-center  h-20 bg-background-light text-text ${business && 'font-bold'}
+          className={`flex items-center justify-center md:justify-center  h-20 bg-background-light text-text ${business && 'font-bold'} hover:shadow-[0.2px_0.2px_5px_0.2px] hover:shadow-secondary duration-300
           w-1/2 rounded-r-2xl 
           md:w-1/2 
           lg:w-1/3 lg:rounded-l-none lg:rounded-r-3xl`}

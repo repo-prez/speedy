@@ -2,6 +2,29 @@ import imgBannerCorporativo from '../../../assets/img/banners/bannerCorporativo.
 import svgSupport from '../../../assets/icons/svgSupport.svg'
 import iconWiffi from '../../../assets/icons/iconWiffi.svg'
 
+const dataCardSupport = [
+  {
+    icon: iconWiffi,
+    title: 'Canales de Atención',
+    subtitle: 'Infromate sobre nuestros canales de soporte.',
+  },
+  {
+    icon: iconWiffi,
+    title: 'Facturación',
+    subtitle: 'Conoce cómo realizar tus pagos.',
+  },
+  {
+    icon: iconWiffi,
+    title: 'Reclamos',
+    subtitle: 'Conoce cómo ingresar un reclamo y revisar su estado.',
+  },
+  {
+    icon: iconWiffi,
+    title: 'Solicitud cambio de domicilio',
+    subtitle: 'Conoce el proceso para trasladar tu servicio a otro domicilio.',
+  }
+]
+
 const Support = () => {
   return (
     <div className='w-full flex flex-col items-center mb-10 '>

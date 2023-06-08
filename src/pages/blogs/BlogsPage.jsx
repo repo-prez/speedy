@@ -1,12 +1,12 @@
 import NavBar from '../../ui/components/NavBar'
 import Footer from '../../ui/components/Footer'
 import DownArrowAnimation from '../../components/DownArrowAnimation'
-import BlogCard from './components/BlogCard'
 
 import { dataBlogs } from '../../data/blog.js'
 import { useContext } from 'react'
 import { AppContext } from '../../context/AppContext'
 import { Helmet } from 'react-helmet'
+import Blogs from '../home/components/Blogs'
 
 
 
@@ -33,8 +33,8 @@ const BlogsPage = () => {
 
 
       {/* Hero */}
-      <div className='flex flex-col items-center px-8 mb-16'>
-        <h1 className='text-7xl font-extrabold w-fit p-2 my-6'>Blogs</h1>
+      <div className='flex flex-col items-center px-8 mb-16 '>
+        <h1 className='text-7xl font-extrabold w-fit p-2 my-6 '>Blogs</h1>
         <p className='text-2xl leading-7 tracking-wide mb-10'> Descubre noticias novedosas en nuestra plataforma de <span className='font-bold'>blogs y despega</span> hacia el futuro de la información.</p>
         <DownArrowAnimation />
       </div>
@@ -45,9 +45,7 @@ const BlogsPage = () => {
       </div>
 
       {/* Cards Blogs */}
-      <div className='flex flex-wrap justify-center p-8'>
-        {dataBlogs.map(blog => (<BlogCard key={blog.id} {...blog} />))}
-      </div>
+      <Blogs title={''} />
 
 
 

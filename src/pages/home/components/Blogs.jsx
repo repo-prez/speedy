@@ -5,12 +5,12 @@ import { dataBlogs } from '../../../data/blog.js'
 import { Link } from 'react-router-dom'
 
 
-const Blogs = () => {
+const Blogs = ({ title = 'Speedy Blogs' }) => {
 
   return (
 
     <>
-      <p className=' text-center my-12 text-primary text-5xl font-bold'>Speedy Blog's</p>
+      <p className=' text-center my-12 text-primary text-5xl font-bold'>{title}</p>
       {/* <p className=' text-center my-12 text-primary text-5xl font-bold'>{window.innerWidth}</p> */}
 
       <div className='relative px-8 lg:px-0 flex justify-center' >
